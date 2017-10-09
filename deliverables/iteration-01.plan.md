@@ -1,13 +1,13 @@
-# YOUR PRODUCT/TEAM NAME
+# THE LOOK
 
  > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
  > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
 
 
-## Iteration XX
+## Iteration 01
 
- * Start date: FILL IN THE DATE WHEN YOU HAD YOUR FIRST TEAM PLANNING MEETING
- * End date: FILL IN THE DATE WHEN YOU ARE PLANNING TO HAVE YOUR REVIEW MEETING
+ * Start date: October 3, 2017
+ * End date: October 10, 2017
 
 ## Process
 
@@ -22,8 +22,17 @@ Describe the different roles on the team and the responsibilities associated wit
 Describe meetings (and other events) you are planning to have:
 
  * When and where? In-person or online?
+ * In-person at BA
+ * Online through group chat
+ * Online through Github collaboration
+ ---
+ 
  * What's the purpose of each meeting?
+ * Ensure everyone is up to date about the project status
+ * Brainstorm target users and solutions to solve their problem
+ ---
  * Other events could be coding sessions, code reviews, quick weekly sync' meeting online, etc.
+ * Brainstorm code design
 
 #### Artifacts
 
