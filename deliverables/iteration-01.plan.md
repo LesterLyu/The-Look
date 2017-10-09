@@ -16,9 +16,21 @@
 #### Roles & responsibilities
 
 Describe the different roles on the team and the responsibilities associated with each role.
-* Product Manager: 
-* Scrum Manager: 
-* Technical Team:
+ ##### Product Manager:
+  - leonyhenn
+ ##### Scrum Manager:
+  - LesterLyu
+ ##### Technical Team:
+  - Front-end (React native)
+    - leonyhenn
+    - ShuiFanZZ
+    - LesterLyu
+  - Back-end (node.js, express, mongoDB, ...)
+    - andrewbinyu (Alogorithm)
+    - LesterLyu
+    - TechiesTheOne
+    - yanxi0830
+    - w34336
 
 
 #### Events
