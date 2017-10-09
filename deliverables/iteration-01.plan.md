@@ -16,9 +16,9 @@
 #### Roles & responsibilities
 
 Describe the different roles on the team and the responsibilities associated with each role.
-Product Manager: 
-Scrum Manager: 
-Technical Team:
+* Product Manager: 
+* Scrum Manager: 
+* Technical Team:
 
 
 #### Events
