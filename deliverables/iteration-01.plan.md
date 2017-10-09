@@ -44,6 +44,8 @@ List/describe the artifacts you will produce in order to organize your team.
    * How do you prioritize tasks?
    * How do tasks get assigned to team members?
 
+* Chat history
+* 
 
 ## Product
 
