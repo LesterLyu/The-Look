@@ -18,6 +18,7 @@ YOUR ANSWER GOES HERE ...
    For example: This is not the time or the place to talk about which programming language and/or framework you are planning to use.
  * **Feel free (and very much encouraged) to include useful diagrams, mock-ups and/or links**.
 
+* We are palnning to build a mobile application that will help users make better clothing choices
 
 #### Q2: Who are your target users?
 
