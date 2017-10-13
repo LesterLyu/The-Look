@@ -36,7 +36,7 @@
 * Assigned roles and responsiblities to every team member
 * Decided on framework/language to use for building the application
   * React Native for front end
-  * MongoDB, Node.js, Express for back end
+  * MongoDB, Node.js for back end
 
 #### Goals and/or tasks that were planned but not met/completed:
 
