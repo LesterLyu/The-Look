@@ -14,59 +14,60 @@
 (Optional:) Quick introduction
 
 #### Roles & responsibilities
-
-Describe the different roles on the team and the responsibilities associated with each role.
- ##### Product Manager:
+ 
+###### Product Manager:
+Communicates product vision from the highest levels to development and implementation teams
+ - leonyhenn
+###### Scrum Manager:
+Facillates team meetings, make sure product backlog is in good shape and ready for the next sprint
+ - LesterLyu
+###### Front End Developer: 
+Design and implementation of the user interface (Tech Stack: React Native)
   - leonyhenn
- ##### Scrum Manager:
+  - ShuiFanZZ
   - LesterLyu
- ##### Technical Team:
-  - Front-end (React native)
-    - leonyhenn
-    - ShuiFanZZ
-    - LesterLyu
-  - Back-end (node.js, express, mongoDB, ...)
-    - andrewbinyu (Alogorithm)
-    - LesterLyu
-    - TechiesTheOne
-    - yanxi0830
-    - w34336
-
+  - yanxi0830
+Database and server side implementation of mobile application (Tech Stack: Node.js, Express, MongoDB, ...)
+  - andrewbinyu (Alogorithm)
+  - LesterLyu
+  - TechiesTheOne
+  - yanxi0830
+  - w34336
 
 #### Events
 
-Describe meetings (and other events) you are planning to have:
+- We will meet in person at BA before, during, and after tutorial every Tuesday from 11:00am - 2:00pm. The purpose of this meeting is to enusre everyone is up to date about the current project status and to address any questions or ideas any team member has. This meeting will also be spend planning the goals for next week. In the future, we plan to use this meeting time to do coding sessions or code reviews. 
 
- * When and where? In-person or online?
- * In-person at BA
- * Online through group chat
- * Online through Github collaboration
- ---
- 
- * What's the purpose of each meeting?
- * Ensure everyone is up to date about the project status
- * Brainstorm target users and solutions to solve their problem
- ---
- * Other events could be coding sessions, code reviews, quick weekly sync' meeting online, etc.
- * Brainstorm code design
+- Online video chat meetings will be held on Saturday 10am using Google Hangout and will typically last around 1 hour. The purpose of this meeting is to check in with everyone and make sure everyone's task is being accomplished in a timely manner. In this meeting, we will address any questions or concerns anyone have and make changes to our plan accordingly .
+
+- Quick ideas and comments can be made at anytime online through WeChat group. Everyone will have a chance to see the chat history and make comments. 
+
+###### Meetings Held:
+- Tuesday September 26 from 11:00am - 1:00pm @ Bahen Centre
+ - brainstormed project ideas
+ - proposed problems currently faced and possible solutions
+- Tuesday October 3 from 10:00am - 2:00pm @ Bahen Centre
+ - finalized project idea
+ - brainstormed unique features to add to project
+- Saturday October 7 from 11:00am - 1:00pm Online through Google Hangout
+ - discussed potential skills required
+ - assigned roles and responsiblities to team members
+- Tuesday October 14 from 11:00am - 2:00pm @ Bahen Centre
+ - finalized changes to some proposed features and highlight about the project
+ - planned out user workflow through the mobile app
 
 #### Artifacts
 
-List/describe the artifacts you will produce in order to organize your team.       
-
- * Artifacts can be To-do lists, Task boards, schedule(s), etc.
- * We want to understand:
-   * How do you keep track of what needs to get done?
-   * How do you prioritize tasks?
-   * How do tasks get assigned to team members?
-
-* Chat history
-* 
+We will keep a Google Doc sheet called the "Track Board" which include each team member's name and under which a list of tasks that the team member is assigned to and the corresponding due date for that task. It is the responsiblity of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
 
 ## Product
 
 #### Goals and tasks
-
+1. Finalize project features
+2. Find existing similar products to improve uniqueness of our product
+3. Assign roles and responsiblities to team members
+4. Find existing APIs to help build our product
+5. Start implementing user interface and workflow
  * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
  * Order the items from most to least important.
  * Feel free (but not obligated) to specify some/all tasks as user stories.
