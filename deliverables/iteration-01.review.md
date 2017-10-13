@@ -36,7 +36,7 @@ List any process-related changes you are planning to make (if there are any)
 
 #### Goals and/or tasks that were met/completed:
 
-* Finalized project idea
+* Singled out one idea for our project
 * Decided on some basic features of the product 
   * Profile our users by their favor
   * Recommand products that matches a user's profile
