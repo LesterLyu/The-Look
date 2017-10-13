@@ -10,7 +10,6 @@
 
 #### Decisions that turned out well
 
-List process-related (i.e. team organization) decisions that, in retrospect, turned out to be successful.
 * Communicating and commenting through WeChat group, everyone is participating and we can see the ideas discuessed through chat history
 * Keeping a Track Board to help team members and the team keep track of goals and responsiblities
 * Face-to-face meetings every week, more efficient than online video meetings
@@ -22,7 +21,6 @@ List process-related (i.e. team organization) decisions that, in retrospect, tur
 
 #### Planned changes
 
-List any process-related changes you are planning to make (if there are any)
 * We plan to reduce online video meetings and organize more face-to-face meetings (hold physical meetings twice per week)
 * Add more details to the track board to keep track of additional information such as important notes or updates to the project that everyone should be aware of
 
