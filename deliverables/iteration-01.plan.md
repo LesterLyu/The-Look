@@ -73,6 +73,8 @@ We will keep a Google Doc sheet called the [Track Board](https://docs.google.com
 #### Artifacts
 
 List/describe the artifacts you will produce in order to present your project idea.
+* We have a Gogle doc to record all our brain storm idea for this project during the first meeting. It also include the reason why we chose one and abandon the others.
+
 * PPT presentation [TheLook](https://docs.google.com/presentation/d/1N4_o-c9Uq4s5piaLzesKM-2TY7jOYplzz-OBPCHGw9I/edit?usp=sharing)
   * This is useful for the team to get a general idea of the problem our app is trying to solve and the target user group for our application
  
