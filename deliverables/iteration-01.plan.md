@@ -61,7 +61,8 @@ Database and server side implementation of mobile application (Tech Stack: Node.
 * Meeting record
   * Meeting record includes all the main points each team member gives during the meeting. This helps to build deliverable files.
 
-* We will keep a Google Doc sheet called the [Track Board](https://docs.google.com/document/d/1FIVt9HOjWtJEGN-1Ru8d8Crb7CeDV5ArKOWB1BIJYXE/edit) which includes each team member's name and under which a list of tasks that the team member is assigned to and the corresponding due date for that task. It is the responsiblity of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
+* [Track Board](https://docs.google.com/document/d/1FIVt9HOjWtJEGN-1Ru8d8Crb7CeDV5ArKOWB1BIJYXE/edit)
+  * We will keep a Google Doc sheet to track each member's tasks progess. The team members will be assigned tasks with corresponding due date. It is the responsiblity of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
 
 ## Product
 
