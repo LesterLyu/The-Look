@@ -35,10 +35,10 @@ Our product allow users to discover the current fashion trends or some styles th
 
 ### Highlights
 
-25 Sep. : Men style app's first UI model finished
-26 Sep. : First formal group meeting, decide to make a men style app
-3 Oct. : First user procedure and app implementation meeting, decide to use Observer pattern.
-3 Oct. : Second tutorial, TA rejected Observer pattern and suggest something more interactive
-8 Oct. : 3 future direction was proposed. The first leads the app to a men-self-development app, the second leads to price range suggestion, the third stick on the old ideas. 
-10 Oct: All three got rejected and product manager locked into contemplation.
-10 Oct: Adjust the future direction to an interactive and initiative learning app.
+* 25 Sep. : Men style app's first UI model finished
+* 26 Sep. : First formal group meeting, decide to make a men style app
+* 3 Oct. : First user procedure and app implementation meeting, decide to use Observer pattern.
+* 3 Oct. : Second tutorial, TA rejected Observer pattern and suggest something more interactive
+* 8 Oct. : 3 future direction was proposed. The first leads the app to a men-self-development app, the second leads to price range suggestion, the third stick on the old ideas. 
+* 10 Oct: All three got rejected and product manager locked into contemplation.
+* 10 Oct: Adjust the future direction to an interactive and initiative learning app.
