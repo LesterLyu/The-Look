@@ -5,7 +5,7 @@
 
 #### Q1: What are you planning to build?
 
-A men style advisor app that learns user's preferred style and recommend related style product.
+A men style advisor app that can learn user's preferred style during the course of usage and recommend related fashion style products accordingly.
 
 We know a big portion of men tend not to spend energy and time in shopping mall and fashion magazines, our app aims to significantly shorten the time of searching for their prefered style.
 
