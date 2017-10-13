@@ -10,14 +10,14 @@
 
 #### Decisions that turned out well
 
-* Communicating and commenting through WeChat group, everyone is participating and we can see the ideas discuessed through chat history
-* Keeping a Track Board to help team members and the team keep track of goals and responsiblities
+* Communicating and commenting through WeChat group, everyone is participating and we can see the ideas discussed through chat history
+* Keeping a Track Board to help team members and the team keep track of goals and responsibilities
 * Face-to-face meetings every week, more efficient than online video meetings
 
 #### Decisions that did not turn out as well as we hoped
 
-* Online video meetings in place of face-to-face meetings. More convenient but turned out to be much less efficient than face-to-face meetings. Also there was some technical problems with noise from microphones.
-* Planned to have a little meeting every day, but after some discussion we found it unnecessary. Additional meetings will be held if we encounter important matters that we have to figure out together. 
+* Online video meetings in place of face-to-face meetings. More convenient but turned out to be much less efficient than face-to-face meetings. Moreover, there were some technical problems with noise from microphones.
+* Planned to have a little meeting every day, but after some discussion, we found it unnecessary. Additional meetings will be held if we encounter important matters that we have to figure out together. 
 #### Planned changes
 
 * We plan to reduce online video meetings and organize more face-to-face meetings (hold physical meetings twice per week at current stage, more meeting after coding starts)
@@ -31,7 +31,7 @@
 * Decided on some basic features of the product 
   * Profile our users by their favor
   * Gain the information about user's favor in an interactive manner instead of filling a long form.
-  * Recommend products that matches a user's profile
+  * Recommend product that matches users' profile
   * User's feedback on a product will update both his/her profile and the ranking of that product
 * Assigned roles and responsiblities to every team member
 * Decided on framework/language to use for building the application
@@ -47,5 +47,5 @@
 
 Going into the next iteration, our main insights are:
 
-* Everyone in the team should come to each meeting prepared with contribute their ideas or questions about the current state of the project
+* Everyone in the team should come to each meeting prepared with ideas or questions about the current state of the project
 * We should plan out our next goals and start assigning task to each member 
