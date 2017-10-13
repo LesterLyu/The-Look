@@ -73,7 +73,7 @@ We will keep a Google Doc sheet called the [Track Board](https://docs.google.com
 #### Artifacts
 
 List/describe the artifacts you will produce in order to present your project idea.
-* Brain storm ideas
+* [Brain storm ideas](https://docs.google.com/document/d/1NJpb-EJWHcr3m_SWY_OAhhRQkXTNxTZ0oxF4UDZ0fZ8/edit)
  * We have a Gogle doc to record all our brain storm idea for this project during the first meeting. It also include the reason why we chose one and abandon the others.
 
 * Meeting record
