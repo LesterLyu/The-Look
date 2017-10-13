@@ -38,9 +38,9 @@ List any process-related changes you are planning to make (if there are any)
 
 * Finalized project idea
 * Decided on some basic features of the product
-   * Profile our users by their favor
-   * Recommand products that matches a user's profile
-   * User's feedback on a product will update both his/her profile and the ranking of that product
+  ** Profile our users by their favor
+  ** Recommand products that matches a user's profile
+  ** User's feedback on a product will update both his/her profile and the ranking of that product
 * Assigned roles and responsiblities to every team member
 * Decided on framework/language to use for building the application
   * React Native for front end
