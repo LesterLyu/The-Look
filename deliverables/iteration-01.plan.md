@@ -73,8 +73,7 @@ We will keep a Google Doc sheet called the "Track Board" which include each team
 #### Artifacts
 
 List/describe the artifacts you will produce in order to present your project idea.
-
- * Artifacts can be text, code, images, videos, interactive mock-ups and/or any other useful artifact you can think of.
- * Make sure to explain the purpose of each artifact (i.e. Why is it on your to-do list? Why is it useful for your team?)
- * Be concise, yet precise.         
-   For example: "Build the website" is not precise at all, but "Build a static home page and upload it somewhere, so that it is publicly accessible" is much clearer.
+* PPT presentation (TheLook)[https://docs.google.com/presentation/d/1N4_o-c9Uq4s5piaLzesKM-2TY7jOYplzz-OBPCHGw9I/edit?usp=sharing]
+ * This is useful for the team to get a general idea of the problem our app is trying to solve and the target user group for our application
+ 
+ * We plan to build an interactive mobile application using React Native for both iOS and Android. Our goal for the final product is to upload it into App Store or Google Play store so that it is publicly accessible. 
