@@ -64,9 +64,6 @@ Database and server side implementation of mobile application (Tech Stack: Node.
 * [Track Board](https://docs.google.com/document/d/1FIVt9HOjWtJEGN-1Ru8d8Crb7CeDV5ArKOWB1BIJYXE/edit)
   * We will keep a Google Doc sheet to track each member's tasks progress. The team members will be assigned tasks with a corresponding due date. It is the responsibility of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
   
- * UI model
-  *First UI model, Observer pattern(abandoned), needs to be updated. 
-  https://drive.google.com/file/d/0B9rhmRtaxtTQNFZSbWxNMXJFVjA/view?usp=sharing
 
 ## Product
 
@@ -88,3 +85,7 @@ List/describe the artifacts you will produce in order to present your project id
   * This is useful for the team to get a general idea of the problem our app is trying to solve and the target user group for our application
  
  * We plan to build an interactive mobile application using React Native for both iOS and Android. We plan to demonstrate the product's functionality through an interactive demo using the Expo App for trying out React Native projects on our phones. We also plan to create a detailed documentation highlighting key aspects of the user interface and the user workflow, such as how our app will interact with users to recommend them styles to their preference. Our goal for the final product is to upload it into App Store or Google Play store so that it is publicly accessible. 
+ 
+ * [UI model](https://drive.google.com/file/d/0B9rhmRtaxtTQNFZSbWxNMXJFVjA/view?usp=sharing)
+  *First UI model, Observer pattern(abandoned), needs to be updated. 
+  
