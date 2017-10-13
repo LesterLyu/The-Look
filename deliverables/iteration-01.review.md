@@ -38,11 +38,9 @@ List any process-related changes you are planning to make (if there are any)
 
 * Finalized project idea
 * Decided on some basic features of the product
-  * [TODO]
-  * [LIST SOME FEATURES OF THE PRODUCT]
-  * After user's first login, he/she will be redirected to a page with 8-9 (4x2 or 3x3) pictures with outfits with different styles, user need to choose his/her favourite style to provide our recommendation algorithm with some basic information about the user.  
-    * User can choose to shuffle to another set of pictures or simply skip this page.
-    * User will be redirected to this page everytime he/she login until a general information about user's favorite style is recorded.
+  * Profile our users by their favor
+  * Recommand products that matches a user's profile
+  * User's feedback on a product will update both his/her profile and the ranking of that product
 * Assigned roles and responsiblities to every team member
 * Decided on framework/language to use for building the application
   * React Native for front end
