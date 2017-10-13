@@ -19,7 +19,7 @@
 Communicates product vision from the highest levels to development and implementation teams
  - leonyhenn
 ##### Scrum Manager:
-Facillates team meetings, make sure product backlog is in good shape and ready for the next sprint
+facilitates team meetings, make sure product backlog is in good shape and ready for the next sprint
  - LesterLyu
 ##### Front End Developer: 
 Design and implementation of the user interface (Tech Stack: React Native)
@@ -29,7 +29,7 @@ Design and implementation of the user interface (Tech Stack: React Native)
   - yanxi0830
 ##### Back End Developer: 
 Database and server side implementation of mobile application (Tech Stack: Node.js, Express, MongoDB, ...)
-  - andrewbinyu (Alogorithm)
+  - andrewbinyu (Algorithm)
   - LesterLyu
   - TechiesTheOne
   - yanxi0830
@@ -37,7 +37,7 @@ Database and server side implementation of mobile application (Tech Stack: Node.
 
 #### Events
 
-- We will meet in person at BA before, during, and after tutorial every Tuesday from 11:00am - 2:00pm. The purpose of this meeting is to enusre everyone is up to date about the current project status and to address any questions or ideas any team member has. This meeting will also be spend planning the goals for next week. In the future, we plan to use this meeting time to do coding sessions or code reviews. 
+- We will meet in person at BA before, during, and after tutorial every Tuesday from 11:00am - 2:00pm. The purpose of this meeting is to ensure everyone is up to date about the current project status and to address any questions or ideas any team member has. This meeting will also be spend planning the goals for next week. In the future, we plan to use this meeting time to do coding sessions or code reviews. 
 
 - Online video meetings will be held on Saturday 10:00am using _Google Hangouts_ and will typically last around 1 hour. The purpose of this meeting is to check in with everyone and make sure everyone's task is being accomplished in a timely manner. In this meeting, we will address any questions or concerns anyone has and make changes to our plan accordingly.
 
@@ -52,24 +52,28 @@ Database and server side implementation of mobile application (Tech Stack: Node.
   - brainstormed unique features to add to project
 - Saturday October 7 from 11:00am - 1:00pm Online through _Google Hangouts_
   - discussed potential techniques required
-  - assigned roles and responsiblities to team members
+  - assigned roles and responsibilities to team members
 
 #### Artifacts
 * [Brain storm ideas](https://docs.google.com/document/d/1NJpb-EJWHcr3m_SWY_OAhhRQkXTNxTZ0oxF4UDZ0fZ8/edit)
-  * We have a Gogle doc to record all our brain storm idea for this project during the first meeting. It also include the reason why we chose one and abandon the others.
+  * We have a Google doc to record all our brain storm idea for this project during the first meeting. It also include the reason why we chose one and abandon the others.
 
 * Meeting record
   * Meeting record includes all the main points each team member gives during the meeting. This helps to build deliverable files.
 
 * [Track Board](https://docs.google.com/document/d/1FIVt9HOjWtJEGN-1Ru8d8Crb7CeDV5ArKOWB1BIJYXE/edit)
-  * We will keep a Google Doc sheet to track each member's tasks progess. The team members will be assigned tasks with corresponding due date. It is the responsiblity of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
+  * We will keep a Google Doc sheet to track each member's tasks progress. The team members will be assigned tasks with corresponding due date. It is the responsibility of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
+  
+ * UI model
+  *First UI model, Observer pattern(abandoned), needs to be updated. 
+  https://drive.google.com/file/d/0B9rhmRtaxtTQNFZSbWxNMXJFVjA/view?usp=sharing
 
 ## Product
 
 #### Goals and tasks
 1. Finalize project features
 1. Find existing similar products to improve uniqueness of our product
-1. Assign roles and responsiblities to team members
+1. Assign roles and responsibilities to team members
 1. Find existing APIs to help build our product
 1. Start implementing user interface and workflow
 
