@@ -37,7 +37,7 @@ Database and server side implementation of mobile application (Tech Stack: Node.
 
 #### Events
 
-- We will meet in person at BA before, during, and after tutorial every Tuesday from 11:00am - 2:00pm. The purpose of this meeting is to ensure everyone is up to date about the current project status and to address any questions or ideas any team member has. This meeting will also be spend planning the goals for next week. In the future, we plan to use this meeting time to do coding sessions or code reviews. 
+- We will meet in person at BA before, during, and after tutorial every Tuesday from 11:00am - 2:00pm. The purpose of this meeting is to ensure everyone is up to date about the current project status and to address any questions or ideas any team member has. This meeting will also be used to plan the goals for next week. In the future, we plan to use this meeting time to do coding sessions or code reviews. 
 
 - Online video meetings will be held on Saturday 10:00am using _Google Hangouts_ and will typically last around 1 hour. The purpose of this meeting is to check in with everyone and make sure everyone's task is being accomplished in a timely manner. In this meeting, we will address any questions or concerns anyone has and make changes to our plan accordingly.
 
@@ -56,13 +56,13 @@ Database and server side implementation of mobile application (Tech Stack: Node.
 
 #### Artifacts
 * [Brain storm ideas](https://docs.google.com/document/d/1NJpb-EJWHcr3m_SWY_OAhhRQkXTNxTZ0oxF4UDZ0fZ8/edit)
-  * We have a Google doc to record all our brain storm idea for this project during the first meeting. It also include the reason why we chose one and abandon the others.
+  * We have a Google doc to record all our brainstorm idea for this project during the first meeting. It also includes the reason why we chose one and abandon the others.
 
 * Meeting record
   * Meeting record includes all the main points each team member gives during the meeting. This helps to build deliverable files.
 
 * [Track Board](https://docs.google.com/document/d/1FIVt9HOjWtJEGN-1Ru8d8Crb7CeDV5ArKOWB1BIJYXE/edit)
-  * We will keep a Google Doc sheet to track each member's tasks progress. The team members will be assigned tasks with corresponding due date. It is the responsibility of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
+  * We will keep a Google Doc sheet to track each member's tasks progress. The team members will be assigned tasks with a corresponding due date. It is the responsibility of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
   
  * UI model
   *First UI model, Observer pattern(abandoned), needs to be updated. 
