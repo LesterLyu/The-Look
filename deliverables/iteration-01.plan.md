@@ -53,9 +53,6 @@ Database and server side implementation of mobile application (Tech Stack: Node.
 - Saturday October 7 from 11:00am - 1:00pm Online through Google Hangout
   - discussed potential skills required
   - assigned roles and responsiblities to team members
-- Tuesday October 14 from 11:00am - 2:00pm @ Bahen Centre
-  - finalized changes to some proposed features and highlight about the project
-  - planned out user workflow through the mobile app
 
 #### Artifacts
 
