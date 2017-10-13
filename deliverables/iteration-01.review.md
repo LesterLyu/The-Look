@@ -40,6 +40,7 @@ List any process-related changes you are planning to make (if there are any)
 * Decided on the features of the product
   * [TODO]
   * [LIST SOME FEATURES OF THE PRODUCT]
+  * After user's first login, he/she will be redirected to a page with 8 pictures with outfits with different styles, user need to choose his/her favourite style to provide our recommend algorithm with some basic information about the user.
 * Assigned roles and responsiblities to every team member
 * Decided on framework/language to use for building the application
   * React Native for front end
