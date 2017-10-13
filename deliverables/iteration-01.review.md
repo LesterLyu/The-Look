@@ -31,7 +31,8 @@
 * Singled out one idea for our project
 * Decided on some basic features of the product 
   * Profile our users by their favor
-  * Recommand products that matches a user's profile
+  * Gain the information about user's favor in an interactive manner instead of filling a long form.
+  * Recommend products that matches a user's profile
   * User's feedback on a product will update both his/her profile and the ranking of that product
 * Assigned roles and responsiblities to every team member
 * Decided on framework/language to use for building the application
