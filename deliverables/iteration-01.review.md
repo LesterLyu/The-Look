@@ -23,7 +23,8 @@ List process-related (i.e. team organization) decisions that, in retrospect, tur
 
 #### Decisions that did not turn out as well as we hoped
 
-* Online video meetings, it was less efficient than face to face meetings as there was some technical problems with noice from microphones. 
+* Online video meetings in place of face-to-face meetings. More convenient but turned out to be much less efficient than face-to-face meetings. Also there was some technical problems with noice from microphones.
+* Planned to have a little meeting every day, but after some discussion we found it unnecessary. Additional meetings will be held if we encounter important matters that we have to figure out together.
 
 #### Planned changes
 
@@ -37,12 +38,12 @@ List any process-related changes you are planning to make (if there are any)
 
 * Finalized project idea
 * Decided on the features of the product
- * [TODO]
- * [LIST SOME FEATURES OF THE PRODUCT]
+  * [TODO]
+  * [LIST SOME FEATURES OF THE PRODUCT]
 * Assigned roles and responsiblities to every team member
 * Decided on framework/language to use for building the application
- * React Native for front end
- * MongoDB, Node.js, Express for back end
+  * React Native for front end
+  * MongoDB, Node.js, Express for back end
 
 #### Goals and/or tasks that were planned but not met/completed:
 
