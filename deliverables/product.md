@@ -5,17 +5,17 @@
 
 #### Q1: What are you planning to build?
 
-A men style advisor app that can learn user's preferred style during the course of usage and recommend related fashion style products accordingly.
+A men's style advisor app that can learn user's preferred style during the course of usage and recommend related fashion style products accordingly.
 
-We know a big portion of men tend not to spend energy and time in shopping mall and fashion magazines, our app aims to significantly shorten the time of searching for their prefered style.
+We know a big portion of men tend not to spend energy and time in a shopping mall and fashion magazines, our app aims to significantly shorten the time of searching for their preferred style.
 
-This app interprets images that user chose which fit their circumstace or preference to study and interact with user in a way such that user only need to do the minimum amount of work. For user, it is easy as Tony Stark takes off his Ironman suit.
+This app interprets images that user chose which meets their requirements or preferences to study and interact with users in a way such that user only need to do the minimum amount of work. For user, it is easy as Tony Stark takes off his Ironman suit.
 
 #### Q2: Who are your target users?
 
 - Men, on young age group(less than 30), who tend not to spend energy or time on their appearance but still want to have a good look.
-- Users would choose our product because it saves users time significantly by eliminating the processes of looking through style books, or going to the store to shop for clothes.
-- Our product allow users to discover the current fashion trends or some styles that is right for their body type/personality/activity. They couldn't discover, or were unlikely to discover these before since our target users are people who do not like to spend much time searching for clothes or who have little fashion sense. 
+- Users would choose our product because it saves users time significantly by eliminating the processes of looking through style books or going to the store to shop for clothes.
+- Our product allows users to discover the current fashion trends or some styles that are right for their body type/personality/activity. They couldn't discover or were unlikely to discover these before since our target users are people who do not like to spend much time searching for clothes or who have little fashion sense. 
 
 #### Q3: Why would your users choose your product? What are they using today to solve their problem/need?
 
@@ -37,6 +37,6 @@ Furthermore, our product allows users to discover the current fashion trends or 
 * 26 Sep. : First formal group meeting, decide to make a men style app
 * 3 Oct. : First user procedure and app implementation meeting, decide to use Observer pattern.
 * 3 Oct. : Second tutorial, TA rejected Observer pattern and suggest something more interactive
-* 8 Oct. : 3 future direction was proposed. The first leads the app to a men-self-development app, the second leads to price range suggestion, the third stick on the old ideas. 
+* 8 Oct. : 3 future directions was proposed. The first leads the app to a men-self-development app, the second leads to price range suggestion, the third stick on the old ideas. 
 * 10 Oct: All three got rejected and product manager locked into contemplation.
 * 10 Oct: Adjust the future direction to an interactive and initiative learning app.
