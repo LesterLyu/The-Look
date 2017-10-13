@@ -17,11 +17,10 @@
 #### Decisions that did not turn out as well as we hoped
 
 * Online video meetings in place of face-to-face meetings. More convenient but turned out to be much less efficient than face-to-face meetings. Also there was some technical problems with noise from microphones.
-* Planned to have a little meeting every day, but after some discussion we found it unnecessary. Additional meetings will be held if we encounter important matters that we have to figure out together.
-
+* Planned to have a little meeting every day, but after some discussion we found it unnecessary. Additional meetings will be held if we encounter important matters that we have to figure out together. 
 #### Planned changes
 
-* We plan to reduce online video meetings and organize more face-to-face meetings (hold physical meetings twice per week)
+* We plan to reduce online video meetings and organize more face-to-face meetings (hold physical meetings twice per week at current stage, more meeting after coding starts)
 * Add more details to the track board to keep track of additional information such as important notes or updates to the project that everyone should be aware of
 
 ## Product - Review
