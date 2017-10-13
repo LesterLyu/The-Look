@@ -40,7 +40,7 @@ List any process-related changes you are planning to make (if there are any)
 * Decided on the features of the product
   * [TODO]
   * [LIST SOME FEATURES OF THE PRODUCT]
-  * After user's first login, he/she will be redirected to a page with 8 pictures with outfits with different styles, user need to choose his/her favourite style to provide our recommendation algorithm with some basic information about the user.  
+  * After user's first login, he/she will be redirected to a page with 8-9 (4x2 or 3x3) pictures with outfits with different styles, user need to choose his/her favourite style to provide our recommendation algorithm with some basic information about the user.  
     * User can choose to shuffle to another set of pictures or simply skip this page.
     * User will be redirected to this page everytime he/she login until a general information about user's favorite style is recorded.
 * Assigned roles and responsiblities to every team member
