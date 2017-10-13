@@ -21,13 +21,13 @@ This app interprets images that user chose which fit their circumstace or prefer
 
 Because The Look is the one-pack solution.
 
-To choose the right cloth will need right height, right body shape, right age group, right skin color...too many "right"s. There are tons of consultant material out there, fashion magazines, bolgs that teach you how to pick good cloth, salesman who put praise on every cloth you tried on...but all of them lacks two things: personalization and efficiency. Those are exactly what we are providing.
+To choose the right cloth will need right height, right body shape, right age group, right skin color...too many "right"s. There are tons of consultant material out there, fashion magazines, blogs that teach you how to pick good outfits, salesmen who put praise on every cloth you tried on...but all of them lacks two things: customization and efficiency. Those are exactly what we are providing.
 
-The Look studies user's information, from the registered information to the records of reviewing and purchasing. All the "right" will be considered as soon as user enters the app to help user find the cloth that fits him. The Look also finds all related but more fashionable styles that user prefers to help user locate the clothes he likes.
+The Look studies user's information, from the registered information to the records of reviewing and purchasing. All the "right" will be considered as soon as the user enters the app to help our user to find the outfits that are suitable for him. The Look also finds all related but more fashionable styles that user prefers to help the user locate the clothes he likes.
 
-Users would choose our product because it saves users time significantly by eliminating the processes of looking through style books, or going to the store to shop for clothes. We all know that men hate that.
+Users would choose our product because it saves users time significantly by eliminating the processes of looking through style books or going to the store to shop for clothes. We all know that men hate that.
 
-Furthermore, our product allow users to discover the current fashion trends or try some styles that is right for their body type/personality/activity. They couldn't discover, or were unlikely to discover these before since our target users are people who do not like to spend much time searching for clothes or who have little fashion sense. Besides, people tend to traped into certain fixed style, while our product encourages users to make change.
+Furthermore, our product allows users to discover the current fashion trends or try some styles that are right for their body type/personality/activity. They couldn't discover or were unlikely to discover these before since our target users are people who do not like to spend much time searching for clothes or who have little fashion sense. Besides, people tend to trapped into certain fixed style, while our product encourages users to make a change.
 
 ----
 
