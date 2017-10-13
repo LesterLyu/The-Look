@@ -1,4 +1,4 @@
-# YOUR PRODUCT/TEAM NAME
+# THE LOOK
 
  > _Note:_ This document is meant to be written during (or shortly after) your review meeting, which should happen fairly close to the due date.      
  >      
@@ -7,8 +7,8 @@
 
 ## Iteration XX - Review & Retrospect
 
- * When: FILL IN THE DATE WHEN YOU ACTUALLY HAD YOUR REVIEW MEETING
- * Where: PHYSICAL LOCATION AND/OR ONLINE
+ * When: Tuesday October 14 11:00am - 1:00pm
+ * Where: Bahen Centre
 
 ## Process - Reflection
 
@@ -17,7 +17,8 @@
 #### Decisions that turned out well
 
 List process-related (i.e. team organization) decisions that, in retrospect, turned out to be successful.
-
+* Communicating and commenting through WeChat group 
+* 
 
  * 2 - 4 decisions.
  * Ordered from most to least important.
