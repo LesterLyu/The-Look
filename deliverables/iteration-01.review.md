@@ -37,7 +37,7 @@ List any process-related changes you are planning to make (if there are any)
 #### Goals and/or tasks that were met/completed:
 
 * Finalized project idea
-* Decided on the features of the product
+* Decided on some basic features of the product
   * [TODO]
   * [LIST SOME FEATURES OF THE PRODUCT]
   * After user's first login, he/she will be redirected to a page with 8-9 (4x2 or 3x3) pictures with outfits with different styles, user need to choose his/her favourite style to provide our recommendation algorithm with some basic information about the user.  
