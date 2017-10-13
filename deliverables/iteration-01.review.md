@@ -2,7 +2,7 @@
 
 ## Iteration 01 - Review & Retrospect
 
- * When: Tuesday October 14 11:00am - 1:00pm
+ * When: Tuesday October 10 11:00am - 1:00pm
  * Where: Bahen Centre
 
 ## Process - Reflection
