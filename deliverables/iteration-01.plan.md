@@ -55,8 +55,13 @@ Database and server side implementation of mobile application (Tech Stack: Node.
   - assigned roles and responsiblities to team members
 
 #### Artifacts
+* [Brain storm ideas](https://docs.google.com/document/d/1NJpb-EJWHcr3m_SWY_OAhhRQkXTNxTZ0oxF4UDZ0fZ8/edit)
+  * We have a Gogle doc to record all our brain storm idea for this project during the first meeting. It also include the reason why we chose one and abandon the others.
 
-We will keep a Google Doc sheet called the [Track Board](https://docs.google.com/document/d/1FIVt9HOjWtJEGN-1Ru8d8Crb7CeDV5ArKOWB1BIJYXE/edit) which includes each team member's name and under which a list of tasks that the team member is assigned to and the corresponding due date for that task. It is the responsiblity of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
+* Meeting record
+  * Meeting record includes all the main points each team member gives during the meeting. This helps to build deliverable files.
+
+* We will keep a Google Doc sheet called the [Track Board](https://docs.google.com/document/d/1FIVt9HOjWtJEGN-1Ru8d8Crb7CeDV5ArKOWB1BIJYXE/edit) which includes each team member's name and under which a list of tasks that the team member is assigned to and the corresponding due date for that task. It is the responsiblity of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
 
 ## Product
 
@@ -73,11 +78,6 @@ We will keep a Google Doc sheet called the [Track Board](https://docs.google.com
 #### Artifacts
 
 List/describe the artifacts you will produce in order to present your project idea.
-* [Brain storm ideas](https://docs.google.com/document/d/1NJpb-EJWHcr3m_SWY_OAhhRQkXTNxTZ0oxF4UDZ0fZ8/edit)
- * We have a Gogle doc to record all our brain storm idea for this project during the first meeting. It also include the reason why we chose one and abandon the others.
-
-* Meeting record
- * Meeting record includes all the main points each team member gives during the meeting. This helps to build deliverable files.
 
 * PPT presentation [TheLook](https://docs.google.com/presentation/d/1N4_o-c9Uq4s5piaLzesKM-2TY7jOYplzz-OBPCHGw9I/edit?usp=sharing)
   * This is useful for the team to get a general idea of the problem our app is trying to solve and the target user group for our application
