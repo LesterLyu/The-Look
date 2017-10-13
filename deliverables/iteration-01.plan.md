@@ -15,19 +15,19 @@
 
 #### Roles & responsibilities
  
-###### Product Manager:
+##### Product Manager:
 Communicates product vision from the highest levels to development and implementation teams
  - leonyhenn
-###### Scrum Manager:
+##### Scrum Manager:
 Facillates team meetings, make sure product backlog is in good shape and ready for the next sprint
  - LesterLyu
-###### Front End Developer: 
-Design and implementation of the user interface (Tech Stack: React Native)
+##### Front End Developer: 
+- Design and implementation of the user interface (Tech Stack: React Native)
   - leonyhenn
   - ShuiFanZZ
   - LesterLyu
   - yanxi0830
-Database and server side implementation of mobile application (Tech Stack: Node.js, Express, MongoDB, ...)
+- Database and server side implementation of mobile application (Tech Stack: Node.js, Express, MongoDB, ...)
   - andrewbinyu (Alogorithm)
   - LesterLyu
   - TechiesTheOne
