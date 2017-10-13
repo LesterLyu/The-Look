@@ -5,49 +5,31 @@
 
 #### Q1: What are you planning to build?
 
-YOUR ANSWER GOES HERE ...
+A men style advisor app that learns user's preferred style and recommend related style product.
 
- * Short (1 - 2 min' read)
- * Start with a single sentence, high-level description of the product.
- * Be clear - Describe the problem you are solving in simple terms.
- * Be concrete. For example:
-    * What are you planning to build? Is it a website, mobile app,
-   browser extension, command-line app, etc.?      
-    * When describing the problem/need, give concrete examples of common use cases.
- * Focus on *what* your product does, and avoid discussing *how* you're going to implement it.      
-   For example: This is not the time or the place to talk about which programming language and/or framework you are planning to use.
- * **Feel free (and very much encouraged) to include useful diagrams, mock-ups and/or links**.
+We know a big portion of men tend not to spend energy and time in shopping mall and fashion magazines, our app aims to significantly shorten the time of searching for their prefered style.
 
-* We are palnning to build a mobile application that will help users make better clothing choices
+This app interprets images that user chose which fit their circumstace or preference to study and interact with user in a way such that user only need to do the minimum amount of work. For user, it is easy as Tony Stark takes off his Ironman suit.
 
 #### Q2: Who are your target users?
 
-YOUR ANSWER GOES HERE ...
-
- * Short (1 - 2 min' read max)
- * Be specific (e.g. )
- * Feel free (but not obligated) to use personas.        
-   You can create your personas as part of this Markdown file, or add a link to an external site (for example, [Xtensio](https://xtensio.com/user-persona/)).
-
-**ANSWER**
+- Men, on young age group(less than 30), who tend not to spend energy or time on their appearance but still want to have a good look.
 - Users would choose our product because it saves users time significantly by eliminating the processes of looking through style books, or going to the store to shop for clothes.
 - Our product allow users to discover the current fashion trends or some styles that is right for their body type/personality/activity. They couldn't discover, or were unlikely to discover these before since our target users are people who do not like to spend much time searching for clothes or who have little fashion sense. 
- 
 
 #### Q3: Why would your users choose your product? What are they using today to solve their problem/need?
 
-YOUR ANSWER GOES HERE ...
+Because The Look is the one-pack solution.
 
- * Short (1 - 2 min' read max)
- * We want you to "connect the dots" for us - Why does your product (as described in your answer to Q1) fits the needs of your users (as described in your answer to Q2)?
- * Explain the benefits of your product explicitly & clearly. For example:
-    * Save users time (how much?)
-    * Allow users to discover new information (which information? And, why couldn't they discover it before?)
-    * Provide users with more accurate and/or informative data (what kind of data? Why is it useful to them?)
+To choose the right cloth will need right height, right body shape, right age group, right skin color...too many "right"s. There are tons of consultant material out there, fashion magazines, bolgs that teach you how to pick good cloth, salesman who put praise on every cloth you tried on...but all of them lacks two things: personalization and efficiency. Those are exactly what we are providing.
 
-**ANSWER**
-- Users would choose our product because it saves users time significantly by eliminating the processes of looking through style books, or going to the store to shop for clothes.
-- Our product allow users to discover the current fashion trends or some styles that is right for their body type/personality/activity. They couldn't discover, or were unlikely to discover these before since our target users are people who do not like to spend much time searching for clothes or who have little fashion sense. 
+The Look studies user's information, all the "right" will be considered as soon as user enters the app to help user find the cloth that fits him.
+
+The Look also finds all related styles that user prefers to help user locate the clothes he likes.
+
+Users would choose our product because it saves users time significantly by eliminating the processes of looking through style books, or going to the store to shop for clothes.
+
+Our product allow users to discover the current fashion trends or some styles that is right for their body type/personality/activity. They couldn't discover, or were unlikely to discover these before since our target users are people who do not like to spend much time searching for clothes or who have little fashion sense. 
 
 ----
 
