@@ -11,7 +11,7 @@
 #### Decisions that turned out well
 
 * We Communicated and commented through the WeChat group, everyone participated and we can see the ideas discussed through WeChat history. WeChat communication is super convenient since it is not necessary that everyone is online at the same time. When someone provides an idea, the others can reveiw the chat history to catch up the discussion. It is a good complement of face-to-face meeting and on-line meeting. It also makes good preparation for formal meetings.
-* We Keep a _Track Board_ to help team members to keep track of their goals and responsibilities. **TODO: WHY**
+* We Keep a _Track Board_ to help team members to keep track of their goals and responsibilities. This can make sure every team member  is on their right track.
 * We have face-to-face meetings every week. Since the face-to-face meeting schedule is fixed on every Tuesday morning before the tutorial, every member can guarantee to participate it. 
 
 #### Decisions that did not turn out as well as we hoped
@@ -20,8 +20,8 @@
 * Planned to have a little meeting every day, but after some discussions, we found it is unnecessary. Additional meetings will be held if we encounter important matters that we have to figure out together.
 #### Planned changes
 
-* We plan to reduce online video meetings and organize more face-to-face meetings (hold physical meetings twice per week at current stage, more meeting after coding starts)
-* Add more details to the track board to keep track of additional information such as important notes or updates to the project that everyone should be aware of
+* We plan to reduce online video meetings and organize more face-to-face meetings. (hold physical meetings twice per week at current stage, more meeting after coding starts)
+* Add more details to the track board to keep track of additional information such as important notes or updates to the project that everyone should be aware of.
 
 ## Product - Review
 
