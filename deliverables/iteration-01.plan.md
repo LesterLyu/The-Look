@@ -54,8 +54,8 @@
 
 #### Artifacts
 
-* Meeting record
-  * Meeting record includes all the main points each team member gives during the meeting. This helps to build deliverable files.
+* [Brain storm ideas](https://docs.google.com/document/d/1NJpb-EJWHcr3m_SWY_OAhhRQkXTNxTZ0oxF4UDZ0fZ8/edit)
+  * We have a Google doc to record all our brainstorm idea for this project during the first meeting. It also includes the reason why we chose one and abandon the others.
 
 * [Track Board](https://docs.google.com/document/d/1FIVt9HOjWtJEGN-1Ru8d8Crb7CeDV5ArKOWB1BIJYXE/edit)
   * We will keep a Google Doc sheet to track each member's tasks progress. The team members will be assigned tasks with a corresponding due date. It is the responsibility of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
@@ -74,14 +74,11 @@
 
 List/describe the artifacts you will produce in order to present your project idea.
 
-* [Brain storm ideas](https://docs.google.com/document/d/1NJpb-EJWHcr3m_SWY_OAhhRQkXTNxTZ0oxF4UDZ0fZ8/edit)
-  * We have a Google doc to record all our brainstorm idea for this project during the first meeting. It also includes the reason why we chose one and abandon the others.
-
 * PPT presentation [TheLook](https://docs.google.com/presentation/d/1N4_o-c9Uq4s5piaLzesKM-2TY7jOYplzz-OBPCHGw9I/edit?usp=sharing)
   * This is useful for the team to get a general idea of the problem our app is trying to solve and the target user group for our application
  
  * We plan to build an interactive mobile application using React Native for both iOS and Android. We plan to demonstrate the product's functionality through an interactive demo using the Expo App for trying out React Native projects on our phones. We also plan to create a detailed documentation highlighting key aspects of the user interface and the user workflow, such as how our app will interact with users to recommend them styles to their preference. Our goal for the final product is to upload it into App Store or Google Play store so that it is publicly accessible. 
  
  * [UI model](https://docs.google.com/presentation/d/1r6RjVMF9yRk7Y2VDtyEtaPwrn9sTBWLls2thbwYi2Qc/edit?usp=sharing)
-   *First UI model, Observer pattern(abandoned), needs to be updated. 
+   * This is the first UI model, Observer pattern, which has been abandoned and needs to be updated. 
   
