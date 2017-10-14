@@ -27,7 +27,8 @@
 
 #### Goals and/or tasks that were met/completed:
 
-* Singled out one idea for our project
+* Singled out one idea for our project. 
+  We brought out 9 ideas at the beginning. Some of them are lack of creativity, some are not convenient to use, and some are pure CRUD. After the first plan meeting, we screen out two ideas for discussion with TA during tutorial. And after the first tutorial, we determined to build a men's style advisor app. 
 * Decided on some basic features of the product 
   * Profile our users by their favor
   * Gain the information about user's favor in an interactive manner instead of filling a long form.
