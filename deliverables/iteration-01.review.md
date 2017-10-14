@@ -18,7 +18,7 @@
 #### Decisions that did not turn out as well as we hoped
 
 * Use online video meetings replace of face-to-face meetings. More convenient but turned out to be much less efficient than face-to-face meetings. It took us one hour to set up the on-line meeting and many member were late. Moreover, there were some technical problems with noise from microphones. More self-dicipline are needed in order to make sure the success of on-line meeting. 
-* Planned to have a little meeting every day, but after some discussions, we found it is unnecessary. Additional meetings will be held if we encounter important matters that we have to figure out together.
+* Planned to have a small meeting every day in the morning, but after some discussions, we found it is unnecessary, since our daily Wechat communication can replace this every day meeting effectively. Additional meetings will be held if we encounter important matters that we have to figure out together.
 #### Planned changes
 
 * We plan to reduce online video meetings and organize more face-to-face meetings. (hold physical meetings twice per week at current stage, more meeting after coding starts)
