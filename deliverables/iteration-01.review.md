@@ -60,5 +60,5 @@
 ## Meeting Highlights
 
 Going into the next iteration, our main insights are:
-* Get new UI deign in React Native
+* Front guys get new UI deign in React Native on iteration 3
 * Backend start to learn about the intelligent recommend system, and report their progress on iteration 3. 
