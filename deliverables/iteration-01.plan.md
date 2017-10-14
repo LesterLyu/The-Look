@@ -14,21 +14,21 @@
 ~~(Optional:) Quick introduction~~
 
 #### Roles & responsibilities
- > In the format: Name (Github ID)
+ > _Note:_ In the format: Name (Github ID)
 ##### Product Manager:
-Communicates product vision from the highest levels to development and implementation teams
+ > Communicates product vision from the highest levels to development and implementation teams
  - Heng Ye (leonyhenn)
 ##### Scrum Manager:
-facilitates team meetings, make sure product backlog is in good shape and ready for the next sprint
+ > facilitates team meetings, make sure product backlog is in good shape and ready for the next sprint
  - Dishu Lyu (LesterLyu)
 ##### Front End Developer: 
-Design and GUI implementation (Tech Stack: React Native)
+ > Design and GUI implementation (Tech Stack: React Native)
  - Heng Ye (leonyhenn)
  - Zezhong Pan (ShuiFanZZ)
  - Dishu Lyu (LesterLyu)
  - Xi Yan (yanxi0830)
 ##### Back End Developer: 
-Database and server side / mobile side implementation (Tech Stack: Node.js, Express, MongoDB, ...)
+ > Database and server side / mobile side implementation (Tech Stack: Node.js, Express, MongoDB, ...)
  - Bin Yu (andrewbinyu) (mainly Algorithm)
  - Dishu Lyu (LesterLyu)
  - Yiran Wang (TechiesTheOne)
