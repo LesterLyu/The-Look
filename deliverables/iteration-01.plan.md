@@ -58,7 +58,7 @@
   * We have a Google doc to record all our brainstorm idea for this project during the first meeting. It also includes the reason why we chose one and abandon the others.
 
 * [Track Board](https://docs.google.com/document/d/1FIVt9HOjWtJEGN-1Ru8d8Crb7CeDV5ArKOWB1BIJYXE/edit)
-  * We will keep a Google Doc sheet to track each member's tasks progress. The team members will be assigned tasks with a corresponding due date. It is the responsibility of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
+  * We will keep a Google Doc sheet to track each member's tasks progress. Scrum manager will post each team member's task and due date on the track board, scrum manager will decide the priority of each task, i.e. the database should be designed before we write other back-end program. It is the responsibility of each team member to request to change or switch with other team member for their tasks. When team members accomplish tasks or encountered some problems, they should update their status onto the track board. 
   
 
 ## Product
