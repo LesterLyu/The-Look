@@ -10,14 +10,14 @@
 
 #### Decisions that turned out well
 
-* Communicating and commenting through WeChat group, everyone is participating and we can see the ideas discuessed through chat history
-* Keeping a Track Board to help team members and the team keep track of goals and responsiblities
-* Face-to-face meetings every week, more efficient than online video meetings
+* We Communicated and commented through the WeChat group, everyone participated and we can see the ideas discussed through WeChat history. WeChat communication is super convenient since it is not necessary that everyone is online at the same time. When someone provides an idea, the others can reveiw the chat history to catch up the discussion. It is a good complement of face-to-face meeting and on-line meeting. It also makes good preparation for formal meetings.
+* We Keep a _Track Board_ to help team members to keep track of their goals and responsibilities. **TODO: WHY**
+* We have face-to-face meetings every week. Since the face-to-face meeting schedule is fixed on every Tuesday morning before the tutorial, every member can guarantee to participate it. 
 
 #### Decisions that did not turn out as well as we hoped
 
-* Online video meetings in place of face-to-face meetings. More convenient but turned out to be much less efficient than face-to-face meetings. Also there was some technical problems with noise from microphones.
-* Planned to have a little meeting every day, but after some discussion we found it unnecessary. Additional meetings will be held if we encounter important matters that we have to figure out together. 
+* Online video meetings in place of face-to-face meetings. More convenient but turned out to be much less efficient than face-to-face meetings. It took us one hour to set up the on-line meeting and many member were late. Moreover, there were some technical problems with noise from microphones. More self-dicipline are needed in order to make sure the success of on-line meeting. 
+* Planned to have a little meeting every day, but after some discussions, we found it is unnecessary. Additional meetings will be held if we encounter important matters that we have to figure out together.
 #### Planned changes
 
 * We plan to reduce online video meetings and organize more face-to-face meetings (hold physical meetings twice per week at current stage, more meeting after coding starts)
@@ -27,13 +27,18 @@
 
 #### Goals and/or tasks that were met/completed:
 
-* Singled out one idea for our project
+* Singled out one idea for our project. 
+  We brought out 9 ideas at the beginning. Some of them are lack of creativity, some are not convenient to use, and some are pure CRUD. After the first plan meeting, we screen out two ideas for discussion with TA during tutorial. And after the first tutorial, we determined to build a men's style advisor app. 
+  
+* The goal of the product and target users
+    We have make clear that the goal of our product is to help young men improve their appearance. There are a large number of young men who are fond of tasting new technology but hate wasting time shopping or not get a clue of fashion. However they also have the necessity  of showing off personality and chasing girls. They are our inborn users.
+    This goal of the product and the target users had never been changed since the idea was brought out.
 * Decided on some basic features of the product 
   * Profile our users by their favor
   * Gain the information about user's favor in an interactive manner instead of filling a long form.
-  * Recommend products that matches a user's profile
+  * Recommend product that matches users' profile
   * User's feedback on a product will update both his/her profile and the ranking of that product
-* Assigned roles and responsiblities to every team member
+
 * Decided on framework/language to use for building the application
   * React Native for front end
   * MongoDB, Node.js for back end
@@ -47,5 +52,5 @@
 
 Going into the next iteration, our main insights are:
 
-* Everyone in the team should come to each meeting prepared with contribute their ideas or questions about the current state of the project
+* Everyone in the team should come to each meeting prepared with ideas or questions about the current state of the project
 * We should plan out our next goals and start assigning task to each member 

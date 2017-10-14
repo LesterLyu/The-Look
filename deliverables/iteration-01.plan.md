@@ -11,33 +11,31 @@
 
 ## Process
 
-~~(Optional:) Quick introduction~~
-
 #### Roles & responsibilities
- 
+ > _Note:_ In the format: Name (Github ID)
 ##### Product Manager:
-Communicates product vision from the highest levels to development and implementation teams
- - leonyhenn
+ > Communicates product vision from the highest levels to development and implementation teams
+ - Heng Ye (leonyhenn)
 ##### Scrum Manager:
-facilitates team meetings, make sure product backlog is in good shape and ready for the next sprint
- - LesterLyu
+ > facilitates team meetings, make sure product backlog is in good shape and ready for the next sprint
+ - Dishu Lyu (LesterLyu)
 ##### Front End Developer: 
-Design and implementation of the user interface (Tech Stack: React Native)
-  - leonyhenn
-  - ShuiFanZZ
-  - LesterLyu
-  - yanxi0830
+ > Design and GUI implementation (Tech Stack: React Native)
+ - Heng Ye (leonyhenn)
+ - Zezhong Pan (ShuiFanZZ)
+ - Dishu Lyu (LesterLyu)
+ - Xi Yan (yanxi0830)
 ##### Back End Developer: 
-Database and server side implementation of mobile application (Tech Stack: Node.js, Express, MongoDB, ...)
-  - andrewbinyu (Algorithm)
-  - LesterLyu
-  - TechiesTheOne
-  - yanxi0830
-  - w34336
+ > Database and server side / mobile side implementation (Tech Stack: Node.js, Express, MongoDB, ...)
+ - Bin Yu (andrewbinyu) (mainly Algorithm)
+ - Dishu Lyu (LesterLyu)
+ - Yiran Wang (TechiesTheOne)
+ - Xi Yan (yanxi0830)
+ - Yuanhao Tu (w34336)
 
 #### Events
 
-- We will meet in person at BA before, during, and after tutorial every Tuesday from 11:00am - 2:00pm. The purpose of this meeting is to ensure everyone is up to date about the current project status and to address any questions or ideas any team member has. This meeting will also be spend planning the goals for next week. In the future, we plan to use this meeting time to do coding sessions or code reviews. 
+- We will meet in person at BA before, during, and after tutorial every Tuesday from 11:00am - 2:00pm. The purpose of this meeting is to ensure everyone is up to date about the current project status and to address any questions or ideas any team member has. This meeting will also be used to plan the goals for next week. In the future, we plan to use this meeting time to do coding sessions or code reviews. 
 
 - Online video meetings will be held on Saturday 10:00am using _Google Hangouts_ and will typically last around 1 hour. The purpose of this meeting is to check in with everyone and make sure everyone's task is being accomplished in a timely manner. In this meeting, we will address any questions or concerns anyone has and make changes to our plan accordingly.
 
@@ -55,18 +53,13 @@ Database and server side implementation of mobile application (Tech Stack: Node.
   - assigned roles and responsibilities to team members
 
 #### Artifacts
-* [Brain storm ideas](https://docs.google.com/document/d/1NJpb-EJWHcr3m_SWY_OAhhRQkXTNxTZ0oxF4UDZ0fZ8/edit)
-  * We have a Google doc to record all our brain storm idea for this project during the first meeting. It also include the reason why we chose one and abandon the others.
 
-* Meeting record
-  * Meeting record includes all the main points each team member gives during the meeting. This helps to build deliverable files.
+* [Brain storm ideas](https://docs.google.com/document/d/1NJpb-EJWHcr3m_SWY_OAhhRQkXTNxTZ0oxF4UDZ0fZ8/edit)
+  * We have a Google doc to record all our brainstorm idea for this project during the first meeting. It also includes the reason why we chose one and abandon the others.
 
 * [Track Board](https://docs.google.com/document/d/1FIVt9HOjWtJEGN-1Ru8d8Crb7CeDV5ArKOWB1BIJYXE/edit)
-  * We will keep a Google Doc sheet to track each member's tasks progress. The team members will be assigned tasks with corresponding due date. It is the responsibility of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
+  * We will keep a Google Doc sheet to track each member's tasks progress. The team members will be assigned tasks with a corresponding due date. It is the responsibility of each team member to discuss what they plan to accomplish and add relevant comments/problems they encountered while working on that task. 
   
- * UI model
-  *First UI model, Observer pattern(abandoned), needs to be updated. 
-  https://drive.google.com/file/d/0B9rhmRtaxtTQNFZSbWxNMXJFVjA/view?usp=sharing
 
 ## Product
 
@@ -77,9 +70,6 @@ Database and server side implementation of mobile application (Tech Stack: Node.
 1. Find existing APIs to help build our product
 1. Start implementing user interface and workflow
 
- * ~~Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.~~
- * ~~Order the items from most to least important.~~
- * ~~Feel free (but not obligated) to specify some/all tasks as user stories.~~
 #### Artifacts
 
 List/describe the artifacts you will produce in order to present your project idea.
@@ -88,3 +78,7 @@ List/describe the artifacts you will produce in order to present your project id
   * This is useful for the team to get a general idea of the problem our app is trying to solve and the target user group for our application
  
  * We plan to build an interactive mobile application using React Native for both iOS and Android. We plan to demonstrate the product's functionality through an interactive demo using the Expo App for trying out React Native projects on our phones. We also plan to create a detailed documentation highlighting key aspects of the user interface and the user workflow, such as how our app will interact with users to recommend them styles to their preference. Our goal for the final product is to upload it into App Store or Google Play store so that it is publicly accessible. 
+ 
+ * [UI model](https://docs.google.com/presentation/d/1r6RjVMF9yRk7Y2VDtyEtaPwrn9sTBWLls2thbwYi2Qc/edit?usp=sharing)
+   * This is the first UI model, Observer pattern, which has been abandoned and needs to be updated. 
+  
