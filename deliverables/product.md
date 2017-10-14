@@ -7,8 +7,6 @@
 
 A men's style advisor app that can learn user's preferred style during the course of usage and recommend related fashion style products accordingly.
 
-<<<<<<< HEAD
-
 The Look are here to solve the world famous "men don't wanna go to shopping mall but still wanna look good" dilemma. The pain spot lies on the inefficiency and inconvenience of real-life shopping. Putting some pair of pants on and off for five or six times just to try the style due to not done enough "pre-requisite" fashion magazine reading is absolutely not an enjoyment for a big portion of men, not to mention he has to do that multiple times in different store.
 
 This app interprets images that user chose which fit their circumstance or preference to study and interact with user in a way such that user only need to do the minimum amount of work. For user, it is as easy as Tony Stark takes off his Ironman suit.
@@ -32,7 +30,6 @@ This app interprets images that user chose which meets their requirements or pre
 
 Because The Look is the one-pack solution.
 
-<<<<<<< HEAD
 To choose the right cloth will need right height, right body shape, right age group, right skin color...too many "right"s. There are tons of consultant material out there, fashion magazines, blogs that teach you how to pick good clothes, salesman in the mall...but all of them lacks two things: personalization and efficiency. Those are exactly what we are providing.
 
 The Look studies user. Both the register information(body shape, for example) and the records of viewing and purchasing will be studied in order to recommend suitable clothes for the user.  All the "right"s will be considered to help user locate clothes that he likes and fits him.
