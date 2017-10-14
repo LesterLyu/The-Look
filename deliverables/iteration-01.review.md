@@ -60,6 +60,5 @@
 ## Meeting Highlights
 
 Going into the next iteration, our main insights are:
-
-* Everyone in the team should come to each meeting prepared with ideas or questions about the current state of the project
-* We should plan out our next goals and start assigning task to each member 
+* Get new UI deign in React Native
+* Backend start to learn about the intelligent recommend system, and report their progress on iteration 3. 
