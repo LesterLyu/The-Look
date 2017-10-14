@@ -47,7 +47,7 @@
   * React Native for front end
     - React Native saves some time compared to traditional programming on two diffenent operating systems(Android / IOS).
   * MongoDB, Node.js for back end
-    - We will use _MongoDB_ for database and Node.js for web server. Node.js us easier for beginner, compared to _PHP_ or _JAVA Servlet_(Spring MVC), _ASP.NET_, etc, and some of us are taking CSC309, which also taught _Node.js_. _MongoDB_ is a document-oriented database, it is suitable for our product. _Node.js_ and _MongoDB_ are also a perfect combination nowadays.
+    - We will use _MongoDB_ for database and _Node.js_ for web server. _Node.js_ is easier for beginner, compared to _PHP_ or _JAVA Servlet_(Spring MVC), _ASP.NET_, etc, and some of us are taking CSC309, which also taught _Node.js_. _MongoDB_ is a document-oriented database, it is suitable for our product. _Node.js_ and _MongoDB_ are also a perfect combination nowadays.
 
 #### Goals and/or tasks that were planned but not met/completed:
 
