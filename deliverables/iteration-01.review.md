@@ -50,6 +50,10 @@
 
 * Gather data, and research existing APIs to use in our product
   * we wanted to implement our key features and user workflow first using fake data first before incorporating with real-world fashion brands and outfits
+  * The recommendation algorithm of fulfill the features is still under consideration
+  
+* UI model
+  * Due to the change of the product features, the first UI model was abandoned. We do not have enough time to make a new UI model for the new product features.
 
 ## Meeting Highlights
 
