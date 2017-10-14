@@ -10,7 +10,7 @@
 
 #### Decisions that turned out well
 
-* We Communicated and commented through the WeChat group, everyone participated and we can see the ideas discussed through WeChat history. WeChat communication is super convenient since it is not necessary that everyone is online at the same time. When someone provides an idea, the others can reveiw the chat history to catch up the discussion. It is a good complement of face-to-face meeting and on-line meeting. It also makes good preparation for formal meetings.
+* We communicated and commented through the WeChat group, everyone participated and we can see the ideas discussed through WeChat History. WeChat communication is super convenient since everyone has an WeChat account and use it as the main communication app(instead of Facebook Messenger). It is a good complement of face-to-face meeting and on-line meeting. It also makes good preparation for formal meetings.
 * We Keep a _Track Board_ to help team members to keep track of their goals and responsibilities. This can make sure every team member  is on their right track.
 * We have face-to-face meetings every week. Since the face-to-face meeting schedule is fixed on every Tuesday morning before the tutorial, every member can guarantee to participate it. 
 
