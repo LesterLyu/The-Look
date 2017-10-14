@@ -35,7 +35,7 @@
 
 * Singled out one idea for our project. 
 
- * We brought out 9 ideas at the beginning. Some of them are lack of creativity(there is one that is literately Yelp), some are not convenient to use, and some are pure CRUD. After the first meeting, we screened out two ideas for discussion(the other one is Kahoot-like quiz app) with TA during tutorial. And after the first tutorial, we determined to build a men's style advisor app, due to the TA suggests that there are thousands apps that do the same thing as the Kahoot-like app, this field has reached saturation. 
+  * We brought out 9 ideas at the beginning. Some of them are lack of creativity(there is one that is literately Yelp), some are not convenient to use, and some are pure CRUD. After the first meeting, we screened out two ideas for discussion(the other one is Kahoot-like quiz app) with TA during tutorial. And after the first tutorial, we determined to build a men's style advisor app, due to the TA suggests that there are thousands apps that do the same thing as the Kahoot-like app, this field has reached saturation. 
   
   * The goal of the product and target users
     * We have make clear that the goal of our product is to help young men improve their appearance. There are a large number of young men who hates wasting time shopping and not get a clue of fashion. However they also have the necessity to look decent. They are our target users.
