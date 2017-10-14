@@ -39,8 +39,8 @@
   * Gain the information about user's favor in an interactive manner instead of filling a long form
   * learn users' preference
   * Recommend product that matches users' profile
-  * Comparing price for the similar style products
-  * providing app database interface to the clothing producers or brand owners
+  * Comparing price for the similar style products(less important)
+  * providing app database interface to the clothing producers or brand owners(least important)
   
 * Decided on framework/language to use for building the application
   * React Native for front end
