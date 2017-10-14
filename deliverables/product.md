@@ -8,6 +8,7 @@
 A men's style advisor app that can learn user's preferred style during the course of usage and recommend related fashion style products accordingly.
 
 <<<<<<< HEAD
+
 The Look are here to solve the world famous "men don't wanna go to shopping mall but still wanna look good" dilemma. The pain spot lies on the inefficiency and inconvenience of real-life shopping. Putting some pair of pants on and off for five or six times just to try the style due to not done enough "pre-requisite" fashion magazine reading is absolutely not an enjoyment for a big portion of men, not to mention he has to do that multiple times in different store.
 
 This app interprets images that user chose which fit their circumstance or preference to study and interact with user in a way such that user only need to do the minimum amount of work. For user, it is as easy as Tony Stark takes off his Ironman suit.
