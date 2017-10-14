@@ -11,8 +11,6 @@
 
 ## Process
 
-~~(Optional:) Quick introduction~~
-
 #### Roles & responsibilities
  > _Note:_ In the format: Name (Github ID)
 ##### Product Manager:
@@ -74,9 +72,6 @@
 1. Find existing APIs to help build our product
 1. Start implementing user interface and workflow
 
- * ~~Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.~~
- * ~~Order the items from most to least important.~~
- * ~~Feel free (but not obligated) to specify some/all tasks as user stories.~~
 #### Artifacts
 
 List/describe the artifacts you will produce in order to present your project idea.
