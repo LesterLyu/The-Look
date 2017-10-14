@@ -86,6 +86,6 @@ List/describe the artifacts you will produce in order to present your project id
  
  * We plan to build an interactive mobile application using React Native for both iOS and Android. We plan to demonstrate the product's functionality through an interactive demo using the Expo App for trying out React Native projects on our phones. We also plan to create a detailed documentation highlighting key aspects of the user interface and the user workflow, such as how our app will interact with users to recommend them styles to their preference. Our goal for the final product is to upload it into App Store or Google Play store so that it is publicly accessible. 
  
- * [UI model](https://drive.google.com/file/d/0B9rhmRtaxtTQNFZSbWxNMXJFVjA/view?usp=sharing)
+ * [UI model](https://docs.google.com/presentation/d/1r6RjVMF9yRk7Y2VDtyEtaPwrn9sTBWLls2thbwYi2Qc/edit?usp=sharing)
   *First UI model, Observer pattern(abandoned), needs to be updated. 
   
