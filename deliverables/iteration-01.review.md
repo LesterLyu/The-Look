@@ -29,6 +29,10 @@
 
 * Singled out one idea for our project. 
   We brought out 9 ideas at the beginning. Some of them are lack of creativity, some are not convenient to use, and some are pure CRUD. After the first plan meeting, we screen out two ideas for discussion with TA during tutorial. And after the first tutorial, we determined to build a men's style advisor app. 
+  
+* The goal of the product and target users
+    We have make clear that the goal of our product is to help young men improve their appearance. There are a large number of young men who are fond of tasting new technology but hate wasting time shopping or not get a clue of fashion. However they also have the necessity  of showing off personality and chasing girls. They are our inborn users.
+    This goal of the product and the target users had never been changed since the idea was brought out.
 * Decided on some basic features of the product 
   * Profile our users by their favor
   * Gain the information about user's favor in an interactive manner instead of filling a long form.
