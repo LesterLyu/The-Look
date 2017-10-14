@@ -14,17 +14,6 @@ This app interprets images that user chose which fit their circumstance or prefe
 #### Q2: Who are your target users?
 
 [User Persona](https://drive.google.com/file/d/0B9rhmRtaxtTQc0t2a1V5VjBoZEE/view?usp=sharing)
-=======
-We know a big portion of men tend not to spend energy and time in a shopping mall and fashion magazines, our app aims to significantly shorten the time of searching for their preferred style.
-
-This app interprets images that user chose which meets their requirements or preferences to study and interact with users in a way such that user only need to do the minimum amount of work. For user, it is easy as Tony Stark takes off his Ironman suit.
-
-#### Q2: Who are your target users?
-
-- Men, on young age group(less than 30), who tend not to spend energy or time on their appearance but still want to have a good look.
-- Users would choose our product because it saves users time significantly by eliminating the processes of looking through style books or going to the store to shop for clothes.
-- Our product allows users to discover the current fashion trends or some styles that are right for their body type/personality/activity. They couldn't discover or were unlikely to discover these before since our target users are people who do not like to spend much time searching for clothes or who have little fashion sense. 
->>>>>>> 349e1af8ba819550f541513afed2dbba47a60786
 
 #### Q3: Why would your users choose your product? What are they using today to solve their problem/need?
 
@@ -35,18 +24,8 @@ To choose the right cloth will need right height, right body shape, right age gr
 The Look studies user. Both the register information(body shape, for example) and the records of viewing and purchasing will be studied in order to recommend suitable clothes for the user.  All the "right"s will be considered to help user locate clothes that he likes and fits him.
 
 Users choose The Look because it saves them a lot of time and energy by eliminating the processes of looking through style books, or going to the store. We all know men hate that. Instead, The Look offers clothes that already been selected by user's preference and circumstance. 
-=======
-To choose the right cloth will need right height, right body shape, right age group, right skin color...too many "right"s. There are tons of consultant material out there, fashion magazines, blogs that teach you how to pick good outfits, salesmen who put praise on every cloth you tried on...but all of them lacks two things: customization and efficiency. Those are exactly what we are providing.
-
-The Look studies user's information, from the registered information to the records of reviewing and purchasing. All the "right" will be considered as soon as the user enters the app to help our user to find the outfits that are suitable for him. The Look also finds all related but more fashionable styles that user prefers to help the user locate the clothes he likes.
-
-Users would choose our product because it saves users time significantly by eliminating the processes of looking through style books or going to the store to shop for clothes. We all know that men hate that.
-
-Furthermore, our product allows users to discover the current fashion trends or try some styles that are right for their body type/personality/activity. They couldn't discover or were unlikely to discover these before since our target users are people who do not like to spend much time searching for clothes or who have little fashion sense. Besides, people tend to trapped into certain fixed style, while our product encourages users to make a change.
->>>>>>> 349e1af8ba819550f541513afed2dbba47a60786
 
 Furthermore, The Look helps users discover latest fashion trends and recommend styles that user may never tried before, step out their comfort zone, so he won't stick on certain fixed style forever.
-----
 
 ### Highlights
 
