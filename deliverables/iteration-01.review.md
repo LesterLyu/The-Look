@@ -29,14 +29,14 @@
 #### Goals and/or tasks that were met/completed:
 
 * Singled out one idea for our project. 
-    *We brought out 9 ideas at the beginning. Some of them are lack of creativity, some are not convenient to use, and some are pure CRUD. After the first plan meeting, we screen out two ideas for discussion with TA during tutorial. And after the first tutorial, we determined to build a men's style advisor app. 
+   * We brought out 9 ideas at the beginning. Some of them are lack of creativity, some are not convenient to use, and some are pure CRUD. After the first plan meeting, we screen out two ideas for discussion with TA during tutorial. And after the first tutorial, we determined to build a men's style advisor app. 
   
 * The goal of the product and target users
-   *We have make clear that the goal of our product is to help young men improve their appearance. There are a large number of young men who are fond of tasting new technology but hate wasting time shopping or not get a clue of fashion. However they also have the necessity  of showing off personality and chasing girls. They are our inborn users.
-   *This goal of the product and the target users had never been changed since the idea was brought out.
+   * We have make clear that the goal of our product is to help young men improve their appearance. There are a large number of young men who are fond of tasting new technology but hate wasting time shopping or not get a clue of fashion. However they also have the necessity  of showing off personality and chasing girls. They are our inborn users.
+   * This goal of the product and the target users had never been changed since the idea was brought out.
     
 * Decision on some basic features of the product
-   *The features of the product were quite arguable. We first wanted to edit many fashionable suits and then just recommended them to the users. But this needed many fashion editors and they are out of our resources. Besides, our app does not have much value if the clothes are recommened by human beings. After several rounds of discussion and under the help of TA, we finaly decided to change the app into a intellegent recommendation system. First of all, it gains minimum necessary personal information of users, like gender, age and body form instead of filling a long form through sign up. Then it can learn user's preference, for example color, during the users' reviewing and purchasing. Based on the users' basic information and preference, our app will intellegently recommmend fashionable and trendy clothes to change their style and improve their appearance. We can also add more value to the app as addition function such as comparing price for the similar style products, and providing app database interface to the clothing producers or brand owners. 
+   * The features of the product were quite arguable. We first wanted to edit many fashionable suits and then just recommended them to the users. But this needed many fashion editors and they are out of our resources. Besides, our app does not have much value if the clothes are recommened by human beings. After several rounds of discussion and under the help of TA, we finaly decided to change the app into a intellegent recommendation system. First of all, it gains minimum necessary personal information of users, like gender, age and body form instead of filling a long form through sign up. Then it can learn user's preference, for example color, during the users' reviewing and purchasing. Based on the users' basic information and preference, our app will intellegently recommmend fashionable and trendy clothes to change their style and improve their appearance. We can also add more value to the app as addition function such as comparing price for the similar style products, and providing app database interface to the clothing producers or brand owners. 
   * Gain the information about user's favor in an interactive manner instead of filling a long form
   * learn users' preference
   * Recommend product that matches users' profile
@@ -62,5 +62,6 @@
 
 Going into the next iteration, our main insights are:
 
-* Everyone in the team should come to each meeting prepared with ideas or questions about the current state of the project
-* We should plan out our next goals and start assigning task to each member 
+* Tasks will be decomposed to small tasks and listed with deadline in the backlog according to the priority.
+* The task which can influence the rest tasks will have the higher priority and should have earlier deadline.
+* The members can pick the small tasks and put it into the track board and delete it from the backlog meanwhile.
