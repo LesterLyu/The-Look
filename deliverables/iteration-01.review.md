@@ -10,14 +10,14 @@
 
 #### Decisions that turned out well
 
-* Communicating and commenting through WeChat group, everyone is participating and we can see the ideas discussed through chat history
-* Keeping a Track Board to help team members and the team keep track of goals and responsibilities
-* Face-to-face meetings every week, more efficient than online video meetings
+* We Communicated and commented through the WeChat group, everyone participated and we can see the ideas discussed through WeChat history.
+* We Keep a _Track Board_ to help team members to keep track of their goals and responsibilities. **TODO: WHY**
+* We have face-to-face meetings every week, it is more efficient than online video meetings. **TODO: WHY**
 
 #### Decisions that did not turn out as well as we hoped
 
 * Online video meetings in place of face-to-face meetings. More convenient but turned out to be much less efficient than face-to-face meetings. Moreover, there were some technical problems with noise from microphones.
-* Planned to have a little meeting every day, but after some discussion, we found it unnecessary. Additional meetings will be held if we encounter important matters that we have to figure out together. 
+* Planned to have a little meeting every day, but after some discussions, we found it is unnecessary. Additional meetings will be held if we encounter important matters that we have to figure out together.
 #### Planned changes
 
 * We plan to reduce online video meetings and organize more face-to-face meetings (hold physical meetings twice per week at current stage, more meeting after coding starts)
@@ -33,7 +33,7 @@
   * Gain the information about user's favor in an interactive manner instead of filling a long form.
   * Recommend product that matches users' profile
   * User's feedback on a product will update both his/her profile and the ranking of that product
-* Assigned roles and responsiblities to every team member
+
 * Decided on framework/language to use for building the application
   * React Native for front end
   * MongoDB, Node.js for back end
