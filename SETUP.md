@@ -7,6 +7,8 @@
  - Install [WebStorm IDE](https://www.jetbrains.com/webstorm/)
    > You need to create a student account from [here](https://www.jetbrains.com/student/)
 
+ - MongoDB
+ 
  - Later (You can do whatever you like.)
    
    ```
@@ -15,6 +17,7 @@
    npm install
    open WebStorm IDE
    open project folder **webserver**
+   Select Javascript version **ECMAScript 6**
    ```
 
 ## Mobile
