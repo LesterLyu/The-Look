@@ -5,6 +5,8 @@
  */
 
 import React, { Component } from 'react';
+import { Container, Header, Content } from 'native-base';
+
 import {
   Platform,
   StyleSheet,
@@ -13,12 +15,18 @@ import {
 } from 'react-native';
 
 import Login from './src/components/login/login';
-
+import FooterNav from "./src/components/sandbox/FooterNav";
+import Profile from "./src/components/profile/profile";
 
 export default class App extends Component<{}> {
-  render() {
+
+    render() {
     return (
-      <Login />
+        <Container>
+            <Header><Text style={{marginTop: 15, fontSize: 20}}>THE LOOK</Text></Header>
+            <Profile/>
+            <FooterNav/>
+        </Container>
     );
   }
 };

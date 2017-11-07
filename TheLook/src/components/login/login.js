@@ -6,7 +6,7 @@ export default class Login extends Component {
     return (
 
       <View style = {styles.container}>
-        <View style={styles.logoContainer}>
+        <View style = {styles.logoContainer}>
           <Text style={styles.logo}>
             The Look
           </Text>
@@ -76,4 +76,4 @@ const styles = StyleSheet.create({
     backgroundColor:'rgba(255,255,255,0.2)',
     color: '#000000'
   }
-})
+});
