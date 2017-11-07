@@ -74,7 +74,7 @@ class IconText extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Footer</Title>
+            <Title>The Look</Title>
           </Body>
           <Right />
         </Header>
@@ -84,20 +84,20 @@ class IconText extends Component {
         <Footer>
           <FooterTab>
             <Button active={this.state.tab1} onPress={() => this.toggleTab1()}>
-              <Icon active={this.state.tab1} name="apps" />
-              <Text>Apps</Text>
+              <Icon active={this.state.tab1} name="body" />
+              <Text>Styles</Text>
             </Button>
             <Button active={this.state.tab2} onPress={() => this.toggleTab2()}>
-              <Icon active={this.state.tab2} name="camera" />
-              <Text>Camera</Text>
+              <Icon active={this.state.tab2} name="archive" />
+              <Text>Likes</Text>
             </Button>
             <Button active={this.state.tab3} onPress={() => this.toggleTab3()}>
-              <Icon active={this.state.tab3} name="compass" />
-              <Text>Compass</Text>
+              <Icon active={this.state.tab3} name="cart" />
+              <Text>Cart</Text>
             </Button>
             <Button active={this.state.tab4} onPress={() => this.toggleTab4()}>
-              <Icon active={this.state.tab4} name="contact" />
-              <Text>Contact</Text>
+              <Icon active={this.state.tab4} name="person" />
+              <Text>Me</Text>
             </Button>
           </FooterTab>
         </Footer>
