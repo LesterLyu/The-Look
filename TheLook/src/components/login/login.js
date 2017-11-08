@@ -1,10 +1,29 @@
 import React, { Component } from 'react';
-import {StyleSheet, View, Image, Text, TextInput, TouchableOpacity} from 'react-native';
-
+import {StyleSheet, View,Alert, Image, Text, TextInput, TouchableOpacity} from 'react-native';
+import { Actions } from 'react-native-router-flux';
 export default class Login extends Component {
-  render(){
-    return (
+    constructor(){
+        super();
+        this.state={username:''}
+    }
 
+    handleChange(e){
+        this.setState({username:e.target.value})
+    }
+
+  _login(){
+        if (this.state.username===''){
+            Alert.alert('Error','Username must not be empty!')
+        }else{
+            const name = this.state.username;
+            this.props.navigation.navigate("PicSelect", {username:name});
+        }
+
+  }
+
+  render(){
+
+    return (
       <View style = {styles.container}>
         <View style={styles.logoContainer}>
           <Text style={styles.logo}>
@@ -13,23 +32,22 @@ export default class Login extends Component {
         </View>
         <View style = {styles.loginContainer}>
           <TextInput
+
             placeholder="username"
             style={styles.input}
-            underlineColorAndroid='transparent'/>
+            underlineColorAndroid='transparent'
+            onChange={this.handleChange.bind(this)}
+          />
           <TextInput
             placeholder="password"
             style={styles.input}
             secureTextEntry
             underlineColorAndroid='transparent'/>
-          <TouchableOpacity>
+          <TouchableOpacity  onPress={this._login.bind(this)}>
             <Text style={styles.login}>LOGIN</Text>
           </TouchableOpacity>
-
         </View>
-
-
       </View>
-
     );
   }
 }
