@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import StylesPage from "./StylesPage.js";
 import CartPage from "./CartPage.js";
 import LikesPage from "./LikesPage.js";
-import ProfilePage from "./ProfilePage";
+import ProfilePage from "../ProfilePage/index.js";
 
 import { TabNavigator } from "react-navigation";
 

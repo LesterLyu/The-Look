@@ -22,7 +22,7 @@ import {
     FooterTab,
     Label
 } from "native-base";
-import HomeScreen from "../HomeScreen";
+import HomeScreen from "../LearnStyle/index";
 
 export default class CartPage extends React.Component {
     render() {
