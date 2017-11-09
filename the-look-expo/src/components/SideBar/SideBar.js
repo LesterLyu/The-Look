@@ -16,7 +16,7 @@ export default class SideBar extends React.Component {
       <Container>
         <Content>
           <Image
-            source={require('/Users/YanXi/Desktop/CSC301/project-team-14/the-look-expo/src/imgs/banner.png')}
+            source={require('./../../imgs/banner.png')}
             style={{
               height: 120,
               alignSelf: "stretch",
