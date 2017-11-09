@@ -11,6 +11,7 @@ import {
   FooterTab,
   Thumbnail,
   Image,
+	Checkbox,
   List,
   ListItem,
   H1,
@@ -26,25 +27,25 @@ import {
 
 import styles from './styles';
 
-const nail = require("../../imgs/1.jpeg");
-const nail2 = require("../../imgs/2.jpeg");
+const thumbnail = require("../../imgs/1.jpeg");
+const thumbnail2 = require("../../imgs/2.jpeg");
 
 
 const datas = [
   {
-    img: nail,
+    img: thumbnail,
     text: "Outfit1",
     note: "Outfit1 description",
     price: "4.99"
   },
   {
-    img: nail,
+    img: thumbnail,
     text: "Outfit2",
     note: "Outfit2 description",
     price: "10.99"
   },
 	{
-		img: nail2,
+		img: thumbnail2,
 		text: "Outfit3",
 		note: "Outfit3 description",
 		price: "4.99"
@@ -62,41 +63,6 @@ class MultiListSwipe extends Component {
 			listViewData: datas,
 		};
 	}
-	toggleTab1() {
-		this.setState({
-			tab1: true,
-			tab2: false,
-			tab3: false,
-			tab4: false
-		});
-	}
-
-	toggleTab2() {
-		this.setState({
-			tab1: false,
-			tab2: true,
-			tab3: false,
-			tab4: false
-		});
-	}
-
-	toggleTab3() {
-		this.setState({
-			tab1: false,
-			tab2: false,
-			tab3: true,
-			tab4: false
-		});
-	}
-
-	toggleTab4() {
-		this.setState({
-			tab1: false,
-			tab2: false,
-			tab3: false,
-			tab4: true
-		});
-	}
 
 	deleteRow(secId, rowId, rowMap) {
 		rowMap[`${secId}${rowId}`].props.closeRow();
@@ -104,7 +70,12 @@ class MultiListSwipe extends Component {
 		newData.splice(rowId, 1);
 		this.setState({ listViewData: newData });
 	}
+
+	closeRow(secId, rowId, rowMap) {
+		rowMap[`${secId}${rowId}`].props.closeRow();
+	}
 	render() {
+		const { navigate } = this.props.navigation;
 		const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 		return (
 			<Container style={styles.container}>
@@ -120,45 +91,34 @@ class MultiListSwipe extends Component {
         <Body>
           <Title>Shopping Cart</Title>
         </Body>
-        <Right>
-          <Button transparent><Icon name="cart" /></Button>
-          <Button transparent><Icon name="heart" /></Button>
-        </Right>
+        <Right/>
 
       </Header>
 
 				<Content>
 					<List
 						dataSource={this.ds.cloneWithRows(this.state.listViewData)}
-						renderRow={data =>
+						renderRow={(data, secId, rowId, rowMap) =>
               <ListItem thumbnail>
                 <Left>
                   <Thumbnail square size={110} source={data.img} />
                 </Left>
                 <Body>
-                  <Text onPress={() => props.navigation.navigate("ProductPage")}>{data.text}</Text>
-                  <Text numberOfLines={1} note>{data.note}</Text>
-                  <Text numberOfLines={1} style={{ color: '#F00' }} note>{data.price}</Text>
+                  <H3 style={{ color: 'blue', textDecorationLine: 'underline'}}
+									onPress={() => this.props.navigation.navigate("ProductPage")}
+									>{data.text}</H3>
+                  <Text numberOfLines={1} onPress={_ => this.closeRow(secId, rowId, rowMap)} note>{data.note}</Text>
+                  <Text numberOfLines={1} onPress={_ => this.closeRow(secId, rowId, rowMap)} style={{ color: '#F00' }} note
+									>{data.price}$</Text>
                 </Body>
                 <Right>
-                  <Button transparent>
+                  <Button>
                     <Text>View</Text>
                   </Button>
                 </Right>
               </ListItem>}
-						renderLeftHiddenRow={data =>
-							<Button
-								full
-								onPress={() => alert(data)}
-								style={{
-									backgroundColor: '#6e9fef',
-									flex: 1,
-									alignItems: 'center',
-									justifyContent: 'center',
-								}}
-							>
-								<Text>View</Text>
-							</Button>}
+						renderLeftHiddenRow={data =>null}
+						disableRightSwipe={true}
 						renderRightHiddenRow={(data, secId, rowId, rowMap) =>
 							<Button
 								full
@@ -172,12 +132,10 @@ class MultiListSwipe extends Component {
 							>
 								<Icon active name="trash" />
 							</Button>}
-						leftOpenValue={75}
 						rightOpenValue={-75}
 					/>
 					<Button block danger style={styles.mb15}><Text>Checkout</Text></Button>
 				</Content>
-				<Footer/>
 			</Container>
 		);
 	}
