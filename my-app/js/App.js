@@ -177,3 +177,13 @@ export default () =>
     <Root>
         <AppNavigator />
     </Root>;
+
+// export default class App extends React.Component {
+//
+//     render() {
+//         return
+//             <Root>
+//                 <AppNavigator />
+//             </Root>;
+//     }
+// }
