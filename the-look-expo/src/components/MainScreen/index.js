@@ -42,7 +42,7 @@ export default (MainScreenNavigator = TabNavigator(
               active={props.navigationState.index === 1}
               onPress={() => props.navigation.navigate("LikesPage")}
             >
-              <Icon name="archive" />
+              <Icon name="heart" />
               <Text>Likes</Text>
             </Button>
             <Button
