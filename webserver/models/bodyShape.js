@@ -4,7 +4,6 @@ const Schema = mongo.Schema;
 
 
 let bodyShapeSchema = new Schema({
-    bodyShapeId:{type:String, require:true},
     height:{type: Number},
     weight:{type: Number},
     skinColor:{type: String},
