@@ -4,7 +4,8 @@ const Schema = mongo.Schema;
 
 
 let orderSchema = new Schema({
-    orderLineIds:[],
+    orderId:{type:String,require: true},
+    orderLineIds:[String],
     userId:{type:String},
     status:{type:String},
     date:{type:String},
