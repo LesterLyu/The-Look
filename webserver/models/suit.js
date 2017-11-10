@@ -6,7 +6,7 @@ const Schema = mongo.Schema;
 let suitSchema = new Schema({
     name: {type:String},
     img: {type:String},
-    items:[String], // List of item Id.
+    items:[], // List of item Id.
     bodyShapeIdRange:{type:String},
 });
 
