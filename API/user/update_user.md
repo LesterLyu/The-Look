@@ -26,7 +26,7 @@ Used to register a User.
 }
 ```
 
-**Data example (Update email and phone number)**
+**Data example**
 
 ```json
 
