@@ -8,8 +8,9 @@ let userSchema = new Schema({
     password:{type: String, required: true},
     admin:{type: Boolean, required: true},
     contactId:{type:String},
-    bodyshapeId:{type:String},
-    favourite:[]// Can be either ItemId or SuitId
+    bodyShapeId:{type:String},
+    favouriteItemId:[],
+    favouriteSuitId:[]
 });
 
 module.exports = mongo.model('User',userSchema);

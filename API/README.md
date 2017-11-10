@@ -28,6 +28,9 @@ Token is provided with the request:
 
 * [Get user info](user/get_user.md) : `GET /api/user/`
 * [Update user info](user/update_user.md) : `PUT /api/user/`
+* [Add favorite item/suit](user/add_favorite.md) : `POST /api/user/favorite`
+* [Remove favorite item/suit](user/remove_favorite.md) : `DELETE /api/user/favorite`
+
 
 ### Item / Suit related
 

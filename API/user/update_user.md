@@ -2,7 +2,7 @@
 
 Used to register a User.
 
-**URL** : `/api/account/`
+**URL** : `/api/user/`
 
 **Method** : `PUT`
 
