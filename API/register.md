@@ -52,13 +52,13 @@ Used to register a User.
 
 ```json
 {
-    "token": "93144b288eb1fdccbe46d6fc0f241a51766ecd3d"
+    "success":true
 }
 ```
 
 ## Error Response
 
-**Condition** : If 'username' and 'password' combination is wrong.
+**Condition** : If 'username' is occupied.
 
 **Code** : `400 BAD REQUEST`
 
@@ -66,8 +66,6 @@ Used to register a User.
 
 ```json
 {
-    "non_field_errors": [
-        "Unable to login with provided credentials."
-    ]
+    "success":false
 }
 ```
