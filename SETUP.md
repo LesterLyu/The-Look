@@ -21,4 +21,4 @@
    ```
 
 ## Mobile
- - **TODO**
+ - See README.md
