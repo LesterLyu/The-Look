@@ -2,7 +2,7 @@
 
 Used to register a User.
 
-**URL** : `/api/account`
+**URL** : `/api/account/`
 
 **Method** : `PUT`
 
@@ -12,14 +12,17 @@ Used to register a User.
 
 ```json
 {
-    "password": "[password in plain text]",
-    "admin": "[is admin? (true/false)]",
-    "email": "[valid email address]",
-    "name": "[Real name]",
-    "address": "[home address]",
-    "phone": "[phone number]",
-    "country": "[country]",
-    "city": "[city]"
+    "height": "[height in cm]",
+    "weight": "[weight in kg]",
+    "skinColor": "[?]",
+    "belly": "[?]",
+    "shoulderShape": "[?]",
+    "legShape": "[?]",
+    "legTorsoRatio": "[?]",
+    "bodyShape": "[?]",
+    "atLength": "[?]",
+    "neckType": "[?]",
+    "gender": "[?]"
 }
 ```
 
@@ -28,8 +31,17 @@ Used to register a User.
 ```json
 
 {
-    "email": "123@gmail.com",
-    "phone": "2333333"
+    "height": 190,
+    "weight": 80,
+    "skinColor": "[?]",
+    "belly": "[?]",
+    "shoulderShape": "[?]",
+    "legShape": "[?]",
+    "legTorsoRatio": "[?]",
+    "bodyShape": "[?]",
+    "atLength": "[?]",
+    "neckType": "[?]",
+    "gender": "[?]"
 }
 ```
 

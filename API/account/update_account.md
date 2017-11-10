@@ -2,7 +2,7 @@
 
 Used to update an account info.
 
-**URL** : `/api/account`
+**URL** : `/api/account/`
 
 **Method** : `PUT`
 

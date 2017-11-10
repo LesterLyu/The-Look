@@ -2,7 +2,7 @@
 
 Used to get an account info.
 
-**URL** : `/api/account`
+**URL** : `/api/account/`
 
 **Method** : `GET`
 

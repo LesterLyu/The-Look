@@ -2,7 +2,7 @@
 
 Used to register a User.
 
-**URL** : `/api/account`
+**URL** : `/api/account/`
 
 **Method** : `GET`
 
@@ -16,15 +16,17 @@ Used to register a User.
 
 ```json
 {
-    "username": "lesterlyu",
-    "password": "abcd1234",
-    "admin": "true",
-    "email": "lvds2000@gmail.com",
-    "name": "Dishu Lyu",
-    "phone": "121232323",
-    "address": "123 Street",
-    "city": "Toronto",
-    "country": "Canada"
+    "height": "[190]",
+    "weight": "[80]",
+    "skinColor": "[?]",
+    "belly": "[?]",
+    "shoulderShape": "[?]",
+    "legShape": "[?]",
+    "legTorsoRatio": "[?]",
+    "bodyShape": "[?]",
+    "atLength": "[?]",
+    "neckType": "[?]",
+    "gender": "[?]"
 }
 ```
 
