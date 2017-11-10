@@ -4,7 +4,7 @@ const Schema = mongo.Schema;
 
 
 let cartSchema = new Schema({
-    orderLineIds:[]
+    orderLineIds:[String]
 });
 
 module.exports = mongo.model('Cart',cartSchema);

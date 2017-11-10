@@ -4,7 +4,6 @@ const Schema = mongo.Schema;
 
 
 let orderlineSchema = new Schema({
-    orderlineId:{type:String},
     itemId:{type:String},
     count:{type:Number}
 });
