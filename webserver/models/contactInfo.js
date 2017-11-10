@@ -4,7 +4,6 @@ const Schema = mongo.Schema;
 
 
 let contactSchema = new Schema({
-    contactId:{type:String, rquire: true},
     email:{type: String},
     name:{type:String},
     phone:{type:String},

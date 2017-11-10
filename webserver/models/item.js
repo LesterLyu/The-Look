@@ -4,7 +4,6 @@ const Schema = mongo.Schema;
 
 
 let itemSchema = new Schema({
-    itemId: {type: String ,rquire: true},
     name: {type:String},
     bodyShapeRangeId:{type:String},
     price:{type:Number},

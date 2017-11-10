@@ -4,7 +4,6 @@ const Schema = mongo.Schema;
 
 
 let suitSchema = new Schema({
-    suitId: {type: String,require: true},
     name: {type:String},
     img: {type:String},
     items:[String], // List of item Id.
