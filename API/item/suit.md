@@ -14,7 +14,7 @@ Used to add an suit.
 
 ```json
 {
-    "name": "[item name]",
+    "name": "[suit name]",
     "price": "[price]",
     "img": "[img url]",
     "items": [
