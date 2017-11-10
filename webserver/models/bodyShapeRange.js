@@ -4,6 +4,7 @@ const Schema = mongo.Schema;
 
 
 let bodyShapeRangeSchema = new Schema({
+    bodyShapeRangeId:{type:String, require:true},
     height:{
         max: Number,
         min: Number
