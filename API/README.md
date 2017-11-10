@@ -50,11 +50,13 @@ Token is provided with the request.
 
 ### Item / Suit related
 
-Endpoints for viewing and manipulating the Item(cloth) / Suit.
+Endpoints for viewing and manipulating the Item(cloth) / Suit. **User must be admin**.
 
-* [Add a item](item/get.md) : `GET /api/accounts/`
+* [Add an item](item/item.md) : `POST /api/item/item`
     <br>![Progress](http://progressed.io/bar/0)
-* [Add a item](item/get.md) : `GET /api/accounts/`
+* [Auto add an item](item/auto_item.md) : `POST /api/item/autoitem`
+    <br>![Progress](http://progressed.io/bar/0)
+* [Add a suit](item/suit.md) : `POST /api/item/suit`
     <br>![Progress](http://progressed.io/bar/0)
 
 ### Purchase related (TO-DO)

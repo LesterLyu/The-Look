@@ -55,6 +55,7 @@ Used to update an account info.
 
 ```json
 {
-    "success":false
+    "success":false,
+    "msg": "error message"
 }
 ```

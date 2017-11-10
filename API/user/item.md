@@ -58,6 +58,7 @@ OR
 
 ```json
 {
-    "success":false
+    "success":false,
+    "msg": "error message"
 }
 ```

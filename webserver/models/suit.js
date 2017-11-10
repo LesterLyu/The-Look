@@ -8,8 +8,7 @@ let suitSchema = new Schema({
     name: {type:String},
     img: {type:String},
     items:[], // List of item Id.
-    bodyShapeIdMax:{type:String},
-    bodyShapeIdMin:{type:String},
+    bodyShapeIdRange:{type:String},
 });
 
 module.exports = mongo.model('Suit',suitSchema);

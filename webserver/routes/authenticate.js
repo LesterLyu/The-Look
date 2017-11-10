@@ -16,13 +16,13 @@ router.post('/', function(req, res, next) {
 
         if (!user) {
             res.status(400);
-            res.json({ success: false, message: 'Authentication failed. User not found.' });
+            res.json({ success: false, msg: 'Authentication failed. User not found.' });
         } else if (user) {
 
             // check if password matches
             if (user.password !== req.body.password) {
                 res.status(400);
-                res.json({ success: false, message: 'Authentication failed. Wrong password.' });
+                res.json({ success: false, msg: 'Authentication failed. Wrong password.' });
             } else {
 
                 // if user is found and password is right
@@ -37,7 +37,7 @@ router.post('/', function(req, res, next) {
 
                 res.json({
                     success: true,
-                    message: 'Enjoy your token!',
+                    msg: 'Enjoy your token!',
                     token: token
                 });
             }

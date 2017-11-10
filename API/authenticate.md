@@ -35,7 +35,7 @@ Used to collect a Token for a registered User.
 ```json
 {
     "success":true,
-    "message":"Enjoy your token!",
+    "msg":"Enjoy your token!",
     "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ZmFsc2UsInVzZXJuYW1lIjoiMTIzIiwiaWF0IjoxNTEwMzQzMTY0LCJleHAiOjE1MTg5ODMxNjR9.VJh8XERpV7njf_5Zs7vPAnBX1iRT5LcfStefZc5lJkM"
 }
 ```
@@ -51,13 +51,13 @@ Used to collect a Token for a registered User.
 ```json
 {
     "success": false,
-    "message": "Authentication failed. User not found."
+    "msg": "Authentication failed. User not found."
 }
 ```
 OR
 ```json
 {
     "success": false,
-    "message": "Authentication failed. Wrong password."
+    "msg": "Authentication failed. Wrong password."
 }
 ```

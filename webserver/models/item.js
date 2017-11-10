@@ -6,16 +6,15 @@ const Schema = mongo.Schema;
 let itemSchema = new Schema({
     itemId: {type: String,require: true},
     name: {type:String},
-    bodyShapeIdMax:{type:String},
-    bodyShapeIdMin:{type:String},
+    bodyShapeRangeId:{type:String},
     price:{type:Number},
     img: {type:String},
     url:{type:String},
-    type:{type:String}, // this is tags
-    season:{type:String},
+    type:[String], // this is tags
+    season:[String],
     brand:{type:String},
-    allSizes:[],
-    color:{type:String}
+    allSizes:[String],
+    colors:[String]
 });
 
 module.exports = mongo.model('Item',itemSchema);

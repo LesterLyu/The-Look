@@ -38,6 +38,7 @@ Used to get an account info.
 
 ```json
 {
-    "success":false
+    "success":false,
+    "msg": "error message"
 }
 ```
