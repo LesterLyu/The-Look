@@ -12,11 +12,16 @@ Open endpoints require no token Authentication.
 Closed endpoints require a valid Token to be included in the header of the
 request. A Token can be acquired from the Authenticate above.
 
-> Header: ```{"x-access-token": "YOUR_TOKEN_HERE"}```
+> i.e. You need to add this into Header: 
+> ```json
+> {
+>     "x-access-token": "YOUR_TOKEN_HERE"
+> }
+> ```
 
 ### Account related
 
-Endpoints for basic account operations, i.e. change password, change home address
+Endpoints for basic account operations, i.e. change password, change home address.
 
 * [Get account info](account/get_account.md) : `GET /api/account/`
 * [Update account info](account/update_account.md) : `PUT /api/account/`
@@ -24,21 +29,24 @@ Endpoints for basic account operations, i.e. change password, change home addres
 ### User Personal Data related
 
 Each endpoint manipulates or displays information related to the User whose
-Token is provided with the request:
+Token is provided with the request.
 
 * [Get user info](user/get_user.md) : `GET /api/user/`
 * [Update user info](user/update_user.md) : `PUT /api/user/`
-* [Add favorite item/suit](user/add_favorite.md) : `POST /api/user/favorite`
-* [Remove favorite item/suit](user/remove_favorite.md) : `DELETE /api/user/favorite`
+* [Add favorite item/suit](user/add_favorite.md) : `POST /api/user/favorite/`
+* [Remove favorite item/suit](user/remove_favorite.md) : `DELETE /api/user/favorite/`
+* [Recommended suits](user/recommendation.md) : `GET /api/user/recommendation/`
 
 
 ### Item / Suit related
 
-Endpoints for viewing and manipulating the Accounts that the Authenticated User
-has permissions to access.
+Endpoints for viewing and manipulating the Item(cloth) / Suits.
 
-* [Show Accessible Accounts](accounts/get.md) : `GET /api/accounts/`
+* [Show Accessible Accounts](item/get.md) : `GET /api/accounts/`
 * [Create Account](accounts/post.md) : `POST /api/accounts/`
 * [Show An Account](accounts/pk/get.md) : `GET /api/accounts/:pk/`
 * [Update An Account](accounts/pk/put.md) : `PUT /api/accounts/:pk/`
 * [Delete An Account](accounts/pk/delete.md) : `DELETE /api/accounts/:pk/`
+
+### Purchase related (TO-DO)
+
