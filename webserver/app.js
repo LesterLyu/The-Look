@@ -8,7 +8,7 @@ let bodyParser = require('body-parser');
 let config = require('./config'); // get our config file
 
 let index = require('./routes/index');
-let users = require('./routes/users');
+let user = require('./routes/user');
 let register = require('./routes/register');
 let authenticate = require('./routes/authenticate');
 
@@ -39,8 +39,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // authentication (no middleware necessary since this isnt authenticated)
 // ---------------------------------------------------------
 app.use('/', index);
-app.use('/register', register);
-app.use('/authenticate', authenticate);
+app.use('/api/register', register);
+app.use('/api/authenticate', authenticate);
 
 // ---------------------------------------------------------
 // route middleware to authenticate and check token
@@ -82,7 +82,7 @@ app.use(function(req, res, next) {
 // authenticated routes
 // ---------------------------------------------------------
 
-app.use('/users', users);
+app.use('/api/user', user);
 
 
 
