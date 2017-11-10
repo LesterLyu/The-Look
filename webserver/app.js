@@ -8,7 +8,7 @@ let bodyParser = require('body-parser');
 let config = require('./config'); // get our config file
 
 let index = require('./routes/index');
-let users = require('./routes/users');
+let user = require('./routes/user');
 let register = require('./routes/register');
 let authenticate = require('./routes/authenticate');
 
@@ -82,7 +82,7 @@ app.use(function(req, res, next) {
 // authenticated routes
 // ---------------------------------------------------------
 
-app.use('/api/users', users);
+app.use('/api/user', user);
 
 
 

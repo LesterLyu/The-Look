@@ -4,23 +4,32 @@
 
 Open endpoints require no token Authentication.
 
-* [Registration (create an account)](register.md) : `POST /api/register`
-* [Authenticate (get a token)](authenticate.md) : `POST /api/authenticate`
+* [Registration (create an account)](register.md) : `POST /api/register/`
+* [Authenticate (get a token)](authenticate.md) : `POST /api/authenticate/`
 
 ## Endpoints that require Authentication
 
 Closed endpoints require a valid Token to be included in the header of the
 request. A Token can be acquired from the Authenticate above.
 
-### User related
+> Header: ```{"x-access-token": "YOUR_TOKEN_HERE"}```
+
+### Account related
+
+Endpoints for basic account operations, i.e. change password, change home address
+
+* [Get account info](account/get_account.md) : `GET /api/account/`
+* [Update account info](account/update_account.md) : `PUT /api/account/`
+
+### User Personal Data related
 
 Each endpoint manipulates or displays information related to the User whose
 Token is provided with the request:
 
-* [Show info](user/get.md) : `GET /api/user/`
-* [Update info](user/put.md) : `PUT /api/user/`
+* [Get user info](user/get_user.md) : `GET /api/user/`
+* [Update user info](user/update_user.md) : `PUT /api/user/`
 
-### Item related
+### Item / Suit related
 
 Endpoints for viewing and manipulating the Accounts that the Authenticated User
 has permissions to access.
