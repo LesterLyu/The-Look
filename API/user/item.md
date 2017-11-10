@@ -1,10 +1,10 @@
-# Update User Info
+# DIslike or like or bookmark an Item / Suit
 
-Used to add a favorite item or suit for a user.
+Used to do some operations on an item or suit for a user.
 
-**URL** : `/api/user/favorite`
+**URL** : `/api/user/item`
 
-**Method** : `DELETE`
+**Method** : `POST`
 
 **Auth required** : YES
 
@@ -12,6 +12,7 @@ Used to add a favorite item or suit for a user.
 
 ```json
 {
+    "operation": "[like / dislike / add_bookmark / remove_bookmark]",
     "type": "[item / suit]",
     "id": "item / suit ID"
 }
@@ -21,6 +22,7 @@ Used to add a favorite item or suit for a user.
 
 ```json
 {
+    "operation": "like",
     "type": "item",
     "id": "g3490tiu0jv0wrjm23r-2fp223-kf3-2fk-2"
 }
@@ -28,6 +30,7 @@ Used to add a favorite item or suit for a user.
 OR
 ```json
 {
+    "operation": "add_bookmark",
     "type": "suit",
     "id": "verlg34-=tkremgowe-0r1-0rewfk2-==3rf"
 }

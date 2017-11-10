@@ -5,7 +5,9 @@
 Open endpoints require no token Authentication.
 
 * [Registration (create an account)](register.md) : `POST /api/register/`
+    <br>![Progress](http://progressed.io/bar/70)
 * [Authenticate (get a token)](authenticate.md) : `POST /api/authenticate/`
+    <br>![Progress](http://progressed.io/bar/100)
 
 ## Endpoints that require Authentication
 
@@ -23,8 +25,10 @@ request. A Token can be acquired from the Authenticate above.
 
 Endpoints for basic account operations, i.e. change password, change home address.
 
-* [Get account info](account/get_account.md) : `GET /api/account/`
-* [Update account info](account/update_account.md) : `PUT /api/account/`
+* [Get account info](account/get_account.md) : `GET /api/account/` 
+    <br>![Progress](http://progressed.io/bar/0)
+* [Update account info](account/update_account.md) : `PUT /api/account/` 
+    <br>![Progress](http://progressed.io/bar/0)
 
 ### User Personal Data related
 
@@ -32,21 +36,26 @@ Each endpoint manipulates or displays information related to the User whose
 Token is provided with the request.
 
 * [Get user info](user/get_user.md) : `GET /api/user/`
+    <br>![Progress](http://progressed.io/bar/0)
 * [Update user info](user/update_user.md) : `PUT /api/user/`
-* [Add favorite item/suit](user/add_favorite.md) : `POST /api/user/favorite/`
-* [Remove favorite item/suit](user/remove_favorite.md) : `DELETE /api/user/favorite/`
+    <br>![Progress](http://progressed.io/bar/0)
+
+
+* [Item/Suit operation](user/item.md) : `POST /api/user/item/`
+    <br>![Progress](http://progressed.io/bar/0)
 * [Recommended suits](user/recommendation.md) : `GET /api/user/recommendation/`
+    <br>![Progress](http://progressed.io/bar/0)
+
 
 
 ### Item / Suit related
 
-Endpoints for viewing and manipulating the Item(cloth) / Suits.
+Endpoints for viewing and manipulating the Item(cloth) / Suit.
 
-* [Show Accessible Accounts](item/get.md) : `GET /api/accounts/`
-* [Create Account](accounts/post.md) : `POST /api/accounts/`
-* [Show An Account](accounts/pk/get.md) : `GET /api/accounts/:pk/`
-* [Update An Account](accounts/pk/put.md) : `PUT /api/accounts/:pk/`
-* [Delete An Account](accounts/pk/delete.md) : `DELETE /api/accounts/:pk/`
+* [Add a item](item/get.md) : `GET /api/accounts/`
+    <br>![Progress](http://progressed.io/bar/0)
+* [Add a item](item/get.md) : `GET /api/accounts/`
+    <br>![Progress](http://progressed.io/bar/0)
 
 ### Purchase related (TO-DO)
 

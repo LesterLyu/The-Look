@@ -9,8 +9,12 @@ let userSchema = new Schema({
     admin:{type: Boolean, required: true},
     contactId:{type:String},
     bodyShapeId:{type:String},
-    favouriteItemId:[],
-    favouriteSuitId:[]
+    likeItemId:[],
+    likeSuitId:[],
+    dislikeItemId:[],
+    dislikeSuitId:[],
+    bookmarkItemId:[],
+    bookmarkSuitId:[]
 });
 
 module.exports = mongo.model('User',userSchema);
