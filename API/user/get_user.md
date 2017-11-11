@@ -18,15 +18,15 @@ Used to register a User.
 {
     "height": "[190]",
     "weight": "[80]",
-    "skinColor": "[?]",
-    "belly": "[?]",
-    "shoulderShape": "[?]",
-    "legShape": "[?]",
-    "legTorsoRatio": "[?]",
-    "bodyShape": "[?]",
-    "atLength": "[?]",
-    "neckType": "[?]",
-    "gender": "[?]"
+    "skinColor": "[String]",
+    "belly": "[ture / false]",
+    "shoulderShape": "[String]]",
+    "legShape": "[String]]",
+    "legTorsoRatio": "[Number]",
+    "bodyShape": "[String]",
+    "atLength": "[String]]",
+    "neckType": "[String]]",
+    "gender": "[String]]"
 }
 ```
 
