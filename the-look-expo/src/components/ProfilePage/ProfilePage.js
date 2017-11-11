@@ -1,5 +1,6 @@
 import React from "react";
-import { AppRegistry, View, StatusBar, Image } from "react-native";
+import { AppRegistry, View, StatusBar, Image, StyleSheet } from "react-native";
+import * as Progress from 'react-native-progress';
 import {
     Button,
     Text,
@@ -47,11 +48,31 @@ class ProfilePage extends React.Component {
 
                 <Thumbnail style={{alignSelf: 'center', marginTop: 30}} large source={avatar} />
 
+                <View style={{alignItems: 'center', flex: 1, flexDirection: 'column'}}>
+                    <View>
+                        <Text>Casual</Text>
+                        <Progress.Bar style={styles.progressBar} progress={0.4} size={200} width={300} height={20}/>
+                    </View>
+                    <View>
+                        <Text>Casual</Text>
+                        <Progress.Bar style={styles.progressBar} progress={0.8} size={200} width={300} height={20}/>
+                    </View>
+                    <View>
+                        <Text>Casual</Text>
+                        <Progress.Bar style={styles.progressBar} progress={0.2} size={200} width={300} height={20}/>
+                    </View>
+                    <View>
+                        <Text>Casual</Text>
+                        <Progress.Bar style={styles.progressBar} progress={0.6} size={200} width={300} height={20}/>
+                    </View>
+                </View>
+
+
                 <Button full rounded light
                         style={{ marginTop: 10 }}
                         onPress={() => this.props.navigation.navigate("EditProfile")}
                 >
-                    <Text>Edit Profile</Text>
+                    <Text>Edit Body Profile</Text>
                 </Button>
 
 
@@ -75,6 +96,13 @@ ProfilePage.navigationOptions = ({ navigation }) => ({
             <Right />
         </Header>
     )
+});
+
+const styles = StyleSheet.create({
+    progressBar: {
+        alignSelf: 'center',
+        margin: 10,
+    }
 });
 
 export default ProfilePage;
