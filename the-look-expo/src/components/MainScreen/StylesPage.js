@@ -1,99 +1,113 @@
 import React from "react";
-import { AppRegistry, View, StatusBar, Image } from "react-native";
+import { StatusBar, View, Image, StyleSheet, TouchableHighlight, TouchableOpacity } from "react-native";
 import {
+    Body,
     Button,
-    Text,
-    Container,
     Card,
     CardItem,
-    Body,
+    Col,
+    Container,
     Content,
+    Footer,
+    FooterTab,
+    Grid,
     Header,
-    Left,
-    Right,
     Icon,
-    Title,
     Input,
     InputGroup,
     Item,
+    Label,
+    Left,
+    Right,
     Tab,
     Tabs,
-    Footer,
-    FooterTab,
-    Label,
+    Text,
     Thumbnail,
-    Grid,
-    Col,
+    Title,
 } from "native-base";
-import HomeScreen from "../LearnStyle/index";
 
-const logo = require("../../imgs/logo.png");
-const cardImage = require("../../imgs/banner.png");
+const s1 = require("../../imgs/corporate.jpg");
+const s2 = require("../../imgs/hiphop.jpg");
+const s3 = require("../../imgs/jock.jpg");
+const s4 = require("../../imgs/popstar.jpg");
+const s5 = require("../../imgs/rockstar.jpg");
+const s6 = require("../../imgs/throwback.jpg");
 
 export default class StylesPage extends React.Component {
-  render() {
-    const { navigate } = this.props.navigation;
-    return (
-      <Container>
-        <Header>
-          <Left>
-            <Button
-              transparent
-              onPress={() => this.props.navigation.navigate("DrawerOpen")}
-            >
-              <Icon name="menu" />
-            </Button>
-          </Left>
-          <Body>
-            <Title>Styles</Title>
-          </Body>
-          <Right />
-        </Header>
-        <Content padder>
-          <Text style={{fontSize: 30, textAlign: 'left'}}>Styles for you</Text>
-            <Card>
-                <CardItem>
+    render() {
+        const {navigate} = this.props.navigation;
+        return (
+            <Container>
+                <Header>
                     <Left>
-                        <Thumbnail source={logo} />
-                        <Body>
-                        <Text>NativeBase</Text>
-                        <Text note>GeekyAnts</Text>
-                        </Body>
-                    </Left>
-                </CardItem>
-
-                <CardItem cardBody>
-                    <Image
-                        style={{
-                            resizeMode: "cover",
-                            width: null,
-                            height: 200,
-                            flex: 1
-                        }}
-                        source={cardImage}
-                    />
-                </CardItem>
-
-                <CardItem style={{ paddingVertical: 0 }}>
-                    <Left>
-                        <Button iconLeft transparent>
-                            <Icon active name="thumbs-up" />
-                            <Text>4923 Likes</Text>
+                        <Button
+                            transparent
+                            onPress={() => this.props.navigation.navigate("DrawerOpen")}
+                        >
+                            <Icon name="menu"/>
                         </Button>
                     </Left>
                     <Body>
-                    <Button iconLeft transparent>
-                        <Icon active name="chatbubbles" />
-                        <Text>89 Comments</Text>
-                    </Button>
+                    <Title>Styles</Title>
                     </Body>
-                    <Right>
-                        <Text>11h ago</Text>
-                    </Right>
-                </CardItem>
-            </Card>
-        </Content>
-      </Container>
-    );
-  }
+                    <Right/>
+                </Header>
+                <Content padder>
+                    <Text style={{fontSize: 30, textAlign: 'left'}}>Styles for you</Text>
+                    <Grid>
+                        <Col>
+                            <TouchableOpacity onPress={() => this.props.navigation.navigate("DetailsPage")}>
+                                <Image source={s1} style={styles.styleImage}/>
+                            </TouchableOpacity>
+                            <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
+                        </Col>
+                    </Grid>
+                    <Grid>
+                        <Col>
+                            <Image source={s2} style={styles.styleImage}/>
+                            <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
+                        </Col>
+                    </Grid>
+                    <Grid>
+                        <Col>
+                            <Image source={s3} style={styles.styleImage}/>
+                            <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
+                        </Col>
+                    </Grid>
+                    <Grid>
+                        <Col>
+                            <Image source={s4} style={styles.styleImage}/>
+                            <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
+                        </Col>
+                    </Grid>
+                    <Grid>
+                        <Col>
+                            <Image source={s5} style={styles.styleImage}/>
+                            <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
+                        </Col>
+                    </Grid>
+                    <Grid>
+                        <Col>
+                            <Image source={s6} style={styles.styleImage}/>
+                            <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
+                        </Col>
+                    </Grid>
+
+                </Content>
+            </Container>
+        );
+    }
 }
+
+
+const styles = StyleSheet.create({
+    styleImage:{
+        flex: 1,
+        width: null,
+        resizeMode: 'cover',
+        height: 450,
+        margin: 5,
+        borderRadius: 20,
+        justifyContent: 'center'
+    }
+});

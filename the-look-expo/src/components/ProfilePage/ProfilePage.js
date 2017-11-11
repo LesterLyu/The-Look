@@ -34,6 +34,8 @@ import HomeScreen from "../LearnStyle/index";
 const logo = require("../../imgs/logo.png");
 const cardImage = require("../../imgs/banner.png");
 
+const avatar = require("../../imgs/avatar.jpeg");
+
 class ProfilePage extends React.Component {
 
 
@@ -43,12 +45,16 @@ class ProfilePage extends React.Component {
             <Content padder style={{backgroundColor: "#ffffff"}}>
                 <Text style={{fontSize: 30, textAlign: 'left'}}>Your Profile</Text>
 
+                <Thumbnail style={{alignSelf: 'center', marginTop: 30}} large source={avatar} />
+
                 <Button full rounded light
                         style={{ marginTop: 10 }}
                         onPress={() => this.props.navigation.navigate("EditProfile")}
                 >
                     <Text>Edit Profile</Text>
                 </Button>
+
+
 
             </Content>
         );
