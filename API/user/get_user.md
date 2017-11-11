@@ -25,8 +25,7 @@ Used to register a User.
     "legTorsoRatio": "[Number]",
     "bodyShape": "[String]",
     "atLength": "[String]]",
-    "neckType": "[String]]",
-    "gender": "[String]]"
+    "neckType": "[String]]"
 }
 ```
 
