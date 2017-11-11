@@ -12,6 +12,13 @@ Used to add an item.
 
 **Data constraints (Only provide needed attributes)**
 
+| name        | type           | example  |
+| ------------- |:-------------:| -----:|
+| skinColor     | String     | 12122 |
+| skinColor     | String     | 12122 |
+| skinColor     | String     | 12122 |
+| skinColor     | String     | 12122 |
+
 ```json
 {
     "url": "[item url]",
