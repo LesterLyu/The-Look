@@ -7,14 +7,15 @@ let User = require('../models/user'); // get our mongoose model
 /* GET users listing. */
 router.post('/', function(req, res, next) {
 
+    console.log(req.body);
+
     // find the user
     User.findOne({
         username: req.body.username
     }, function(err, user) {
 
         if (err) throw err;
-
-        if (!user) {
+        if (!user || user === "undefined") {
             res.status(400);
             res.json({ success: false, msg: 'Authentication failed. User not found.' });
         } else if (user) {

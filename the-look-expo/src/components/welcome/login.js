@@ -32,9 +32,12 @@ export default class Login extends Component {
     }
 
     _login = () => {
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json'); // This one sends body
         if(this.state.username && this.state.password)
             return fetch('http://99.229.227.21:3000/api/authenticate/', {
                 method: 'POST',
+                headers: headers,
                 redirect: 'follow',
                 body: JSON.stringify({
                     username: this.state.username,
@@ -43,11 +46,47 @@ export default class Login extends Component {
             }).then(resp => {
                 return resp.json();
             }).then(data => {
-                Alert.alert(data.msg);
-                console.log(data);
+                if(data.success) {
+                    // to next page
+
+                }
+                else {
+                    Alert.alert(data.msg);
+                    console.log(data);
+                }
             }).catch(err => {
                 console.log(err);
-            })
+            });
+        else
+            Alert.alert("Please input username and password");
+    };
+
+    _register = () => {
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json'); // This one sends body
+        if(this.state.username && this.state.password)
+            return fetch('http://99.229.227.21:3000/api/register/', {
+                method: 'POST',
+                headers: headers,
+                redirect: 'follow',
+                body: JSON.stringify({
+                    username: this.state.username,
+                    password: this.state.password,
+                    admin: false
+                }),
+            }).then(resp => {
+                return resp.json();
+            }).then(data => {
+                if(data.success) {
+                    Alert.alert("Registration success");
+                }
+                else {
+                    Alert.alert("Failed to register, " + data.msg);
+                    console.log(data);
+                }
+            }).catch(err => {
+                console.log(err);
+            });
         else
             Alert.alert("Please input username and password");
     };
@@ -79,12 +118,17 @@ export default class Login extends Component {
                         <Item floatingLabel>
                             <Label>Username</Label>
                             <Input
+                                keyboardType={'ascii-capable'}
+                                autoCorrect={false}
                                 onChangeText={(username) => this.setState({username})}
                             />
                         </Item>
                         <Item floatingLabel>
                             <Label>Password</Label>
                             <Input
+                                keyboardType={'ascii-capable'}
+                                secureTextEntry={true}
+                                autoCorrect={false}
                                 onChangeText={(password) => this.setState({password})}
                             />
                         </Item>
@@ -94,7 +138,7 @@ export default class Login extends Component {
                         <Text>Sign in</Text>
                     </Button>
                     <View style={styles.gap}/>
-                    <Button block success>
+                    <Button block success onPress={this._register}>
                         <Text>Register</Text>
                     </Button>
                 </Content>
