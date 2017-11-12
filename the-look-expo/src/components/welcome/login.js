@@ -79,7 +79,7 @@ export default class Login extends Component {
                 return resp.json();
             }).then(data => {
                 if(data.success) {
-                    Alert.alert("Registration success");
+                    //Alert.alert("Registration success");
                     this.props.navigation.navigate("EditProfile");
                 }
                 else {
