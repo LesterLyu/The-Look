@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Form, Item, Input, Label, Button, Text } from 'native-base';
-import { StyleSheet, View, Image, ListView } from 'react-native';
+import {StyleSheet, View, Image, ListView, StatusBar, Alert} from 'react-native';
 import { Constants } from 'expo';
 
 const styles = StyleSheet.create({
     statusBar: {
-        backgroundColor: "#C2185B",
+        backgroundColor: "#2f2f2f",
         height: Constants.statusBarHeight,
     },
     form: {
@@ -30,27 +30,37 @@ export default class Login extends Component {
         super(props);
         this.state = { username: '', password: '' };
     }
-    componentDidMount() {
-        return fetch('https://facebook.github.io/react-native/movies.json')
-            .then((response) => response.json())
-            .then((responseJson) => {
-                let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-                this.setState({
-                    isLoading: false,
-                    dataSource: ds.cloneWithRows(responseJson.movies),
-                }, function() {
-                    // do something with new state
-                });
+
+    _login = () => {
+        if(this.state.username && this.state.password)
+            return fetch('http://99.229.227.21:3000/api/authenticate/', {
+                method: 'POST',
+                redirect: 'follow',
+                body: JSON.stringify({
+                    username: this.state.username,
+                    password: this.state.password
+                }),
+            }).then(resp => {
+                return resp.json();
+            }).then(data => {
+                Alert.alert(data.msg);
+                console.log(data);
+            }).catch(err => {
+                console.log(err);
             })
-            .catch((error) => {
-                console.error(error);
-            });
+        else
+            Alert.alert("Please input username and password");
+    };
+
+    componentDidMount() {
+
     }
 
     render() {
         return (
             <Container style={styles.mainContainer}>
                 <View style={styles.statusBar} />
+                <StatusBar barStyle="light-content"/>
 
                 <Image
                     source={require('./../../imgs/banner.png')}
@@ -80,9 +90,8 @@ export default class Login extends Component {
                         </Item>
                     </Form>
 
-                    <Button block info>
+                    <Button block info onPress={this._login}>
                         <Text>Sign in</Text>
-                        {/*onPress={onPressLearnMore}*/}
                     </Button>
                     <View style={styles.gap}/>
                     <Button block success>
