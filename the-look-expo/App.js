@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import HomeScreen from "./src/components/LearnStyle/index";
+import Login from "./src/components/welcome/login";
 import Sandbox from "./src/sandbox";
 
 export default class App extends React.Component {
@@ -27,7 +28,8 @@ export default class App extends React.Component {
         }
         return (
             //<Footer />
-            <HomeScreen />
+            //<HomeScreen />
+            <Login />
             //<Sandbox/>
         )
     }
