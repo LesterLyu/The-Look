@@ -19,6 +19,8 @@ export default class App extends React.Component {
             Ionicons: require("@expo/vector-icons/fonts/Ionicons.ttf")
         });
 
+
+
         this.setState({ isReady: true });
     }
 

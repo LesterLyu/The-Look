@@ -49,7 +49,7 @@ export default class Login extends Component {
             }).then(data => {
                 if(data.success) {
                     // to next page
-                    this.props.navigation.navigate("EditProfile");
+                    this.props.navigation.navigate("HomeScreen");
                 }
                 else {
                     Alert.alert(data.msg);
@@ -80,6 +80,7 @@ export default class Login extends Component {
             }).then(data => {
                 if(data.success) {
                     Alert.alert("Registration success");
+                    this.props.navigation.navigate("EditProfile");
                 }
                 else {
                     Alert.alert("Failed to register, " + data.msg);
