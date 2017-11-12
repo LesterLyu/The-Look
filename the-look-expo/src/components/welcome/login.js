@@ -36,7 +36,7 @@ export default class Login extends Component {
         let headers = new Headers();
         headers.append('Content-Type', 'application/json'); // This one sends body
         if(this.state.username && this.state.password)
-            return fetch('http://99.229.227.21:3000/api/authenticate/', {
+            return fetch('http://lesterlyu.com/api/authenticate/', {
                 method: 'POST',
                 headers: headers,
                 redirect: 'follow',
@@ -66,7 +66,7 @@ export default class Login extends Component {
         let headers = new Headers();
         headers.append('Content-Type', 'application/json'); // This one sends body
         if(this.state.username && this.state.password)
-            return fetch('http://99.229.227.21:3000/api/register/', {
+            return fetch('http://lesterlyu.com/api/register/', {
                 method: 'POST',
                 headers: headers,
                 redirect: 'follow',
