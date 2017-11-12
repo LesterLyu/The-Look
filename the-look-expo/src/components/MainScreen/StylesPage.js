@@ -1,41 +1,52 @@
 import React from "react";
-import { StatusBar, View, Image, StyleSheet, TouchableHighlight, TouchableOpacity } from "react-native";
+import { StatusBar, View, Image } from "react-native";
 import {
-    Body,
     Button,
+    Text,
+    Container,
     Card,
     CardItem,
-    Col,
-    Container,
+    Body,
     Content,
-    Footer,
-    FooterTab,
-    Grid,
     Header,
-    Icon,
-    Input,
-    InputGroup,
-    Item,
-    Label,
-    Left,
-    Right,
-    Tab,
-    Tabs,
-    Text,
-    Thumbnail,
     Title,
+    Left,
+    Icon,
+    Right,
+    DeckSwiper,
 } from "native-base";
 
-const s1 = require("../../imgs/corporate.jpg");
-const s2 = require("../../imgs/hiphop.jpg");
-const s3 = require("../../imgs/jock.jpg");
-const s4 = require("../../imgs/popstar.jpg");
-const s5 = require("../../imgs/rockstar.jpg");
-const s6 = require("../../imgs/throwback.jpg");
+const card1 = require("../../imgs/1.jpeg");
+const card2 = require("../../imgs/2.jpeg");
+const card3 = require("../../imgs/3.jpeg");
+const card4 = require("../../imgs/4.jpeg");
 
-export default class StylesPage extends React.Component {
+const cards = [
+    {
+        text: "1",
+        name: "1",
+        image: card1
+    },
+    {
+        text: "2",
+        name: "2",
+        image: card2
+    },
+    {
+        text: "3",
+        name: "3",
+        image: card3
+    },
+    {
+        text: "4",
+        name: "4",
+        image: card4
+    },
+];
+
+export default class LearnMe extends React.Component {
+
     render() {
-        const {navigate} = this.props.navigation;
         return (
             <Container>
                 <Header>
@@ -44,70 +55,48 @@ export default class StylesPage extends React.Component {
                             transparent
                             onPress={() => this.props.navigation.navigate("DrawerOpen")}
                         >
-                            <Icon name="menu"/>
+                            <Icon name="menu" />
                         </Button>
                     </Left>
                     <Body>
-                    <Title>Styles</Title>
+                    <Title>Learn Me</Title>
                     </Body>
-                    <Right/>
+                    <Right />
                 </Header>
-                <Content padder>
-                    <Text style={{fontSize: 30, textAlign: 'left'}}>Styles for you</Text>
-                    <Grid>
-                        <Col>
-                            <TouchableOpacity onPress={() => this.props.navigation.navigate("DetailsPage")}>
-                                <Image source={s1} style={styles.styleImage}/>
-                            </TouchableOpacity>
-                            <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
-                        </Col>
-                    </Grid>
-                    <Grid>
-                        <Col>
-                            <Image source={s2} style={styles.styleImage}/>
-                            <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
-                        </Col>
-                    </Grid>
-                    <Grid>
-                        <Col>
-                            <Image source={s3} style={styles.styleImage}/>
-                            <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
-                        </Col>
-                    </Grid>
-                    <Grid>
-                        <Col>
-                            <Image source={s4} style={styles.styleImage}/>
-                            <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
-                        </Col>
-                    </Grid>
-                    <Grid>
-                        <Col>
-                            <Image source={s5} style={styles.styleImage}/>
-                            <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
-                        </Col>
-                    </Grid>
-                    <Grid>
-                        <Col>
-                            <Image source={s6} style={styles.styleImage}/>
-                            <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
-                        </Col>
-                    </Grid>
+                <View style={{flex: 1, padding: 10}}>
+                    <DeckSwiper ref={(mr) => this._deckSwiper = mr}
+                                dataSource={cards}
+                                looping={false}
+                                renderEmpty={() =>
+                                    <View style={{alignSelf: 'center'}}>
+                                        <Button full rounded light
+                                                style={{ marginTop: 10 }}
+                                                onPress={() => this.props.navigation.navigate("Home")} >
+                                            <Text>Check out my styles!</Text>
+                                        </Button>
+                                    </View>}
+                                renderItem={item =>
+                                    <Card style={{elevation: 2}}>
+                                        <CardItem cardBody>
+                                            <Image style={{resizeMode: "cover", width: null, flex: 1, height: 450}} source={item.image} />
+                                        </CardItem>
+                                    </Card>}
+                    />
+                </View>
 
-                </Content>
+
+                <View style={{flexDirection: "row", flex: 2, position: 'relative', left: 0, right: 0, justifyContent: 'space-between', padding: 10, paddingTop: 430}}>
+                    <Button iconLeft rounded danger large onPress={() => this._deckSwiper._root.swipeLeft()}>
+                        <Icon name="md-thumbs-down" />
+                        <Text>Dislike</Text>
+                    </Button>
+                    <Button iconRight rounded success large onPress={() => this._deckSwiper._root.swipeRight()}>
+                        <Text>Like</Text>
+                        <Icon name="md-thumbs-up" />
+                    </Button>
+                </View>
+
             </Container>
         );
     }
 }
-
-
-const styles = StyleSheet.create({
-    styleImage:{
-        flex: 1,
-        width: null,
-        resizeMode: 'cover',
-        height: 450,
-        margin: 5,
-        borderRadius: 20,
-        justifyContent: 'center'
-    }
-});

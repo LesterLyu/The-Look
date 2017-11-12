@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import HomeScreen from "./src/components/LearnStyle/index";
+import Welcome from "./src/components/welcome/index";
 import Sandbox from "./src/sandbox";
 
 export default class App extends React.Component {
@@ -18,6 +19,8 @@ export default class App extends React.Component {
             Ionicons: require("@expo/vector-icons/fonts/Ionicons.ttf")
         });
 
+
+
         this.setState({ isReady: true });
     }
 
@@ -27,7 +30,8 @@ export default class App extends React.Component {
         }
         return (
             //<Footer />
-            <HomeScreen />
+            //<HomeScreen />
+            <Welcome />
             //<Sandbox/>
         )
     }
