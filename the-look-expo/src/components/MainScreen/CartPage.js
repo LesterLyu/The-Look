@@ -35,18 +35,21 @@ const datas = [
         img: thumbnail,
         text: "Outfit1",
         note: "Outfit1 description",
+        quantity: 2,
         price: "4.99"
     },
     {
         img: thumbnail,
         text: "Outfit2",
         note: "Outfit2 description",
+        quantity: 4,
         price: "10.99"
     },
     {
         img: thumbnail2,
         text: "Outfit3",
         note: "Outfit3 description",
+        quantity: 4,
         price: "4.99"
     },
 ];
@@ -113,9 +116,15 @@ class MultiListSwipe extends Component {
                                 >{data.price}$</Text>
                                 </Body>
                                 <Right>
-                                    <Button>
-                                        <Text>View</Text>
-                                    </Button>
+                                  <Left>
+                                    <Button style={{height: 18}} info><Text> + </Text></Button>
+                                  </Left>
+                                  <Body>
+                                    <Text>{data.quantity}</Text>
+                                  </Body>
+                                  <Right>
+                                    <Button style={{height: 18}} info><Text> - </Text></Button>
+                                  </Right>
                                 </Right>
                             </ListItem>}
                         renderLeftHiddenRow={data => null}
