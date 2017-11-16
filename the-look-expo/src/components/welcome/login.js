@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Container, Header, Content, Form, Item, Input, Label, Button, Text } from 'native-base';
 import {StyleSheet, View, Image, ListView, StatusBar, Alert} from 'react-native';
 import { Constants } from 'expo';
-import Profile from "./EditProfile";
 
 const styles = StyleSheet.create({
     statusBar: {
@@ -49,7 +48,7 @@ export default class Login extends Component {
             }).then(data => {
                 if(data.success) {
                     // to next page
-                    this.props.navigation.navigate("HomeScreen");
+                    this.props.navigation.navigate("HomeScreen", {from: "login"});
                 }
                 else {
                     Alert.alert(data.msg);

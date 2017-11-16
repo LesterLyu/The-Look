@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Platform, StatusBar } from 'react-native';
-import EditProfile from "./EditProfile.js";
+import EditProfile from "../ProfilePage/EditProfile.js";
 import Login from "./login.js";
 import { StackNavigator } from "react-navigation";
 import HomeScreen from "../LearnStyle/index";

@@ -58,7 +58,7 @@ export default class EditProfile extends React.Component {
         )
     });
 
-    constructor() {
+    constructor(params) {
         super();
         this.state = {
             belly: 0,
@@ -68,6 +68,12 @@ export default class EditProfile extends React.Component {
             neck: 0,
             body: 0
         };
+        if(params.from === 'login') {
+            this.state.next = 'HomeScreen';
+        }
+        else if(params.from === 'profilePage'){
+            this.state.next = 'ProfilePage';
+        }
     }
 
     render() {
