@@ -29,7 +29,7 @@ export default class Login extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { username: '', password: '' };
+        this.state = { username: 'a', password: 'a' };
     }
 
     _login = () => {
