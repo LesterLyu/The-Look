@@ -37,7 +37,7 @@ const bellyImg = [require("../../imgs/profile/belly/belly-0.png"),
     require("../../imgs/profile/belly/belly-1.png"),
     require("../../imgs/profile/belly/belly-2.png")];
 
-const shoulderShape = ["RECTANGLE SHOULDER", "ROUND SHOULDER"];
+const shoulderShape = ["RECTANGLE\nSHOULDER", "ROUND\nSHOULDER"];
 const shoulderShapeImg = [require("../../imgs/profile/shoulderShape/shoulder-0.png"),
     require("../../imgs/profile/shoulderShape/shoulder-1.png")];
 
@@ -52,7 +52,7 @@ const legTorsoRatioImg = [require("../../imgs/profile/legTorsoRatio/ratio-0.png"
     require("../../imgs/profile/legTorsoRatio/ratio-1.png"),
     require("../../imgs/profile/legTorsoRatio/ratio-2.png")];
 
-const bodyShape = ["SKINNY BODY", "NORMAL BODY", "MUSCULAR BODY", "CHUBBY BODY"];
+const bodyShape = ["SKINNY BODY", "NORMAL\nBODY", "MUSCULAR\nBODY", "CHUBBY BODY"];
 const bodyShapeImg = [require("../../imgs/profile/bodyShape/shape-0.png"),
     require("../../imgs/profile/bodyShape/shape-1.png"),
     require("../../imgs/profile/bodyShape/shape-2.png"),
@@ -65,7 +65,7 @@ const atLengthImg = [require("../../imgs/profile/atLength/at-0.png"),
 
 const height = [">188\nCM", "175-188\nCM", "<175\nCM"];
 
-const neckType = ["NORMAL NECK", "LONG NECK", "SHORT NECK"];
+const neckType = ["NORMAL\nNECK", "LONG NECK", "SHORT NECK"];
 const neckTypeImg = [require("../../imgs/profile/neckType/neck-0.png"),
     require("../../imgs/profile/neckType/neck-1.png"),
     require("../../imgs/profile/neckType/neck-2.png")];
@@ -88,18 +88,19 @@ class ProfileButton extends React.Component {
     render() {
         return (
             <TouchableOpacity
-                style={styles.boxNone}
+                style={styles.box}
                 onPress={ () => {
                     this.setState({currentIndex: (this.state.currentIndex + 1) % this.state.descriptions.length})
                 }} >
 
                 { this.state.type === 'image' &&
                     <Image style={styles.image} source={this.state.images[this.state.currentIndex]}>
-                        <Text style={styles.text}>
-                            { this.state.descriptions[this.state.currentIndex] }
-                        </Text>
                     </Image>
                 }
+                { this.state.type === 'image' &&
+                    <Text style={styles.text}>
+                        { this.state.descriptions[this.state.currentIndex] }
+                    </Text>}
                 { this.state.type !== 'image' &&
                     <Text style={styles.textOnly}>
                         { this.state.descriptions[this.state.currentIndex] }
@@ -192,7 +193,7 @@ export default class EditProfile extends React.Component {
                             <ProfileButton type={'image'} descriptions={atLength} images={atLengthImg}/>
                         </Col>
                         <Col>
-                            <View style={styles.boxNone}/>
+                            <View style={styles.boxEmpty}/>
                         </Col>
                     </Grid>
                     <Grid>
@@ -210,39 +211,31 @@ export default class EditProfile extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    box1:{
+    boxEmpty:{
         flex: 1,
         margin: 5,
         borderRadius: 20,
-        backgroundColor: '#3b5998',
         height: 180,
-        //alignItems: 'center',
         justifyContent: 'center'
     },
-    box2: {
+    box:{
         flex: 1,
         margin: 5,
         borderRadius: 20,
-        backgroundColor: '#0288c9',
+        overflow: 'hidden',
         height: 180,
-        //alignItems: 'center',
-        justifyContent: 'center'
-    },
-    boxNone:{
-        flex: 1,
-        margin: 5,
-        borderRadius: 20,
-        height: 180,
-        //alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: "#D7D9DB",
     },
     text: {
         fontSize: 25,
         fontWeight: 'bold',
-        textAlign: 'center',
-        textAlignVertical: 'bottom',
+        justifyContent: 'center',
+        alignItems: 'center',
         color: "#ffffff",
-        flex: 1
+        bottom: 0,
+        position: 'absolute',
     },
     textOnly: {
         fontSize: 25,
@@ -253,8 +246,8 @@ const styles = StyleSheet.create({
     },
     image: {
         flex: 1,
-        width: null,
-        height: null,
+        width: 180,
+        height: 180,
         borderRadius: 20,
     },
 });
