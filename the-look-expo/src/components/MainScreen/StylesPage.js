@@ -108,20 +108,18 @@ export default class LearnMe extends React.Component {
                                 renderItem={item =>
                                     <Card style={{elevation: 2}}>
                                         <CardItem cardBody>
-                                            <Image style={{resizeMode: "cover", width: null, flex: 1, height: 450}} source={item.image} />
+                                            <Image style={{resizeMode: "cover", width: null, flexDirection:"column",flex: 1, height:400}} source={item.image} />
                                         </CardItem>
                                     </Card>}
                     />
                 </View>
 
 
-                <View style={{flexDirection: "row", flex: 2, position: 'relative', left: 0, right: 0, justifyContent: 'space-between', padding: 10, paddingTop: 430}}>
+                <View style={{flexDirection: "row", flex: 0.8, position: 'relative', left: 5, right: 5, justifyContent: 'space-between', padding: 10, paddingBottom: 30}}>
                     <Button iconLeft rounded danger large onPress={() => this._deckSwiper._root.swipeLeft()}>
                         <Icon name="md-thumbs-down" />
-                        <Text>Dislike</Text>
                     </Button>
                     <Button iconRight rounded success large onPress={() => this._deckSwiper._root.swipeRight()}>
-                        <Text>Like</Text>
                         <Icon name="md-thumbs-up" />
                     </Button>
                 </View>

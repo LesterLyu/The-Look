@@ -44,10 +44,8 @@ class ProfilePage extends React.Component {
         const { navigate } = this.props.navigation;
         return (
             <Content padder style={{backgroundColor: "#ffffff"}}>
-                <Text style={{fontSize: 30, textAlign: 'left'}}>Your Profile</Text>
 
                 <Thumbnail style={{alignSelf: 'center', marginTop: 30}} large source={avatar} />
-
                 <View style={{alignItems: 'center', flex: 1, flexDirection: 'column'}}>
                     <View>
                         <Text>Casual</Text>
@@ -67,12 +65,17 @@ class ProfilePage extends React.Component {
                     </View>
                 </View>
 
+                <Button full rounded light
+                        style={{ marginTop: 10 }}
+                >
+                    <Text>Clean style data</Text>
+                </Button>
 
                 <Button full rounded light
                         style={{ marginTop: 10 }}
                         onPress={() => this.props.navigation.navigate("EditProfile", {from: "profilePage"})}
                 >
-                    <Text>Edit Body Profile</Text>
+                    <Text>Body profile</Text>
                 </Button>
 
 

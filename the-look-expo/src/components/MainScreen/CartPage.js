@@ -40,14 +40,14 @@ const datas = [
     },
     {
         img: thumbnail,
-        text: "Morbi laoreet leo vita",
+        text: "Morbi laoreet leo",
         note: "Proin ornare ante erat, efficitur molestie metus venenatis eget.",
         quantity: 4,
         price: "50.99"
     },
     {
         img: thumbnail2,
-        text: "Sed viverra ipsum",
+        text: "Sed viverra",
         note: "Etiam quis gravida justo, a lobortis risus. Maecenas eu dui et arcu lobortis suscipit. ",
         quantity: 4,
         price: "84.99"
@@ -62,6 +62,7 @@ class MultiListSwipe extends Component {
         this.state = {
             basic: true,
             listViewData: datas,
+            dataSource: this.ds.cloneWithRows(datas)
         };
     }
 
@@ -72,14 +73,14 @@ class MultiListSwipe extends Component {
         this.setState({listViewData: newData});
     }
 
+
     closeRow(secId, rowId, rowMap) {
         rowMap[`${secId}${rowId}`].props.closeRow();
     }
 
     render() {
-
-        const {navigate} = this.props.navigation;
-        const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+        //const {navigate} = this.props.navigation;
+        //const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
         return (
             <Container style={styles.container}>
                 <Header>
@@ -92,39 +93,35 @@ class MultiListSwipe extends Component {
                         </Button>
                     </Left>
                     <Body>
-                    <Title>Shopping Cart</Title>
+                    <Title>My Cart</Title>
                     </Body>
                     <Right/>
-
                 </Header>
 
                 <Content>
-                    <List
-                        dataSource={this.ds.cloneWithRows(this.state.listViewData)}
+                    <ListView
+                        dataSource={this.state.dataSource}
                         renderRow={(data, secId, rowId, rowMap) =>
-                            <ListItem thumbnail>
-                                <Left>
-                                    <Thumbnail square size={110} source={data.img}/>
+                            <ListItem thumbnail onPress={() => this.props.navigation.navigate("ProductPage")}>
+                                <Left style={{flex:0.2}}>
+                                    <Thumbnail square size={110} source={data.img} />
                                 </Left>
-                                <Body>
-                                <H3 style={{color: 'blue', textDecorationLine: 'underline'}}
-                                    onPress={() => this.props.navigation.navigate("ProductPage")}
-                                >{data.text}</H3>
-                                <Text numberOfLines={1} onPress={_ => this.closeRow(secId, rowId, rowMap)}
-                                      note>{data.note}</Text>
-                                <Text numberOfLines={1} onPress={_ => this.closeRow(secId, rowId, rowMap)}
-                                      style={{color: '#F00'}} note
+                                <Body style={{flex:0.6}}>
+                                <Text style={{fontSize:14}}
+                                >{data.text}</Text>
+                                <Text numberOfLines={1}
+                                      style={{fontSize:12}}
                                 >{data.price}$</Text>
                                 </Body>
-                                <Right>
+                                <Right style={{flex:0.2}}>
                                   <Left>
-                                    <Button style={{height: 18}} info><Text> + </Text></Button>
+                                    <Button block style={{height: 18}}><Text>+</Text></Button>
                                   </Left>
                                   <Body>
                                     <Text>{data.quantity}</Text>
                                   </Body>
                                   <Right>
-                                    <Button style={{height: 18}} info><Text> - </Text></Button>
+                                    <Button block style={{height: 18}} info><Text>-</Text></Button>
                                   </Right>
                                 </Right>
                             </ListItem>}
@@ -145,9 +142,8 @@ class MultiListSwipe extends Component {
                             </Button>}
                         rightOpenValue={-75}
                     />
-
-                    <Button block danger style={styles.mb}><Text>Checkout</Text></Button>
                 </Content>
+                <Button block style={{backgroundColor:"black"}}><Text>Checkout</Text></Button>
             </Container>
         );
     }

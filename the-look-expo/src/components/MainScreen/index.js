@@ -24,6 +24,18 @@ export default (MainScreenNavigator = TabNavigator(
         scrollEnabled: true,
         backBehavior: false,
         tabBarPosition: "bottom",
+
+        tabBarOptions: {
+            activeTintColor: '#e91e63',
+            labelStyle: {
+                fontSize: 12,
+            },
+            style: {
+                backgroundColor: 'blue',
+            },
+        },
+
+
         tabBarComponent: props => {
             return (
                 <Footer>
@@ -33,7 +45,7 @@ export default (MainScreenNavigator = TabNavigator(
                             active={props.navigationState.index === 0}
                             onPress={() => props.navigation.navigate("StylesPage")}
                         >
-                            <Icon name="body"/>
+                            <Icon name="shirt"/>
                         </Button>
                         <Button
                             vertical
@@ -59,6 +71,7 @@ export default (MainScreenNavigator = TabNavigator(
                     </FooterTab>
                 </Footer>
             );
+
         }
     }
 ));
