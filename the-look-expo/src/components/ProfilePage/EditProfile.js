@@ -130,8 +130,18 @@ export default class EditProfile extends React.Component {
         )
     });
 
+    back = () => {
+        if(this.state.from === 'login') {
+            this.props.navigation.navigate('HomeScreen');
+        }
+        else
+            this.props.navigation.goBack();
+
+    };
+
     constructor(params) {
         super();
+        const {state} = params.navigation;
         this.state = {
             belly: 0,
             shoulder: 0,
@@ -141,14 +151,10 @@ export default class EditProfile extends React.Component {
             body: 0,
             skinColor: 0,
             legTorsoRatio: 0,
-            atLength: 0
+            atLength: 0,
+            from: state.params.from,
         };
-        if(params.from === 'login') {
-            this.state.next = 'HomeScreen';
-        }
-        else if(params.from === 'profilePage'){
-            this.state.next = 'ProfilePage';
-        }
+
     }
 
     render() {
@@ -199,7 +205,7 @@ export default class EditProfile extends React.Component {
                     <Grid>
                         <Col>
                             <Button full rounded light
-                                    style={{ marginTop: 10, marginBottom: 20}} onPress={() => this.props.navigation.navigate("ProfilePage")}>
+                                    style={{ marginTop: 10, marginBottom: 20}} onPress={this.back}>
                                 <Text>THAT'S ME</Text>
                             </Button>
                         </Col>
