@@ -236,6 +236,7 @@ const styles = StyleSheet.create({
         color: "#ffffff",
         bottom: 0,
         position: 'absolute',
+        backgroundColor: 'transparent',
     },
     textOnly: {
         fontSize: 25,
