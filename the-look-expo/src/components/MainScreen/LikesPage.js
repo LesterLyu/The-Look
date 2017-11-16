@@ -106,21 +106,23 @@ export default class LikesPage extends React.Component {
                 <Right/>
               </Header>
               <Content padder>
-                <Text style={{fontSize: 30, textAlign: 'left'}}>Styles for you</Text>
                 <Grid>
                   <Col>
+
                     <TouchableOpacity onPress={() => this.props.navigation.navigate("DetailsPage")}>
                       <Image source={s1} style={styles.styleImage}/>
                     </TouchableOpacity>
                     <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
                   </Col>
                 </Grid>
+
                 <Grid>
                   <Col>
                     <Image source={s2} style={styles.styleImage}/>
                     <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
                   </Col>
                 </Grid>
+
                 <Grid>
                   <Col>
                     <Image source={s3} style={styles.styleImage}/>
@@ -155,10 +157,11 @@ export default class LikesPage extends React.Component {
 
 const styles = StyleSheet.create({
     styleImage:{
-        flex: 1,
+        flexDirection:"column",
+        flex: 0.3,
         width: null,
         resizeMode: 'cover',
-        height: 450,
+        height: 200,
         margin: 5,
         borderRadius: 20,
         justifyContent: 'center'
