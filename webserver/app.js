@@ -11,6 +11,8 @@ let index = require('./routes/index');
 let user = require('./routes/user');
 let register = require('./routes/register');
 let authenticate = require('./routes/authenticate');
+let item = require('./routes/item');
+let suit = require('./routes/suit');
 
 let app = express();
 
@@ -83,6 +85,8 @@ app.use(function(req, res, next) {
 // ---------------------------------------------------------
 
 app.use('/api/user', user);
+app.use('/api/item/item/', item);
+app.use('/api/item/suit/', suit);
 
 
 
