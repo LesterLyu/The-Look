@@ -20,6 +20,9 @@ export default (MainScreenNavigator = TabNavigator(
         DetailsPage: {screen: DetailsPage}
     },
     {
+        swipeEnabled:false,
+        scrollEnabled: true,
+        backBehavior: false,
         tabBarPosition: "bottom",
         tabBarComponent: props => {
             return (
@@ -31,7 +34,6 @@ export default (MainScreenNavigator = TabNavigator(
                             onPress={() => props.navigation.navigate("StylesPage")}
                         >
                             <Icon name="body"/>
-                            <Text>Styles</Text>
                         </Button>
                         <Button
                             vertical
@@ -39,7 +41,6 @@ export default (MainScreenNavigator = TabNavigator(
                             onPress={() => props.navigation.navigate("LikesPage")}
                         >
                             <Icon name="heart"/>
-                            <Text>Likes</Text>
                         </Button>
                         <Button
                             vertical
@@ -47,7 +48,6 @@ export default (MainScreenNavigator = TabNavigator(
                             onPress={() => props.navigation.navigate("CartPage")}
                         >
                             <Icon name="cart"/>
-                            <Text>Cart</Text>
                         </Button>
                         <Button
                             vertical
@@ -55,7 +55,6 @@ export default (MainScreenNavigator = TabNavigator(
                             onPress={() => props.navigation.navigate("ProfilePage")}
                         >
                             <Icon name="person"/>
-                            <Text>Profile</Text>
                         </Button>
                     </FooterTab>
                 </Footer>

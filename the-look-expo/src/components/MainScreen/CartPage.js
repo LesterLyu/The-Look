@@ -33,24 +33,24 @@ const thumbnail2 = require("../../imgs/2.jpeg");
 const datas = [
     {
         img: thumbnail,
-        text: "Outfit1",
-        note: "Outfit1 description",
+        text: "Vivamus",
+        note: "Lorem ipsum dolor sit amet.",
         quantity: 2,
-        price: "4.99"
+        price: "59.99"
     },
     {
         img: thumbnail,
-        text: "Outfit2",
-        note: "Outfit2 description",
+        text: "Morbi laoreet leo vita",
+        note: "Proin ornare ante erat, efficitur molestie metus venenatis eget.",
         quantity: 4,
-        price: "10.99"
+        price: "50.99"
     },
     {
         img: thumbnail2,
-        text: "Outfit3",
-        note: "Outfit3 description",
+        text: "Sed viverra ipsum",
+        note: "Etiam quis gravida justo, a lobortis risus. Maecenas eu dui et arcu lobortis suscipit. ",
         quantity: 4,
-        price: "4.99"
+        price: "84.99"
     },
 ];
 
@@ -77,6 +77,7 @@ class MultiListSwipe extends Component {
     }
 
     render() {
+
         const {navigate} = this.props.navigation;
         const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
         return (
