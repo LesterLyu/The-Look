@@ -37,10 +37,7 @@ export default class Bananas extends Component {
                     <View style={styles.product}>
                         <Text style={{fontSize: 30, marginTop: 10}}>Vans Classic Sneaker</Text>
                         <Text style={{fontSize: 20, marginTop: 10}}>$ 118</Text>
-                        <Text style={{fontSize: 20, marginTop: 10, marginRight: 15}}>Vans The Old Skool, Vans classic
-                            skate shoe and the first to bare the iconic side stripe, has a low-top lace-up silhouette
-                            with a durable suede and canvas upper with padded tongue and lining and Vans signature
-                            Waffle Outsole.</Text>
+                        <Text style={{fontSize: 20, marginTop: 10, marginRight: 15}}>Our customers asked for a lighter, trimmer asymmetrical leather biker jacket and we answered with the Perfecto model 626. As easygoing as a second skin yet incredibly durable, this 26” long motorcycle jacket was designed for warmer weather riding or casual trouble—your choice. </Text>
                     </View>
 
                 </ScrollView>
