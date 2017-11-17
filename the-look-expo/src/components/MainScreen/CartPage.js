@@ -30,40 +30,49 @@ const image3 = require("../../imgs/styles/6/Schott.jpg");
 const image4 = require("../../imgs/styles/6/Supreme-Plain-Logo-Shirt.png");
 const image5 = require("../../imgs/styles/6/Zara-Leather-Jacket.jpg");
 
-
 let data = [
     {
         id: 1,
-        image: image1,
-        name: 'Uniqlo Black Shirt',
-        price: 15,
-        amountTaken: 1
-    }, {
-        id: 2,
-        image: image2,
-        name: 'Levis 501',
-        price: 398,
-        amountTaken: 1
-    }, {
-        id: 3,
-        image: image3,
-        name: 'Schott',
-        price: 78,
-        amountTaken: 1
-    }, {
-        id: 4,
-        image: image4,
-        name: 'Supreme Plain Logo Shirt',
-        price: 780,
-        amountTaken: 1
-    }, {
-        id: 5,
         image: image5,
         name: 'Zara Leather Jacket',
-        price: 6800,
+        price: 200,
         amountTaken: 1
     },
-];
+]
+
+// let data = [
+//     {
+//         id: 1,
+//         image: image1,
+//         name: 'Uniqlo Black Shirt',
+//         price: 15,
+//         amountTaken: 1
+//     }, {
+//         id: 2,
+//         image: image2,
+//         name: 'Levis 501',
+//         price: 398,
+//         amountTaken: 1
+//     }, {
+//         id: 3,
+//         image: image3,
+//         name: 'Schott',
+//         price: 78,
+//         amountTaken: 1
+//     }, {
+//         id: 4,
+//         image: image4,
+//         name: 'Supreme Plain Logo Shirt',
+//         price: 780,
+//         amountTaken: 1
+//     }, {
+//         id: 5,
+//         image: image5,
+//         name: 'Zara Leather Jacket',
+//         price: 6800,
+//         amountTaken: 1
+//     },
+// ];
 
 
 class CartPage extends Component {
