@@ -32,13 +32,6 @@ export default class Bananas extends Component {
 
         return (
             <Container>
-                <Header>
-
-                    <Body>
-                    <Title>Product</Title>
-                    </Body>
-                </Header>
-
                 <ScrollView style={styles.scroll} contentContainerStyle={styles.center}>
                     <Image source={vans} style={{width: 300, height: 300, resizeMode: 'contain'}}/>
                     <View style={styles.product}>

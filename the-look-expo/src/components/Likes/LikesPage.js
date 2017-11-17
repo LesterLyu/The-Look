@@ -44,10 +44,9 @@ class StyleSection extends React.Component {
     }
 
     render() {
-
         return (
             <View>
-                <TouchableOpacity onPress={() => this.state.navigation.navigate("suitDetailsPage")}>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate("SuitDetailsPage")}>
                     <Image source={this.state.image} style={styles.styleImage} navigation={this.props.navigation}/>
                 </TouchableOpacity>
                 <Text style={{textAlign: 'center', fontSize: 20}}>{this.state.descriptions}</Text>

@@ -10,7 +10,9 @@ import {Button, Footer, FooterTab, Icon, Item, Label, Text} from "native-base";
 
 export default (MainScreenNavigator = TabNavigator(
     {
-        StylesPage: {screen: StylesPage},
+        StylesPage: {
+            screen: StylesPage,
+        },
         LikesPage: {screen: LikesPage},
         CartPage: {screen: CartPage},
         ProfilePage: {screen: ProfilePage},
@@ -18,7 +20,7 @@ export default (MainScreenNavigator = TabNavigator(
     {
         swipeEnabled:false,
         scrollEnabled: true,
-        backBehavior: false,
+        animationEnabled: true,
         tabBarPosition: "bottom",
 
         tabBarOptions: {

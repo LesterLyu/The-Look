@@ -80,7 +80,6 @@ export default class LearnMe extends React.Component {
         return (
             <Container>
                 <Header>
-
                     <Body>
                     <Title>Styles</Title>
                     </Body>
