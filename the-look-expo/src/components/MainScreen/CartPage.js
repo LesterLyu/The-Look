@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, FlatList, Image, TouchableWithoutFeedback } from 'react-native';
+import { Text, View, FlatList, Image, TouchableWithoutFeedback, Alert } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import {
@@ -119,6 +119,9 @@ class CartPage extends Component {
         );
     }
 
+    _checkout = () => {
+        Alert.alert("Your order has been placed!");
+    };
 
     render() {
         return (
@@ -136,8 +139,7 @@ class CartPage extends Component {
                     keyExtractor={(item) => item.id}
                 />
 
-                <Button block dark><Text style={{color: '#ffffff'}}
-                onPress={() => {Alert.alert("Checkout Success")}}>Checkout</Text></Button>
+                <Button block dark onPress={this._checkout}><Text style={{color: '#ffffff'}}>Checkout</Text></Button>
             </Container>
         );
     }
