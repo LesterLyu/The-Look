@@ -39,7 +39,6 @@ class StyleSection extends React.Component {
         this.state = {
             descriptions: props.descriptions, // e.g. ["NO BELLY", "THIN BELLY", "FAT BELLY"]
             image: props.image,
-            navigation: props.navigation
         };
     }
 

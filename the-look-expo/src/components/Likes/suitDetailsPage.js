@@ -1,6 +1,6 @@
-
-import React, {Component} from 'react';
-import {ListView} from 'react-native';
+import React, { Component } from 'react';
+import { Text, View, FlatList, Image, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import {
     Body,
@@ -14,98 +14,148 @@ import {
     H2,
     H3,
     Header,
-    Icon,
     Left,
     List,
-    ListItem,
     Right,
-    Text,
     Thumbnail,
     Title,
-    View
 } from 'native-base';
 
-import styles from '../MainScreen/styles';
 
 const thumbnail = require("../../imgs/1.jpeg");
 const thumbnail2 = require("../../imgs/2.jpeg");
 
 
-const datas = [
+const data = [
     {
+        id: 1,
         img: thumbnail,
-        text: "Vivamus",
+        name: "Vivamus",
         note: "Lorem ipsum dolor sit amet.",
         price: "59.99"
     },
     {
+        id: 2,
         img: thumbnail,
-        text: "Morbi laoreet leo",
+        name: "Morbi laoreet leo",
         note: "Proin ornare ante erat, efficitur molestie metus venenatis eget.",
         price: "50.99"
     },
     {
+        id: 3,
         img: thumbnail2,
-        text: "Sed viverra",
+        name: "Sed viverra",
         note: "Etiam quis gravida justo, a lobortis risus. Maecenas eu dui et arcu lobortis suscipit. ",
         price: "84.99"
     },
 ];
 
 
-class SuitDetailPage extends Component {
+class ListItem extends React.PureComponent {
+    _onPress = () => {
+        this.state.navigation.navigate('ItemDetailPage');
+    };
+
     constructor(props) {
-        super(props);
-        this.ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+        super();
         this.state = {
-            basic: true,
-            listViewData: datas,
-            dataSource: this.ds.cloneWithRows(datas)
+            index: props.index,
+            item: props.item,
+            navigation: props.navigation,
         };
-    }
 
-    deleteRow(secId, rowId, rowMap) {
-        rowMap[`${secId}${rowId}`].props.closeRow();
-        const newData = [...this.state.listViewData];
-        newData.splice(rowId, 1);
-        this.setState({listViewData: newData});
-    }
-
-
-    closeRow(secId, rowId, rowMap) {
-        rowMap[`${secId}${rowId}`].props.closeRow();
+        if(props.type === 'image') {
+            this.state.images = props.images
+        }
     }
 
     render() {
-        //const {navigate} = this.props.navigation;
-        //const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-
         return (
-            <Container style={styles.container}>
+            <TouchableOpacity onPress={this._onPress()}>
+                <View style={(this.state.index + 1 === data.length) ? styles.lastItemStyle : styles.containerStyle}>
+                    <Image source={this.state.item.img} style={styles.imageStyle}/>
+                    <View style={styles.textStyle}>
+                        <Text style={{ color: '#2e2f30' }}>{this.state.item.name}</Text>
+                        <View style={styles.priceStyle}>
+                            <Text style={{ color: '#2e2f30', fontSize: 12 }}>${this.state.item.price}</Text>
+                        </View>
+                    </View>
+                </View>
+            </TouchableOpacity>
+        )
+    }
+}
 
-                <Content>
-                    <ListView
-                        dataSource={this.state.dataSource}
-                        renderRow={(data, secId, rowId, rowMap) =>
-                            <ListItem thumbnail onPress={() => this.props.navigation.navigate("ItemDetailPage")}>
-                                <Left style={{flex:0.2}}>
-                                    <Thumbnail square size={110} source={data.img} />
-                                </Left>
-                                <Body style={{flex:1}}>
 
-                                <Text style={{fontSize:14}}
-                                >{data.text}</Text>
-                                <Text numberOfLines={1}
-                                      style={{fontSize:12}}
-                                >{data.price}$</Text>
-                                </Body>
-                            </ListItem>}
-                        rightOpenValue={-75}
-                    />
-                </Content>
+class SuitDetailPage extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    _showDetail = () => {
+        console.log("pressed");
+        this.props.navigation.navigate('ItemDetailPage');
+    };
+
+    _renderItem({ item, index }) {
+        return (
+            <ListItem item={item} index={index} navigation={this.props.navigation}/>
+        );
+    }
+
+    render() {
+        return (
+            <Container>
+                <FlatList
+                    data={data}
+                    renderItem={this._renderItem}
+                    keyExtractor={(item) => item.id}
+                />
             </Container>
         );
     }
 }
+
+
+const styles = {
+    containerStyle: {
+        flexDirection: 'row',
+        flex: 1,
+        borderBottomWidth: 1,
+        borderColor: '#e2e2e2',
+        padding: 10,
+        paddingLeft: 15,
+        backgroundColor: '#fff'
+    },
+    lastItemStyle: {
+        flexDirection: 'row',
+        flex: 1,
+        padding: 10,
+        paddingLeft: 15,
+        backgroundColor: '#fff'
+    },
+    imageStyle: {
+        width: 50,
+        height: 50,
+        marginRight: 20
+    },
+    textStyle: {
+        flex: 2,
+        justifyContent: 'center'
+    },
+    priceStyle: {
+        backgroundColor: '#ddd',
+        width: 60,
+        alignItems: 'center',
+        marginTop: 3,
+        borderRadius: 3
+    },
+    counterStyle: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center'
+    }
+};
 
 export default SuitDetailPage;
