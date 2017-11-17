@@ -75,11 +75,6 @@ let data = [
 // ];
 
 class CartPage extends Component {
-
-    _onPressItem = () => {
-        console.log("hi");
-    };
-
     _renderItem({ item, index }) {
         const {
             containerStyle,
@@ -90,39 +85,40 @@ class CartPage extends Component {
             priceStyle } = styles;
 
         return (
-            <View style={(index + 1 === data.length) ? lastItemStyle : containerStyle}
-                    onPress={() => {console.log("??")}}>
-                <Image source={item.image} style={imageStyle}/>
-                <View style={textStyle}>
-                    <Text style={{ color: '#2e2f30' }}>{item.name}</Text>
-                    <View style={priceStyle}>
-                        <Text style={{ color: '#2e2f30', fontSize: 12 }}>${item.price}</Text>
+            <TouchableWithoutFeedback>
+                <View style={(index + 1 === data.length) ? lastItemStyle : containerStyle}>
+                    <Image source={item.image} style={imageStyle}/>
+                    <View style={textStyle}>
+                        <Text style={{ color: '#2e2f30' }}>{item.name}</Text>
+                        <View style={priceStyle}>
+                            <Text style={{ color: '#2e2f30', fontSize: 12 }}>${item.price}</Text>
+                        </View>
+                    </View>
+
+                    <View style={counterStyle}>
+                        <Icon.Button
+                            name="ios-remove"
+                            size={25}
+                            color='#fff'
+                            backgroundColor='#fff'
+                            style={{ borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30 }}
+                            iconStyle={{ marginRight: 0 }}
+                        />
+
+                        <Text>{item.amountTaken}</Text>
+
+                        <Icon.Button
+                            name="ios-add"
+                            size={25}
+                            color='#fff'
+                            backgroundColor='#fff'
+                            style={{ borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30 }}
+                            iconStyle={{ marginRight: 0 }}
+                        />
+
                     </View>
                 </View>
-
-                <View style={counterStyle}>
-                    <Icon.Button
-                        name="ios-remove"
-                        size={25}
-                        color='#fff'
-                        backgroundColor='#fff'
-                        style={{ borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30 }}
-                        iconStyle={{ marginRight: 0 }}
-                    />
-
-                    <Text>{item.amountTaken}</Text>
-
-                    <Icon.Button
-                        name="ios-add"
-                        size={25}
-                        color='#fff'
-                        backgroundColor='#fff'
-                        style={{ borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30 }}
-                        iconStyle={{ marginRight: 0 }}
-                    />
-
-                </View>
-            </View>
+            </TouchableWithoutFeedback>
         );
     }
 
@@ -134,7 +130,6 @@ class CartPage extends Component {
         return (
             <Container>
                 <Header>
-
                     <Body>
                     <Title>My Cart</Title>
                     </Body>

@@ -24,6 +24,8 @@ import {
 
 import CartPage from "../MainScreen/CartPage.js";
 
+const image5 = require("../../imgs/styles/6/Zara-Leather-Jacket.jpg");
+
 export default class Bananas extends Component {
     render() {
         let vans = {
@@ -33,13 +35,13 @@ export default class Bananas extends Component {
         return (
             <Container>
                 <ScrollView style={styles.scroll} contentContainerStyle={styles.center}>
-                    <Image source={vans} style={{width: 300, height: 300, resizeMode: 'contain'}}/>
+                    <Image source={image5} style={{width: 300, height: 300, resizeMode: 'contain'}}/>
                     <View style={styles.product}>
-                        <Text style={{fontSize: 30, marginTop: 10}}>Vans Classic Sneaker</Text>
-                        <Text style={{fontSize: 20, marginTop: 10}}>$ 118</Text>
+                        <Text style={{fontSize: 30, marginTop: 10}}>Zara Leather Jacket</Text>
+                        <Text style={{fontSize: 20, marginTop: 10}}>$ 200</Text>
                         <Text style={{fontSize: 20, marginTop: 10, marginRight: 15}}>Our customers asked for a lighter, trimmer asymmetrical leather biker jacket and we answered with the Perfecto model 626. As easygoing as a second skin yet incredibly durable, this 26” long motorcycle jacket was designed for warmer weather riding or casual trouble—your choice. </Text>
                     </View>
-
+                <Button full light style={{marginTop: 10}}><Text>Add To Cart</Text></Button>
                 </ScrollView>
             </Container>
         );
