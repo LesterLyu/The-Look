@@ -87,11 +87,7 @@ class ProfilePage extends React.Component {
 ProfilePage.navigationOptions = ({ navigation }) => ({
     header: (
         <Header>
-            <Left>
-                <Button transparent onPress={() => navigation.navigate("DrawerOpen")}>
-                    <Icon name="menu" />
-                </Button>
-            </Left>
+
             <Body>
             <Title>Profile</Title>
             </Body>

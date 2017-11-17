@@ -23,13 +23,20 @@ import {
     Label
 } from "native-base";
 
-export default class LikesPage extends React.Component {
+export default class DetailsPage extends React.Component {
     render() {
         const { navigate } = this.props.navigation;
         return (
             <Container>
                 <Header>
-
+                    <Left>
+                        <Button
+                            transparent
+                            onPress={() => this.props.navigation.goBack()}
+                        >
+                            <Icon name="arrow-back"/>
+                        </Button>
+                    </Left>
                     <Body>
                     <Title>Details</Title>
                     </Body>

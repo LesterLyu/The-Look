@@ -98,11 +98,11 @@ export default class LikesPage extends React.Component {
                 </Body>
                 <Right/>
               </Header>
-              <Content padder>
+              <Content padder style={{backgroundColor: "#ffffff"}}>
                 <Grid>
                   <Col>
 
-                    <TouchableOpacity onPress={() => this.props.navigation.navigate("DetailsPage")}>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate("suitDetailsPage")}>
                       <Image source={s1} style={styles.styleImage}/>
                     </TouchableOpacity>
                     <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>

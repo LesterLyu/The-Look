@@ -1,9 +1,7 @@
 import React from "react";
 import StylesPage from "./StylesPage.js";
 import CartPage from "./CartPage.js";
-import LikesPage from "./LikesPage.js";
-import ProductPage from "./ProductPage.js";
-import DetailsPage from "./DetailsPage.js";
+import LikesPage from "../Likes/index";
 import ProfilePage from "../ProfilePage/index.js";
 
 import {TabNavigator} from "react-navigation";
@@ -16,8 +14,6 @@ export default (MainScreenNavigator = TabNavigator(
         LikesPage: {screen: LikesPage},
         CartPage: {screen: CartPage},
         ProfilePage: {screen: ProfilePage},
-        ProductPage: {screen: ProductPage},
-        DetailsPage: {screen: DetailsPage},
     },
     {
         swipeEnabled:false,
