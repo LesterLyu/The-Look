@@ -72,34 +72,34 @@ export default class LikesPage extends React.Component {
               <Content padder style={{backgroundColor: "#ffffff"}}>
                 <Grid>
                   <Col>
-                      <StyleSection descriptions={'style 1'} image={s1} navigation={this.props.navigation}/>
+                      <StyleSection descriptions={''} image={s1} navigation={this.props.navigation}/>
                   </Col>
                 </Grid>
 
                 <Grid>
                   <Col>
-                      <StyleSection descriptions={'style 1'} image={s2} navigation={this.props.navigation}/>
+                      <StyleSection descriptions={''} image={s2} navigation={this.props.navigation}/>
                   </Col>
                 </Grid>
 
                 <Grid>
                   <Col>
-                      <StyleSection descriptions={'style 1'} image={s3} navigation={this.props.navigation}/>
+                      <StyleSection descriptions={''} image={s3} navigation={this.props.navigation}/>
                   </Col>
                 </Grid>
                 <Grid>
                   <Col>
-                      <StyleSection descriptions={'style 1'} image={s4} navigation={this.props.navigation}/>
+                      <StyleSection descriptions={''} image={s4} navigation={this.props.navigation}/>
                   </Col>
                 </Grid>
                 <Grid>
                   <Col>
-                      <StyleSection descriptions={'style 1'} image={s5} navigation={this.props.navigation}/>
+                      <StyleSection descriptions={''} image={s5} navigation={this.props.navigation}/>
                   </Col>
                 </Grid>
                 <Grid>
                   <Col>
-                      <StyleSection descriptions={'style 1'} image={s6} navigation={this.props.navigation}/>
+                      <StyleSection descriptions={''} image={s6} navigation={this.props.navigation}/>
                   </Col>
                 </Grid>
 
