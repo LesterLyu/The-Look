@@ -30,7 +30,6 @@ import {
     Switch,
     Separator
 } from "native-base";
-import HomeScreen from "../LearnStyle/index";
 
 const logo = require("../../imgs/logo.png");
 const cardImage = require("../../imgs/banner.png");

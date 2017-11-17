@@ -85,14 +85,6 @@ class MultiListSwipe extends Component {
         return (
             <Container style={styles.container}>
                 <Header>
-                    <Left>
-                        <Button
-                            transparent
-                            onPress={() => this.props.navigation.navigate("DrawerOpen")}
-                        >
-                            <Icon name="menu"/>
-                        </Button>
-                    </Left>
                     <Body>
                     <Title>My Cart</Title>
                     </Body>

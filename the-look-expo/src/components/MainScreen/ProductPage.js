@@ -33,14 +33,7 @@ export default class Bananas extends Component {
         return (
             <Container>
                 <Header>
-                    <Left>
-                        <Button
-                            transparent
-                            onPress={() => this.props.navigation.navigate("CartPage")}
-                        >
-                            <Icon name="arrow-back"/>
-                        </Button>
-                    </Left>
+
                     <Body>
                     <Title>Product</Title>
                     </Body>

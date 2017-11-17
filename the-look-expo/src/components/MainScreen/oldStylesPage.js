@@ -39,14 +39,7 @@ export default class StylesPage extends React.Component {
         return (
             <Container>
                 <Header>
-                    <Left>
-                        <Button
-                            transparent
-                            onPress={() => this.props.navigation.navigate("DrawerOpen")}
-                        >
-                            <Icon name="menu"/>
-                        </Button>
-                    </Left>
+
                     <Body>
                     <Title>Styles</Title>
                     </Body>

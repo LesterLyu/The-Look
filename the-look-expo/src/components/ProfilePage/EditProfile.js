@@ -25,7 +25,7 @@ import {
     Grid,
     Col,
 } from "native-base";
-import HomeScreen from "../LearnStyle/index";
+import HomeScreen from "../MainScreen/index";
 
 const skinColor = ["WHITE", "YELLOW", "BROWN", "BLACK"];
 const skinColorImg = [require("../../imgs/profile/skinColor/color-0.png"),
@@ -158,7 +158,6 @@ export default class EditProfile extends React.Component {
     }
 
     render() {
-        //const { navigate } = this.props.navigation;
         return (
             <Container>
                 <Content padder>

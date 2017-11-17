@@ -29,14 +29,7 @@ export default class LikesPage extends React.Component {
         return (
             <Container>
                 <Header>
-                    <Left>
-                        <Button
-                            transparent
-                            onPress={() => this.props.navigation.goBack()}
-                        >
-                            <Icon name="arrow-back"/>
-                        </Button>
-                    </Left>
+
                     <Body>
                     <Title>Details</Title>
                     </Body>
