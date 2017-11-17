@@ -71,7 +71,7 @@ class ProfilePage extends React.Component {
                 </Button>
 
                 <Button full rounded light
-                        style={{ marginTop: 20 }}
+                        style={{ marginTop: 20, marginBottom: 20  }}
                         onPress={() => this.props.navigation.navigate("EditProfile", {from: "profilePage"})}
                 >
                     <Text>Body profile</Text>

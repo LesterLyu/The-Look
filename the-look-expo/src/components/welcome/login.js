@@ -3,6 +3,10 @@ import { Container, Header, Content, Form, Item, Input, Label, Button, Text } fr
 import {StyleSheet, View, Image, ListView, StatusBar, Alert} from 'react-native';
 import { Constants } from 'expo';
 
+const SIGN_IN_ERROR_USERNAME_NOT_EXIST = 'You are not in our system yet. If you are a new user, please click "register".';
+const SIGN_IN_ERROR_PASSWORD_INCORRECT = 'Looks like there\'s something wrong with the password you entered, please try again.';
+const REGISTER_ERROR_USERNAME_EXIST = 'You have already registered! Click "sign in"';
+
 const styles = StyleSheet.create({
     statusBar: {
         backgroundColor: "#2f2f2f",
