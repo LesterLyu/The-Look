@@ -40,6 +40,7 @@ export default class DetailsPage extends React.Component {
                     <Body>
                     <Title>Details</Title>
                     </Body>
+                    <Right/>
                 </Header>
 
                 <Content padder>
