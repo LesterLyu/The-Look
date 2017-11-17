@@ -77,6 +77,10 @@ let data = [
 
 class CartPage extends Component {
 
+    _onPressItem = () => {
+        console.log("hi");
+    };
+
     _renderItem({ item, index }) {
         const {
             containerStyle,
@@ -91,7 +95,7 @@ class CartPage extends Component {
         };
 
         return (
-            <TouchableWithoutFeedback>
+            <TouchableWithoutFeedback onPressItem={this._onPressItem}>
                 <View style={(index + 1 === data.length) ? lastItemStyle : containerStyle}>
                     <Image source={item.image} style={imageStyle}/>
                     <View style={textStyle}>
