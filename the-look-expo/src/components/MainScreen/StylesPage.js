@@ -103,8 +103,10 @@ export default class LearnMe extends React.Component {
                 <View style={{flexDirection: "row", flex: 0.8, position: 'relative', left: 5, right: 5, justifyContent: 'space-between', padding: 10, paddingBottom: 30, paddingTop: 250}}>
                     <Button iconLeft rounded danger large onPress={() => this._deckSwiper._root.swipeLeft()}>
                         <Icon name="md-thumbs-down" />
+                        <Text>Pass</Text>
                     </Button>
                     <Button iconRight rounded success large onPress={() => this._deckSwiper._root.swipeRight()}>
+                        <Text>Like</Text>
                         <Icon name="md-thumbs-up" />
                     </Button>
                 </View>

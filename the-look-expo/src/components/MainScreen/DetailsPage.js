@@ -39,6 +39,7 @@ export default class LikesPage extends React.Component {
                 <Content padder>
                     <Text>Details Page</Text>
                 </Content>
+
             </Container>
         );
     }

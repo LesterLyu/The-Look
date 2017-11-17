@@ -94,7 +94,7 @@ export default class LikesPage extends React.Component {
               <Header>
 
                 <Body>
-                <Title>Styles</Title>
+                <Title>Likes</Title>
                 </Body>
                 <Right/>
               </Header>
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
         flex: 0.3,
         width: null,
         resizeMode: 'cover',
-        height: 200,
+        height: 300,
         margin: 5,
         borderRadius: 20,
         justifyContent: 'center'
