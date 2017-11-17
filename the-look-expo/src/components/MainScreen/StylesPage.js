@@ -72,21 +72,21 @@ export default class LearnMe extends React.Component {
                     <Title>Styles</Title>
                     </Body>
                 </Header>
-                <View style={{flex: 1, padding: 10}}>
+                <View style={{flex: 0.85, padding: 10}}>
                     <DeckSwiper ref={(mr) => this._deckSwiper = mr}
                                 dataSource={cards}
                                 looping={true}
                                 renderItem={item =>
-                                    <Card style={{elevation: 2}}>
+                                    <Card style={{elevation: 5}}>
                                         <CardItem cardBody>
-                                            <Image style={{resizeMode: "cover", width: null, flexDirection:"column",flex: 1, height:500}} source={item.image} />
+                                            <Image style={{resizeMode: "cover", width:390, height: 500}} source={item.image} />
                                         </CardItem>
                                     </Card>}
                     />
                 </View>
 
 
-                <View style={{flexDirection: "row", flex: 0.8, position: 'relative', left: 5, right: 5, justifyContent: 'space-between', padding: 10, paddingBottom: 30, paddingTop: 450}}>
+                <View style={{flexDirection: "row", flex: 0.15, position: 'absolute', bottom:15, left: 15, right: 15, justifyContent: 'space-between'}}>
                     <Button iconLeft rounded danger large onPress={() => this._deckSwiper._root.swipeLeft()}>
                         <Icon name="md-thumbs-down" />
                         <Text>Pass</Text>
