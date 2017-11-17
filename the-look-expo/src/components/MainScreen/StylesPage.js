@@ -84,7 +84,6 @@ export default class LearnMe extends React.Component {
                     <Body>
                     <Title>Styles</Title>
                     </Body>
-                    <Right />
                 </Header>
                 <View style={{flex: 1, padding: 10}}>
                     <DeckSwiper ref={(mr) => this._deckSwiper = mr}

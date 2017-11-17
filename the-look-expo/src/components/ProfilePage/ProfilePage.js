@@ -91,7 +91,6 @@ ProfilePage.navigationOptions = ({ navigation }) => ({
             <Body>
             <Title>Profile</Title>
             </Body>
-            <Right />
         </Header>
     )
 });

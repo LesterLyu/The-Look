@@ -37,7 +37,6 @@ export default class Bananas extends Component {
                     <Body>
                     <Title>Product</Title>
                     </Body>
-                    <Right/>
                 </Header>
 
                 <ScrollView style={styles.scroll} contentContainerStyle={styles.center}>

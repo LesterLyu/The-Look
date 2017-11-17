@@ -96,7 +96,6 @@ export default class LikesPage extends React.Component {
                 <Body>
                 <Title>Likes</Title>
                 </Body>
-                <Right/>
               </Header>
               <Content padder style={{backgroundColor: "#ffffff"}}>
                 <Grid>
