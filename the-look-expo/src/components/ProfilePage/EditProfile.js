@@ -125,6 +125,7 @@ export default class EditProfile extends React.Component {
                 <Body>
                 <Title>Edit Profile</Title>
                 </Body>
+                <Right/>
             </Header>
         )
     });
