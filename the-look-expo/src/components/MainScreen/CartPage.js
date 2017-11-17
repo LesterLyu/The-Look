@@ -136,7 +136,8 @@ class CartPage extends Component {
                     keyExtractor={(item) => item.id}
                 />
 
-                <Button block dark><Text style={{color: '#ffffff'}}>Checkout</Text></Button>
+                <Button block dark><Text style={{color: '#ffffff'}}
+                onPress={() => {Alert.alert("Checkout Success")}}>Checkout</Text></Button>
             </Container>
         );
     }
