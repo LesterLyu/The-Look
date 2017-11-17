@@ -90,14 +90,6 @@ export default class LearnMe extends React.Component {
                     <DeckSwiper ref={(mr) => this._deckSwiper = mr}
                                 dataSource={cards}
                                 looping={true}
-                                // renderEmpty={() =>
-                                //     <View style={{alignSelf: 'center'}}>
-                                //         <Button full rounded light
-                                //                 style={{ marginTop: 10 }}
-                                //                 onPress={() => this.props.navigation.navigate("Home")} >
-                                //             <Text>Check out my styles!</Text>
-                                //         </Button>
-                                //     </View>}
                                 renderItem={item =>
                                     <Card style={{elevation: 2}}>
                                         <CardItem cardBody>
@@ -108,7 +100,7 @@ export default class LearnMe extends React.Component {
                 </View>
 
 
-                <View style={{flexDirection: "row", flex: 0.8, position: 'relative', left: 5, right: 5, justifyContent: 'space-between', padding: 10, paddingBottom: 30}}>
+                <View style={{flexDirection: "row", flex: 0.8, position: 'relative', left: 5, right: 5, justifyContent: 'space-between', padding: 10, paddingBottom: 30, paddingTop: 250}}>
                     <Button iconLeft rounded danger large onPress={() => this._deckSwiper._root.swipeLeft()}>
                         <Icon name="md-thumbs-down" />
                     </Button>
