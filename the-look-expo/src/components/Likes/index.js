@@ -14,7 +14,11 @@ export default (Likes = StackNavigator({
     },
     suitDetailsPage: { screen: suitDetailsPage,
         navigationOptions: ({navigation}) => ({
-            header: null,
+            headerTitle: "Suit Detail",
+            headerTintColor: "#FFFFFF",
+            headerStyle: {
+                backgroundColor: "#3f51b5",
+            }
         }),
     },
     itemDetailPage: { screen: itemDetailPage,
