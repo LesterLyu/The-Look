@@ -150,6 +150,8 @@ class CartPage extends Component {
                     renderItem={this._renderItem}
                     keyExtractor={(item) => item.id}
                 />
+
+                <Button block dark><Text style={{color: '#ffffff'}}>Checkout</Text></Button>
             </Container>
         );
     }
