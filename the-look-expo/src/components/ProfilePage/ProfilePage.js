@@ -52,15 +52,15 @@ class ProfilePage extends React.Component {
                         <Progress.Bar style={styles.progressBar} progress={0.4} size={200} width={300} height={20}/>
                     </View>
                     <View>
-                        <Text>Casual</Text>
+                        <Text>Business</Text>
                         <Progress.Bar style={styles.progressBar} progress={0.8} size={200} width={300} height={20}/>
                     </View>
                     <View>
-                        <Text>Casual</Text>
+                        <Text>Sport</Text>
                         <Progress.Bar style={styles.progressBar} progress={0.2} size={200} width={300} height={20}/>
                     </View>
                     <View>
-                        <Text>Casual</Text>
+                        <Text>Hip-pop</Text>
                         <Progress.Bar style={styles.progressBar} progress={0.6} size={200} width={300} height={20}/>
                     </View>
                 </View>
@@ -72,7 +72,7 @@ class ProfilePage extends React.Component {
                 </Button>
 
                 <Button full rounded light
-                        style={{ marginTop: 10 }}
+                        style={{ marginTop: 20 }}
                         onPress={() => this.props.navigation.navigate("EditProfile", {from: "profilePage"})}
                 >
                     <Text>Body profile</Text>
