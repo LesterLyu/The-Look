@@ -74,7 +74,6 @@ let data = [
 //     },
 // ];
 
-
 class CartPage extends Component {
 
     _onPressItem = () => {
@@ -90,45 +89,40 @@ class CartPage extends Component {
             counterStyle,
             priceStyle } = styles;
 
-        this.state = {
-            amount: item.amountTaken
-        };
-
         return (
-            <TouchableWithoutFeedback onPressItem={this._onPressItem}>
-                <View style={(index + 1 === data.length) ? lastItemStyle : containerStyle}>
-                    <Image source={item.image} style={imageStyle}/>
-                    <View style={textStyle}>
-                        <Text style={{ color: '#2e2f30' }}>{item.name}</Text>
-                        <View style={priceStyle}>
-                            <Text style={{ color: '#2e2f30', fontSize: 12 }}>${item.price}</Text>
-                        </View>
-                    </View>
-
-                    <View style={counterStyle}>
-                        <Icon.Button
-                            name="ios-remove"
-                            size={25}
-                            color='#fff'
-                            backgroundColor='#fff'
-                            style={{ borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30 }}
-                            iconStyle={{ marginRight: 0 }}
-                        />
-
-                        <Text>{this.state.amount}</Text>
-
-                        <Icon.Button
-                            name="ios-add"
-                            size={25}
-                            color='#fff'
-                            backgroundColor='#fff'
-                            style={{ borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30 }}
-                            iconStyle={{ marginRight: 0 }}
-                        />
-
+            <View style={(index + 1 === data.length) ? lastItemStyle : containerStyle}
+                    onPress={() => {console.log("??")}}>
+                <Image source={item.image} style={imageStyle}/>
+                <View style={textStyle}>
+                    <Text style={{ color: '#2e2f30' }}>{item.name}</Text>
+                    <View style={priceStyle}>
+                        <Text style={{ color: '#2e2f30', fontSize: 12 }}>${item.price}</Text>
                     </View>
                 </View>
-            </TouchableWithoutFeedback>
+
+                <View style={counterStyle}>
+                    <Icon.Button
+                        name="ios-remove"
+                        size={25}
+                        color='#fff'
+                        backgroundColor='#fff'
+                        style={{ borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30 }}
+                        iconStyle={{ marginRight: 0 }}
+                    />
+
+                    <Text>{item.amountTaken}</Text>
+
+                    <Icon.Button
+                        name="ios-add"
+                        size={25}
+                        color='#fff'
+                        backgroundColor='#fff'
+                        style={{ borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30 }}
+                        iconStyle={{ marginRight: 0 }}
+                    />
+
+                </View>
+            </View>
         );
     }
 
