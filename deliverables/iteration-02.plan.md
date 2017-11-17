@@ -67,18 +67,20 @@ List/describe the artifacts you will produce in order to organize your team.
 
  * How do tasks get assigned to team members?
  
-    TODO
+    see [Roles & responsibilities](#roles--responsibilities)
 
 
 #### Git / GitHub workflow
 
-Describe your Git / GitHub workflow.     
-Essentially, we want to understand how your team members share a codebase and avoid conflicts.
-
- * Be concise, yet precise.      
-For example, "we use pull-requests" is not a precise statement since it leaves too many open questions - Pull-requests from where to where? Who reviews the pull-requests? Who is responsible for merging them? etc.
- * If applicable, specify any naming conventions or standards you decide to adopt.
- * Don't forget to **explain why** you chose this workflow.
+ * Everyone creates a new branch to work on their task, when they finished, open a "pull-request" from their branch to master branch to
+  request changes, if there are conflicts, that person need to contact the person involved in the conflict files to
+  resolve the conflict, if Github can auto-merge, no reviewer required.
+  
+ * If anyone finds or encounters a bug, they should record the bug in "Issues" and create to new branch called bug-xx to resolve it.
+   
+ * We follow camelcase syntax for naming class, method, variable and file/folder, we also follow Airbnb's javascript coding style.
+ 
+  This workflow can prevent struggling on conflicts, and improve the code readability.
 
 
 
