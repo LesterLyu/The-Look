@@ -141,7 +141,7 @@ class CartPage extends Component {
                 <Header>
 
                     <Body>
-                    <Title>Styles</Title>
+                    <Title>My Cart</Title>
                     </Body>
                 </Header>
 

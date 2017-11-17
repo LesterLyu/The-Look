@@ -33,6 +33,30 @@ const s4 = require("../../imgs/popstar.jpg");
 const s5 = require("../../imgs/rockstar.jpg");
 const s6 = require("../../imgs/throwback.jpg");
 
+class StyleSection extends React.Component {
+    constructor(props) {
+        super();
+        this.state = {
+            descriptions: props.descriptions, // e.g. ["NO BELLY", "THIN BELLY", "FAT BELLY"]
+            image: props.image,
+            navigation: props.navigation
+        };
+    }
+
+    render() {
+
+        return (
+            <View>
+                <TouchableOpacity onPress={() => this.state.navigation.navigate("suitDetailsPage")}>
+                    <Image source={this.state.image} style={styles.styleImage} navigation={this.props.navigation}/>
+                </TouchableOpacity>
+                <Text style={{textAlign: 'center', fontSize: 20}}>{this.state.descriptions}</Text>
+            </View>
+        );
+    };
+}
+
+
 export default class LikesPage extends React.Component {
     render() {
         const {navigate} = this.props.navigation;
@@ -47,43 +71,34 @@ export default class LikesPage extends React.Component {
               <Content padder style={{backgroundColor: "#ffffff"}}>
                 <Grid>
                   <Col>
-
-                    <TouchableOpacity onPress={() => this.props.navigation.navigate("suitDetailsPage")}>
-                      <Image source={s1} style={styles.styleImage}/>
-                    </TouchableOpacity>
-                    <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
+                      <StyleSection descriptions={'style 1'} image={s1}/>
                   </Col>
                 </Grid>
 
                 <Grid>
                   <Col>
-                    <Image source={s2} style={styles.styleImage}/>
-                    <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
+                      <StyleSection descriptions={'style 1'} image={s2}/>
                   </Col>
                 </Grid>
 
                 <Grid>
                   <Col>
-                    <Image source={s3} style={styles.styleImage}/>
-                    <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
+                      <StyleSection descriptions={'style 1'} image={s3}/>
                   </Col>
                 </Grid>
                 <Grid>
                   <Col>
-                    <Image source={s4} style={styles.styleImage}/>
-                    <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
+                      <StyleSection descriptions={'style 1'} image={s4}/>
                   </Col>
                 </Grid>
                 <Grid>
                   <Col>
-                    <Image source={s5} style={styles.styleImage}/>
-                    <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
+                      <StyleSection descriptions={'style 1'} image={s5}/>
                   </Col>
                 </Grid>
                 <Grid>
                   <Col>
-                    <Image source={s6} style={styles.styleImage}/>
-                    <Text style={{textAlign: 'center', fontSize: 20}}>STYLE 1 </Text>
+                      <StyleSection descriptions={'style 1'} image={s6}/>
                   </Col>
                 </Grid>
 
