@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { Container, Header, Content, Form, Item, Input, Label, Button, Text } from 'native-base';
 import {StyleSheet, View, Image, ListView, StatusBar, Alert} from 'react-native';
 import { Constants } from 'expo';
-import Profile from "./EditProfile";
+
+const SIGN_IN_ERROR_USERNAME_NOT_EXIST = 'You are not in our system yet. If you are a new user, please click "register".';
+const SIGN_IN_ERROR_PASSWORD_INCORRECT = 'Looks like there\'s something wrong with the password you entered, please try again.';
+const REGISTER_ERROR_USERNAME_EXIST = 'You have already registered! Click "sign in"';
 
 const styles = StyleSheet.create({
     statusBar: {
@@ -29,7 +32,7 @@ export default class Login extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { username: '', password: '' };
+        this.state = { username: 'a', password: 'a' };
     }
 
     _login = () => {
@@ -80,7 +83,7 @@ export default class Login extends Component {
             }).then(data => {
                 if(data.success) {
                     //Alert.alert("Registration success");
-                    this.props.navigation.navigate("EditProfile");
+                    this.props.navigation.navigate("EditProfile", {from: "login"});
                 }
                 else {
                     Alert.alert("Failed to register, " + data.msg);

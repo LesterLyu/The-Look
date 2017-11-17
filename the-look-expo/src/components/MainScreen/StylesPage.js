@@ -20,11 +20,9 @@ const card1 = require("../../imgs/1.jpeg");
 const card2 = require("../../imgs/2.jpeg");
 const card3 = require("../../imgs/3.jpeg");
 const card4 = require("../../imgs/4.jpeg");
-const card5 = require("../../imgs/corporate.jpg");
-const card6 = require("../../imgs/hiphop.jpg");
-const card7 = require("../../imgs/jock.jpg");
-const card8 = require("../../imgs/popstar.jpg");
-const card9 = require("../../imgs/throwback.jpg");
+const card5 = require("../../imgs/5.jpeg");
+const card6 = require("../../imgs/6.jpeg");
+const card7 = require("../../imgs/7.jpeg");
 
 const cards = [
     {
@@ -61,17 +59,7 @@ const cards = [
         text: "7",
         name: "7",
         image: card7
-    },
-    {
-        text: "8",
-        name: "8",
-        image: card8
-    },
-    {
-        text: "9",
-        name: "9",
-        image: card9
-    },
+    }
 ];
 
 export default class LearnMe extends React.Component {
@@ -80,45 +68,28 @@ export default class LearnMe extends React.Component {
         return (
             <Container>
                 <Header>
-                    <Left>
-                        <Button
-                            transparent
-                            onPress={() => this.props.navigation.navigate("DrawerOpen")}
-                        >
-                            <Icon name="menu" />
-                        </Button>
-                    </Left>
                     <Body>
                     <Title>Styles</Title>
                     </Body>
-                    <Right />
                 </Header>
-                <View style={{flex: 1, padding: 10}}>
+                <View style={{flex: 0.85, padding: 10}}>
                     <DeckSwiper ref={(mr) => this._deckSwiper = mr}
                                 dataSource={cards}
                                 looping={true}
-                                // renderEmpty={() =>
-                                //     <View style={{alignSelf: 'center'}}>
-                                //         <Button full rounded light
-                                //                 style={{ marginTop: 10 }}
-                                //                 onPress={() => this.props.navigation.navigate("Home")} >
-                                //             <Text>Check out my styles!</Text>
-                                //         </Button>
-                                //     </View>}
                                 renderItem={item =>
-                                    <Card style={{elevation: 2}}>
+                                    <Card style={{elevation: 5}}>
                                         <CardItem cardBody>
-                                            <Image style={{resizeMode: "cover", width: null, flex: 1, height: 450}} source={item.image} />
+                                            <Image style={{resizeMode: "cover", width:390, height: 500}} source={item.image} />
                                         </CardItem>
                                     </Card>}
                     />
                 </View>
 
 
-                <View style={{flexDirection: "row", flex: 2, position: 'relative', left: 0, right: 0, justifyContent: 'space-between', padding: 10, paddingTop: 430}}>
+                <View style={{flexDirection: "row", flex: 0.15, position: 'absolute', bottom:15, left: 15, right: 15, justifyContent: 'space-between'}}>
                     <Button iconLeft rounded danger large onPress={() => this._deckSwiper._root.swipeLeft()}>
                         <Icon name="md-thumbs-down" />
-                        <Text>Dislike</Text>
+                        <Text>Pass</Text>
                     </Button>
                     <Button iconRight rounded success large onPress={() => this._deckSwiper._root.swipeRight()}>
                         <Text>Like</Text>

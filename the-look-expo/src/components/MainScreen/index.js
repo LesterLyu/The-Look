@@ -1,10 +1,9 @@
 import React from "react";
 import StylesPage from "./StylesPage.js";
 import CartPage from "./CartPage.js";
-import LikesPage from "./LikesPage.js";
+import LikesPage from "../Likes/index";
 import ProfilePage from "../ProfilePage/index.js";
-import ProductPage from "./ProductPage.js";
-import DetailsPage from "./DetailsPage.js";
+import itemDetailPage from "../Likes/itemDetailPage.js";
 
 import {TabNavigator} from "react-navigation";
 
@@ -12,15 +11,35 @@ import {Button, Footer, FooterTab, Icon, Item, Label, Text} from "native-base";
 
 export default (MainScreenNavigator = TabNavigator(
     {
-        StylesPage: {screen: StylesPage},
+        StylesPage: {
+            screen: StylesPage,
+        },
         LikesPage: {screen: LikesPage},
         CartPage: {screen: CartPage},
         ProfilePage: {screen: ProfilePage},
-        ProductPage: {screen: ProductPage},
-        DetailsPage: {screen: DetailsPage}
+        itemDetailPage: { screen: itemDetailPage,
+            navigationOptions: ({navigation}) => ({
+                header: null,
+            }),
+        },
     },
     {
+        swipeEnabled:false,
+        scrollEnabled: true,
+        animationEnabled: true,
         tabBarPosition: "bottom",
+
+        tabBarOptions: {
+            activeTintColor: '#e91e63',
+            labelStyle: {
+                fontSize: 12,
+            },
+            style: {
+                backgroundColor: 'blue',
+            },
+        },
+
+
         tabBarComponent: props => {
             return (
                 <Footer>
@@ -30,8 +49,7 @@ export default (MainScreenNavigator = TabNavigator(
                             active={props.navigationState.index === 0}
                             onPress={() => props.navigation.navigate("StylesPage")}
                         >
-                            <Icon name="body"/>
-                            <Text>Styles</Text>
+                            <Icon name="shirt"/>
                         </Button>
                         <Button
                             vertical
@@ -39,7 +57,6 @@ export default (MainScreenNavigator = TabNavigator(
                             onPress={() => props.navigation.navigate("LikesPage")}
                         >
                             <Icon name="heart"/>
-                            <Text>Likes</Text>
                         </Button>
                         <Button
                             vertical
@@ -47,7 +64,6 @@ export default (MainScreenNavigator = TabNavigator(
                             onPress={() => props.navigation.navigate("CartPage")}
                         >
                             <Icon name="cart"/>
-                            <Text>Cart</Text>
                         </Button>
                         <Button
                             vertical
@@ -55,11 +71,11 @@ export default (MainScreenNavigator = TabNavigator(
                             onPress={() => props.navigation.navigate("ProfilePage")}
                         >
                             <Icon name="person"/>
-                            <Text>Profile</Text>
                         </Button>
                     </FooterTab>
                 </Footer>
             );
+
         }
     }
 ));
