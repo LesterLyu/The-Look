@@ -98,7 +98,7 @@ List/describe the artifacts you will produce in order to organize your team.
   when we pull the changes. Fix the conflict will be complicated.
   
   * By following Airbnb's coding style, our code will be easier to read and understand. We all know it is painful to 
-  reading code with random styles or no styles at all. It makes our team members' life easier. 
+  read code with random styles or no styles at all. It makes our team members' life easier. 
 
 ## Product
 
