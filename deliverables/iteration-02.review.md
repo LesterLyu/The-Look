@@ -19,7 +19,7 @@
    
    3. We decide to let Backend guys keep working on Backend. We make such a decision due to we noticed that there are only 2 weeks for D3, and Backend, communication between backend and frontend are heavy work.By start early on backend, now we have a foundation of it by now, and it is also a good start for D3.
 
-> Product desicion:
+> Product decision:
 
    3. We decide to give up on machine learning. Machine learning was fancy and powerful, we wanted to train one for the app so it can fetch, tag and categorize clothes from internet and no human intervention will be needed. But at the end of D2 we found out that the value added part of The Look is not from machine learning, but mostly from the 2 layer filter system we designed. Even it is machine learning it has to apply the same filter logic, and we have to find at least 1000 pictures and 8000 tags to train it, which is clearly impossible due to D3 only has 2 weeks. So we decide to give up on that, this is going to save us tons of time and effort in D3.
 
