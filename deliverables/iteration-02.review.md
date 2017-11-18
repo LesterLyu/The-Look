@@ -29,6 +29,7 @@ Process decisions:
 #### Decisions that did not turn out as well as we hoped
 
 Process decisions:
+
 1.Due to it is in reading week, we decide to write code independently in order to be more flexible.  It turned out to be a bad decision. This decision lead to lack of communication and management. We ended up facing overlapping implementation of same functionality, front end logic is different than what product manager required and some pages cannot work in the app frame.
 
 2.Decide to use Wechat GroupChat as communication tool which caused lack of communication. During the implementation of user interface, our communication is poor. Everyone is doing their own job and rarely talk to each other. This is due to we work independently, and everyone’s working hour are different. For example, if A is implementing task 1 and he needs info from B and C, has to coordinate with E and F, B,C,E,F may not be online while A is asking them questions on WeChat Group Chat. After BCEF replied hours later, A has already gone to the wrong way. This kind of communication is slow, inefficient and ineffective, and it makes people don’t want to talk to each other much due to those drawbacks. WeChat is a good communication tool on the early stage of the project when people are talking about high-level ideas, due to you only have to drop in and participate. Now we need more face-to-face communication which can really make things clear.
@@ -60,10 +61,13 @@ Following are procedures that we designed to avoid unnecessary problems.
 
 #### Goals and/or tasks that were met/completed:
 
-A displayable and clickable user interface.
-Basic structure of Backend.
-Design of structure and tag system.
-(not planned) logo design.
+   A displayable and clickable user interface.
+
+   Basic structure of Backend.
+
+   Design of structure and tag system.
+
+   (not planned) logo design.
 
 
 #### Goals and/or tasks that were planned but not met/completed:
