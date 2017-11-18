@@ -46,9 +46,7 @@ body and conclusion recorded.
 
 
 
-#### Artifacts
-
-List/describe the artifacts you will produce in order to organize your team.       
+#### Artifacts   
 
  * [Trackboard:](https://docs.google.com/document/d/1FIVt9HOjWtJEGN-1Ru8d8Crb7CeDV5ArKOWB1BIJYXE/edit)
      But not much in there because we are all more comfortable with WeChat Group Chat. The WeChat Group chat history is better at maintaining our tasks and schedules. 
