@@ -55,7 +55,7 @@ body and conclusion recorded.
  
     We decided what needed to get done at the 7 Nov meeting, all details are in roles and responsibilities. 
  
- * How do you prioritize tasks?
+ * How do we prioritize tasks?
  
     We had four remaining things that need to get done for the entire project: documents, UI, Backend and the Video.
     
