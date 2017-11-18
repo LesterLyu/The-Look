@@ -140,8 +140,6 @@ List/describe the artifacts you will produce in order to present your project id
 
    We figured out his system that can guarantee our customer get the right clothes. The first layer of the filter is the user profile page that each user has to click on his registration, this will screens out clothes that are not going to fit user’s body shape. For example, if you are a chubby guy then all crew neck shirt with wide crew neck will be filtered due to they will make your neck look shorter than normal. The second layer of the filter is a user preference system, based on clothes passed the first filter, user can click “like” or “pass” to let system learn their preference. With the two-layer filter, we can guarantee that clothes user buys fits them and they like. 
 
-Above will be summaries on discussions on WeChat.
-
 
 5. **Profile page drawing**
 
