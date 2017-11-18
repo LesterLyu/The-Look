@@ -136,7 +136,7 @@ List/describe the artifacts you will produce in order to present your project id
 
 3. **Tag system**
 
-    We figured out tag system for the backend. There are four components, database of users, database of styles and a logic system that links them, and a database of clothes. This is how it works: we collect user body shape information on registration and transfer it to tags and save them in user database. In the database of styles we store tags for styles. Tag of it will looks like this:(TrechCoat, Jean,Shirt,(TrenchCoat)). The logic that links them will determine if the style fits user’s body shape by style's tag's determine factor, if it fits, the style will be suggested, otherwise won't.
+   We figured out tag system for the backend. There are four components, database of users, database of styles and a logic system that links them, and a database of clothes. This is how it works: we collect user body shape information on registration and transfer it to tags and save them in user database. In the database of styles we store tags for styles. Tag of it will looks like this:(TrechCoat, Jean,Shirt,(TrenchCoat)). The logic that links them will determine if the style fits user’s body shape by style's tag's determine factor, if it fits, the style will be suggested, otherwise won't.
 
 4. **Invention of the two layer filter**
 
