@@ -61,9 +61,9 @@
 
   * A displayable and clickable user interface.
 
-  *  Basic structure of Backend.
+  * Basic structure of Backend.
 
-  *  Design of structure and tag system.
+  * Design of structure and tag system.
 
   * (not planned) logo design.
   
