@@ -57,9 +57,9 @@ body and conclusion recorded.
  
  * How do we prioritize tasks?
  
-    We had four remaining things that need to get done for the entire project: documents, UI, Backend and the Video.
+    We have four remaining things that need to get done for the entire project: documents, UI, Backend and the Video.
     
-    We decided to put the video on the top of the list, due to video is the main thing that is going to be marked on D2, so we should put more concentration to it.
+    We decide to put the video on the top of the list, due to video is the main thing that is going to be marked on D2, so we should put more concentration to it.
     
     Backend implementation can be tough, and D3 is when all big dues(think about csc369 A4, write a file system from nothing) lines up, so we also decide to not put the entire team on UI and video. Backend guys will keep working on the backend and will not be interfered by D2, their sole goal is to put backend online and working on D3. 
     
