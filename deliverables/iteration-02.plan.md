@@ -104,10 +104,6 @@ List/describe the artifacts you will produce in order to organize your team.
 
 #### Goals and tasks
 
- * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
- * Order the items from most to least important.
- * Feel free (but not obligated) to specify some/all tasks as user stories.
-
 We will concentrate on the video making, the video will be shown to investors and the public. It will need a UI that
  seems works and an excellent script that really displaying what this app does and how to use it well.
 
