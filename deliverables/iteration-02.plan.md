@@ -133,72 +133,27 @@ List/describe the artifacts you will produce in order to present your project id
     Another way is to look up a word by its structure. If I have to explain it in English, imagine there is a chart in your Marin-Webster that contains all words start with a prefix ”pre”, and another chart contains all words end with suffix ”ness”. When you want a specific style of word, a specific suffix or prefix, you just go to the chart, and you will know all about it. This is the shopping experience that The Look is providing, locate a specific style first, then you can see all the clothes that can be a part of that style. It is a new way to shopping for men, more straight, more determinant, and more direct.
     
     After all, what customers are buying is NOT a specific cloth, but a general look, which is the value added part that we provide.
-    
-3. **Discussion on machine learning**
 
-   After discussion, we decide to give up on machine learning that we planned to use to fetch, categorize and tag clothes. Machine learning is fancy and powerful, but it is hard to implement and Bin Yu is the only one in our group who had taken all necessary classes, it needs 1000 images and 8000 tags, which is hard to accomplish in d3(two weeks), and the value added that The Look provide does not comes from a super fast processing tool but the logic of two filter system(see Product Artifact #7). So we decide to cut machine learning and concentrate on application itself.
-   
-4. **Discussion on text/image on user profile page**
+3. **Tag system**
 
-   PM insists to use image on user profile page with no text for explanation while some member thinks it is better to use text soly or have text as description of the picture. PM insists so for Aesthetics reason. Have text below the picture kind of ruins the whole picture and different length of text are ugly, and not intuitive. Members insist so due to user might not be able to understand the picture, for example, in the shape of legs, difference are hard to notice at first sight. Eventually PM agrees on the problem of recognition, and decide to use a half measure by adding text that has the same style as picture in pictures. Picture can be found on Product Artifact #8.
+   We figured out tag system for the backend. There are four components, database of users, database of styles and a logic system that links them, and a database of clothes. This is how it works: we collect user body shape information on registration and transfer it to tags and save them in user database. In the database of styles we store tags for styles. Tag of it will looks like this:(TrechCoat, Jean,Shirt,(TrenchCoat)). The logic that links them will determine if the style fits user’s body shape by style's tag's determine factor, if it fits, the style will be suggested, otherwise won't.
 
-
-5. **Discussion on “that’s me” button**
-
-   PM insists to use only a button that labels ”that’s me” on the button of user profile page for its simplicity and well-express of idea. Some members insists that add descriptive text on the page so that user understands. PM rejected this advice due to “that’s me” is enough for user who did not know the purpose of the page to realize that this is meant for getting his body shape and skin color, descriptive text is not necessary.
-
-6. **Tag system**
-
-   We figured out tag system for the backend. There are four components, database of users, database of styles and a logic system that links them, and a database of clothes. This is how it works: we collect user body shape information on registration and transfer it to tags and save them in user database. For example, if I am a short chubby guy, in backend there will be “<175” and “FatBelly”. In the database of styles we store tags for styles. For example, if there is a style that contains a trench jacket, a jeans and a shirt, than trench jacket will be the determine factor. Tag of it will looks like this:(TrechCoat, Jean,Shirt,(TrenchCoat)). The logic that links them will determine if the style fits user’s body shape. For example, if we use trench coat example and chubby guy example above, the trench coat style will not be suggested to the user due to trench coat is the determine factor and trench coat will be tagged as “175-188, >188” and “NoBelly, NormalBelly” due to short guys’ legs will looks even shorter in a long trench coat and it fits slim body shape. 
-
-7. **Invention of the two layer filter**
+4. **Invention of the two layer filter**
 
    We figured out his system that can guarantee our customer get the right clothes. The first layer of filter is the user profile page that each user has to click on his registration, this will screens out clothes that is not going to fit user’s body shape. For example, if you are a chubby guy then all crew neck shirt with wide crew neck will be filtered due to they will make your neck look shorter than normal. The second layer of filter is a user preference system, based on clothes passed the first filter, user can click “like” or “pass” to let system learn their preference. With the two layer filter, we can guarantee that clothes user buys fits them and they likes. 
 
 Above will be summary on dicussions on WeChat.
 
 
-8. **Profile page drawing**
+5. **Profile page drawing**
 
    https://drive.google.com/drive/folders/1sNR6EEWCgK7yL_T5MRVSsR3S8rV4pqA_?usp=sharing
 
 
-9. **Pictures used to build The Look Interface**
+6. **Pictures used to build The Look Interface**
 
    https://drive.google.com/drive/folders/1vDTRWO-ECq8pXXAS1qsv5a1Sp08ZcbId?usp=sharing
 
-10. **Logo Design**.
-  
-    A logo is significant to a company or a product, it is the first and the only impression that is going
-    to leave in user's mind, that is why we are so careful when comes to logo design. We have developed 9 different logos
-    for the icon of the app, I will explain one by one about each's pro and cons.
-    ![logos](./img/logos.jpg)
- 
-    All logos are derived from the capital letter L, this design pattern follows from most popular application icon
-    design, such as Google’s G, Uber’s U, Pinterest’s p and Uncrate’s u. We plan to combine the “The Look” text
-    with its function, men style, like the way pinterest did: p and the pin.
-    
-    `#0`, the foot, derived from the leg of the main character of Cowboy Bebop, Spike Spiegel. The foot is just
-    impossible to make a modern, elegant logo, so we give up on that, but it is an interesting thought.
-    
-    `#4` and `#6` are the original thoughts, but there are some problems within it: `#4`, report from online gamers in
-    our group, looks way too similar to the logo of League of Legends and there is no way to fix it, that is how Times
-    New Roman looks. And it also looks more like a logo for dictionary applications, due to most paperback dictionary
-    uses Times New Roman.
+7. **Logo Design**
 
-    The font of `#6` looks like it is an initial for a university, and it gives the wrong feelings--too tough,
-     too square, lack of elegance, and too student. Same problem with `#5`.
-
-    Then we have `#2`, an image copy from internet. Helvetica with bold effect looks like the way to go, but still
-     something wrong with it: the dot means nothing to us, but if we take the dot out, then it’s too empty on the
-      upper-right corner.
-
-    So we decide to move the dot to the upper-right corner to see what will that looks like, here goes `#1`. It actually
-     looks not bad, and somehow it looks like men’s cuff, which is a surprise to us: both “L” and the
-      functionality--men’s style are included, I think we did a better job then Pinterest on this. But there is
-       still something unsatisfied: the shape of L makes it doesn’t looks like an L,and the way the L and the dot
-        occupies the icon is just too dull, nothing interesting in there. So we change the shape of L
-        (from vertical:horizontal 4:4 to vertical:horizontal 4:3)--`#3`, but then the dot seems out of place, 
-        and the left-lower corner looks void now. So we figure, why not make the logo a part of the icon to avoid 
-        the emptiness? So we move the logo up and add text to the bottom, that is `#7` and `#8`, text at the bottom,
-         men’s cuff on the upper. `#7`’s text’s font’s L looks more like 4:4, so we eventually move to `#8`.
+   https://docs.google.com/document/d/1PjyWAspYaQEpl-Vc3KFTMK9vfYTe6KlI_zlzkFznyJs/edit?usp=sharing
