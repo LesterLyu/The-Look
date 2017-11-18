@@ -66,7 +66,7 @@
   * Design of structure and tag system.
 
   * (not planned) logo design.
-  
+
   * (not planned) profile page picture drawing (see Product Artifact #7). 
   
    
