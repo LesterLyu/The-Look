@@ -42,6 +42,13 @@ On October 31, we were all busy for different midterms, so we made this meeting 
 
   * November 7, 2017 - Online Meeting
 On November 7, due to it is in reading week and not much members are around school, so we made it an online meeting, and it’s a quite productive one.  We made most decisions about d2, we assigned roles and responsibilities, discussed detailed implementation on how to suggest clothes to user, include some machine learning solution that can be applied. We also browsed apps and websites that related to our backend implementation to get some inspiration.
+  * November 13, 2017 - Studio Recording
+intro recorded.
+  * November 16, 2017 - Studio Recording and coding session
+had a coding session, UI was completed.
+body and conclusion recorded.
+
+
 
 #### Artifacts
 
@@ -99,7 +106,66 @@ We will concentrate on the video making, the video will be shown to investors an
 
 List/describe the artifacts you will produce in order to present your project idea.
 
- 1. **Logo Design**.
+ 1. **Product Functionality added: Cart and Checkout function**
+
+    We did some critical thinking on the function of the app on should the app solely focus on suggesting user product
+     and provide the link for purchase, or should the app have a direct way to purchase, eventually we decide to make
+      the app have a cart and checkout function. 
+
+    It doesn’t make sense at first sight, due to only do the style suggesting would be a lot easier, and make more
+     sense for a startup, otherwise there will be problems on stock. But we think this is actually crucial to user
+      experience.
+
+    If user is interested in a style and he want to make a purchase, if the app can only provide links to products
+    , shirt comes from Nike,pants comes from Levis and shoes comes from Adidas, then user has to jump back-and-forth
+     between The Look and browser three times, and he has to manually input his billing address and credit card 
+     payment method three times, which is pretty bad user experience, and did not make the user buy style easier,
+      so we decide to avoid that, and add a checkout function to the app.
+
+ 2. **Change of product mandate**
+
+    Our original product mandate is to help men with no style shopping clothes, now, with the app coming true, and me more realizing what this app provides to its user, I think we can do more than just that. 
+
+    I decide to change the mandate of the app to “help all men shopping clothes”. 
+    
+    In Chinese dictionary, there are two ways to locate a word. One is by alphabetic order, A for Armani, B for balmin, H for H&M.etc, that’s how we shop in a ordinary mall, or shop cloth online, we go to one store(or its website), then another.
+    
+    Another way is to look up a word by its structure. If I have to explain it in English, image there is a chart in your Marin-Webster that contains all words start with a prefix ”pre”, and another chart contains all words end with suffix ”ness”. When you want a specific style of word, a specific suffix or prefix, you just go to the chart, and you will know all about it. This is the shopping experience that The Look is providing, locate a specific style first, then you can see all the clothes that can be a part of that style. It is a new way to shopping for men, more straight, more determinant, and more direct.
+    
+    After all, what customers are buying is NOT a specific cloth, but a general look, which is the value added part that we provide.
+    
+3. **Discussion on machine learning**
+
+   After discussion, we decide to give up on machine learning that we planned to use to fetch, categorize and tag clothes. Machine learning is fancy and powerful, but it is hard to implement and Bin Yu is the only one in our group who had taken all necessary classes, it needs 1000 images and 8000 tags, which is hard to accomplish in d3(two weeks), and the value added that The Look provide does not comes from a super fast processing tool but the logic of two filter system(see Product Artifact #7). So we decide to cut machine learning and concentrate on application itself.
+   
+4. **Discussion on text/image on user profile page**
+
+PM insists to use image on user profile page with no text for explanation while some member thinks it is better to use text soly or have text as description of the picture. PM insists so for Aesthetics reason. Have text below the picture kind of ruins the whole picture and different length of text are ugly, and not intuitive. Members insist so due to user might not be able to understand the picture, for example, in the shape of legs, difference are hard to notice at first sight. Eventually PM agrees on the problem of recognition, and decide to use a half measure by adding text that has the same style as picture in pictures. Picture can be found on Product Artifact #8.
+
+
+5. **Discussion on “that’s me” button**
+
+PM insists to use only a button that labels ”that’s me” on the button of user profile page for its simplicity and well-express of idea. Some members insists that add descriptive text on the page so that user understands. PM rejected this advice due to “that’s me” is enough for user who did not know the purpose of the page to realize that this is meant for getting his body shape and skin color, descriptive text is not necessary.
+
+6. **Tag system**
+
+We figured out tag system for the backend. There are four components, database of users, database of styles and a logic system that links them, and a database of clothes. This is how it works: we collect user body shape information on registration and transfer it to tags and save them in user database. For example, if I am a short chubby guy, in backend there will be “<175” and “FatBelly”. In the database of styles we store tags for styles. For example, if there is a style that contains a trench jacket, a jeans and a shirt, than trench jacket will be the determine factor. Tag of it will looks like this:(TrechCoat, Jean,Shirt,(TrenchCoat)). The logic that links them will determine if the style fits user’s body shape. For example, if we use trench coat example and chubby guy example above, the trench coat style will not be suggested to the user due to trench coat is the determine factor and trench coat will be tagged as “175-188, >188” and “NoBelly, NormalBelly” due to short guys’ legs will looks even shorter in a long trench coat and it fits slim body shape. 
+
+7. **Invention of the two layer filter**
+
+We figured out his system that can guarantee our customer get the right clothes. The first layer of filter is the user profile page that each user has to click on his registration, this will screens out clothes that is not going to fit user’s body shape. For example, if you are a chubby guy then all crew neck shirt with wide crew neck will be filtered due to they will make your neck look shorter than normal. The second layer of filter is a user preference system, based on clothes passed the first filter, user can click “like” or “pass” to let system learn their preference. With the two layer filter, we can guarantee that clothes user buys fits them and they likes. 
+
+Above will be summary on dicussions on WeChat.
+
+
+8. **Profile page drawing**
+
+https://drive.google.com/drive/folders/1sNR6EEWCgK7yL_T5MRVSsR3S8rV4pqA_?usp=sharing
+
+
+9. **Pictures used to build The Look Interface**
+https://drive.google.com/drive/folders/1vDTRWO-ECq8pXXAS1qsv5a1Sp08ZcbId?usp=sharing
+10. **Logo Design**.
   
     A logo is significant to a company or a product, it is the first and the only impression that is going
     to leave in user's mind, that is why we are so careful when comes to logo design. We have developed 9 different logos
@@ -134,31 +200,3 @@ List/describe the artifacts you will produce in order to present your project id
         and the left-lower corner looks void now. So we figure, why not make the logo a part of the icon to avoid 
         the emptiness? So we move the logo up and add text to the bottom, that is `#7` and `#8`, text at the bottom,
          men’s cuff on the upper. `#7`’s text’s font’s L looks more like 4:4, so we eventually move to `#8`.
-
- 1. **Product Functionality added: Cart and Checkout function**
-
-    We did some critical thinking on the function of the app on should the app solely focus on suggesting user product
-     and provide the link for purchase, or should the app have a direct way to purchase, eventually we decide to make
-      the app have a cart and checkout function. 
-
-    It doesn’t make sense at first sight, due to only do the style suggesting would be a lot easier, and make more
-     sense for a startup, otherwise there will be problems on stock. But we think this is actually crucial to user
-      experience.
-
-    If user is interested in a style and he want to make a purchase, if the app can only provide links to products
-    , shirt comes from Nike,pants comes from Levis and shoes comes from Adidas, then user has to jump back-and-forth
-     between The Look and browser three times, and he has to manually input his billing address and credit card 
-     payment method three times, which is pretty bad user experience, and did not make the user buy style easier,
-      so we decide to avoid that, and add a checkout function to the app.
-
- 1. **Change of product mandate**
-
-    Our original product mandate is to help men with no style shopping clothes, now, with the app coming true, and me more realizing what this app provides to its user, I think we can do more than just that. 
-
-    I decide to change the mandate of the app to “help all men shopping clothes”. 
-    
-    In Chinese dictionary, there are two ways to locate a word. One is by alphabetic order, A for Armani, B for balmin, H for H&M.etc, that’s how we shop in a ordinary mall, or shop cloth online, we go to one store(or its website), then another.
-    
-    Another way is to look up a word by its structure. If I have to explain it in English, image there is a chart in your Marin-Webster that contains all words start with a prefix ”pre”, and another chart contains all words end with suffix ”ness”. When you want a specific style of word, a specific suffix or prefix, you just go to the chart, and you will know all about it. This is the shopping experience that The Look is providing, locate a specific style first, then you can see all the clothes that can be a part of that style. It is a new way to shopping for men, more straight, more determinant, and more direct.
-    
-    After all, what customers are buying is NOT a specific cloth, but a general look, which is the value added part that we provide.
