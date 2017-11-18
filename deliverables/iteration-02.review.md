@@ -68,6 +68,7 @@
   * (not planned) logo design.
   
   * (not planned) profile page picture drawing (see Product Artifact #7). 
+  
    
 #### Goals and/or tasks that were planned but not met/completed:
 
