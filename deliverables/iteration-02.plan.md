@@ -140,20 +140,20 @@ List/describe the artifacts you will produce in order to present your project id
    
 4. **Discussion on text/image on user profile page**
 
-PM insists to use image on user profile page with no text for explanation while some member thinks it is better to use text soly or have text as description of the picture. PM insists so for Aesthetics reason. Have text below the picture kind of ruins the whole picture and different length of text are ugly, and not intuitive. Members insist so due to user might not be able to understand the picture, for example, in the shape of legs, difference are hard to notice at first sight. Eventually PM agrees on the problem of recognition, and decide to use a half measure by adding text that has the same style as picture in pictures. Picture can be found on Product Artifact #8.
+   PM insists to use image on user profile page with no text for explanation while some member thinks it is better to use text soly or have text as description of the picture. PM insists so for Aesthetics reason. Have text below the picture kind of ruins the whole picture and different length of text are ugly, and not intuitive. Members insist so due to user might not be able to understand the picture, for example, in the shape of legs, difference are hard to notice at first sight. Eventually PM agrees on the problem of recognition, and decide to use a half measure by adding text that has the same style as picture in pictures. Picture can be found on Product Artifact #8.
 
 
 5. **Discussion on “that’s me” button**
 
-PM insists to use only a button that labels ”that’s me” on the button of user profile page for its simplicity and well-express of idea. Some members insists that add descriptive text on the page so that user understands. PM rejected this advice due to “that’s me” is enough for user who did not know the purpose of the page to realize that this is meant for getting his body shape and skin color, descriptive text is not necessary.
+   PM insists to use only a button that labels ”that’s me” on the button of user profile page for its simplicity and well-express of idea. Some members insists that add descriptive text on the page so that user understands. PM rejected this advice due to “that’s me” is enough for user who did not know the purpose of the page to realize that this is meant for getting his body shape and skin color, descriptive text is not necessary.
 
 6. **Tag system**
 
-We figured out tag system for the backend. There are four components, database of users, database of styles and a logic system that links them, and a database of clothes. This is how it works: we collect user body shape information on registration and transfer it to tags and save them in user database. For example, if I am a short chubby guy, in backend there will be “<175” and “FatBelly”. In the database of styles we store tags for styles. For example, if there is a style that contains a trench jacket, a jeans and a shirt, than trench jacket will be the determine factor. Tag of it will looks like this:(TrechCoat, Jean,Shirt,(TrenchCoat)). The logic that links them will determine if the style fits user’s body shape. For example, if we use trench coat example and chubby guy example above, the trench coat style will not be suggested to the user due to trench coat is the determine factor and trench coat will be tagged as “175-188, >188” and “NoBelly, NormalBelly” due to short guys’ legs will looks even shorter in a long trench coat and it fits slim body shape. 
+   We figured out tag system for the backend. There are four components, database of users, database of styles and a logic system that links them, and a database of clothes. This is how it works: we collect user body shape information on registration and transfer it to tags and save them in user database. For example, if I am a short chubby guy, in backend there will be “<175” and “FatBelly”. In the database of styles we store tags for styles. For example, if there is a style that contains a trench jacket, a jeans and a shirt, than trench jacket will be the determine factor. Tag of it will looks like this:(TrechCoat, Jean,Shirt,(TrenchCoat)). The logic that links them will determine if the style fits user’s body shape. For example, if we use trench coat example and chubby guy example above, the trench coat style will not be suggested to the user due to trench coat is the determine factor and trench coat will be tagged as “175-188, >188” and “NoBelly, NormalBelly” due to short guys’ legs will looks even shorter in a long trench coat and it fits slim body shape. 
 
 7. **Invention of the two layer filter**
 
-We figured out his system that can guarantee our customer get the right clothes. The first layer of filter is the user profile page that each user has to click on his registration, this will screens out clothes that is not going to fit user’s body shape. For example, if you are a chubby guy then all crew neck shirt with wide crew neck will be filtered due to they will make your neck look shorter than normal. The second layer of filter is a user preference system, based on clothes passed the first filter, user can click “like” or “pass” to let system learn their preference. With the two layer filter, we can guarantee that clothes user buys fits them and they likes. 
+   We figured out his system that can guarantee our customer get the right clothes. The first layer of filter is the user profile page that each user has to click on his registration, this will screens out clothes that is not going to fit user’s body shape. For example, if you are a chubby guy then all crew neck shirt with wide crew neck will be filtered due to they will make your neck look shorter than normal. The second layer of filter is a user preference system, based on clothes passed the first filter, user can click “like” or “pass” to let system learn their preference. With the two layer filter, we can guarantee that clothes user buys fits them and they likes. 
 
 Above will be summary on dicussions on WeChat.
 
@@ -164,7 +164,9 @@ https://drive.google.com/drive/folders/1sNR6EEWCgK7yL_T5MRVSsR3S8rV4pqA_?usp=sha
 
 
 9. **Pictures used to build The Look Interface**
+
 https://drive.google.com/drive/folders/1vDTRWO-ECq8pXXAS1qsv5a1Sp08ZcbId?usp=sharing
+
 10. **Logo Design**.
   
     A logo is significant to a company or a product, it is the first and the only impression that is going
