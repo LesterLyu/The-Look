@@ -15,7 +15,7 @@
 
    1. We start to working on the video super-early due to we realize that it is the most prioritized thing in D2. Intro is the most difficult part of the entire video, different script of intro was written and compared in a super early stage, even earlier than D2 was announced, and intro was filmed and completed a week later. Our intro is funny and ideas are delivered well due to we have time to keep editing the script to get a better version. After the video is done and everyone had look it over, we are all satisfied. It is a good decision.
 
-   2. We did a good job on synchronization, and for jobs that is beyond our reach, we decide to reach out for help. For example, on the app’s profile page, we cannot find any picture that describe body shape, so we decide to let some drawing guys to do the job. We did not solely waiting for them to get job done, instead we use text as placeholder to make sure our progress is not interrupted.
+   2. We did a good job on synchronization, and for jobs that is beyond our reach, we decide to reach out for help. For example, on the app’s profile page, we cannot find any picture that describe body shape, so we decide to let some drawing guys to do the job(see Product Artifact #7). We did not solely waiting for them to get job done, instead we use text as placeholder to make sure our progress is not interrupted.
 
 > Product desicions:
 
