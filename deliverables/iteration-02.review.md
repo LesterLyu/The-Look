@@ -78,8 +78,11 @@ According to our plan.md, we actually completed all tasks.
 
 Going into the next iteration, our main insights are:
 
- * 2 - 4 items
- * Short (no more than one short paragraph per item)
- * High-level concepts that should guide your work for the next iteration.
- * These concepts should help you decide on where to focus your efforts.
- * Can be related to product and/or process.
+Communication is the key.
+
+Before coding, talk to product manager/ scrum manager to double check that you know what you should implement, so things like overlapping functionality implement by different member won’t happen again.
+
+If a member encountered a functionality problem(e.g. some functionality cannot be implemented), talk to product manager and scrum manager first, don’t try to find an alternative way to solve it, it might impact the bigger picture. It make sure things like logic is different than what product manager request won’t happen.
+
+If you encounter a bug that you can't solve, don't leave it there, talk to other people.
+ 
