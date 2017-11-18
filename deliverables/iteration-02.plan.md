@@ -160,12 +160,12 @@ Above will be summary on dicussions on WeChat.
 
 8. **Profile page drawing**
 
-https://drive.google.com/drive/folders/1sNR6EEWCgK7yL_T5MRVSsR3S8rV4pqA_?usp=sharing
+   https://drive.google.com/drive/folders/1sNR6EEWCgK7yL_T5MRVSsR3S8rV4pqA_?usp=sharing
 
 
 9. **Pictures used to build The Look Interface**
 
-https://drive.google.com/drive/folders/1vDTRWO-ECq8pXXAS1qsv5a1Sp08ZcbId?usp=sharing
+   https://drive.google.com/drive/folders/1vDTRWO-ECq8pXXAS1qsv5a1Sp08ZcbId?usp=sharing
 
 10. **Logo Design**.
   
