@@ -32,6 +32,9 @@ const image2 = require("../../imgs/styles/6/Levis.jpg");
 const image3 = require("../../imgs/styles/6/Schott.jpg");
 const image4 = require("../../imgs/styles/6/Supreme-Plain-Logo-Shirt.png");
 const image5 = require("../../imgs/styles/6/Zara-Leather-Jacket.jpg");
+const image6 = require("../../imgs/styles/6/Levis501.jpg");
+const image7 = require("../../imgs/styles/6/Saint-Laurent-Signature-Biker-Jacket.jpg");
+const image8 = require("../../imgs/styles/6/Diesel-Sleenker.jpg")
 
 const datas = [
     {
@@ -62,6 +65,24 @@ const datas = [
         id: 5,
         image: image5,
         name: 'Zara Leather Jacket',
+        price: 200,
+        amountTaken: 1
+    }, {
+        id: 6,
+        image: image6,
+        name: 'Levis Pants',
+        price: 200,
+        amountTaken: 1
+    }, {
+        id: 7,
+        image: image7,
+        name: 'Saint Laurent Signature Biker Jacket',
+        price: 200,
+        amountTaken: 1
+    }, {
+        id: 8,
+        image: image8,
+        name: 'Diesel Sleenker',
         price: 200,
         amountTaken: 1
     },
