@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Image, ScrollView, StyleSheet, Text, View, Alert} from 'react-native';
+import {Image, ScrollView, StyleSheet, Text, View} from 'react-native';
 
 import {
     Body,
@@ -27,12 +27,10 @@ import CartPage from "../MainScreen/CartPage.js";
 const image5 = require("../../imgs/styles/6/Zara-Leather-Jacket.jpg");
 
 export default class Bananas extends Component {
-
-    _addCart = () => {
-        Alert.alert("Added to cart");
-    };
-
     render() {
+        let vans = {
+            uri: 'https://images.vans.com/is/image/Vans/D3HY28-HERO'
+        };
 
         return (
             <Container>
@@ -43,7 +41,7 @@ export default class Bananas extends Component {
                         <Text style={{fontSize: 20, marginTop: 10}}>$ 200</Text>
                         <Text style={{fontSize: 20, marginTop: 10, marginRight: 15}}>Our customers asked for a lighter, trimmer asymmetrical leather biker jacket and we answered with the Perfecto model 626. As easygoing as a second skin yet incredibly durable, this 26” long motorcycle jacket was designed for warmer weather riding or casual trouble—your choice. </Text>
                     </View>
-                <Button full light style={{marginTop: 10}} onPress={this._addCart}><Text>Add To Cart</Text></Button>
+                <Button full light style={{marginTop: 10}}><Text>Add To Cart</Text></Button>
                 </ScrollView>
             </Container>
         );
