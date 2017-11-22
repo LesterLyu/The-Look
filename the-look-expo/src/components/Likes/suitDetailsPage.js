@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View, FlatList, Image, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-
+import PropTypes from 'prop-types';
 import {
     Body,
     Button,
@@ -51,27 +51,28 @@ const data = [
 ];
 
 
-class ListItem extends React.PureComponent {
+class ListItem extends React.Component {
     _onPress = () => {
-        this.state.navigation.navigate('ItemDetailPage');
+        this.props.navigation.navigate('ItemDetailPage');
     };
 
     constructor(props) {
-        super();
+        super(props);
         this.state = {
             index: props.index,
             item: props.item,
-            navigation: props.navigation,
+            navigation:props.navigation
         };
+        this._onPress=this._onPress.bind(this);
 
         if(props.type === 'image') {
             this.state.images = props.images
         }
-    }
+    };
 
     render() {
         return (
-            <TouchableOpacity onPress={this._onPress()}>
+            <TouchableOpacity onPress={this._onPress}>
                 <View style={(this.state.index + 1 === data.length) ? styles.lastItemStyle : styles.containerStyle}>
                     <Image source={this.state.item.img} style={styles.imageStyle}/>
                     <View style={styles.textStyle}>
@@ -87,19 +88,16 @@ class ListItem extends React.PureComponent {
 }
 
 
-class SuitDetailPage extends Component {
+class SuitDetailPage extends React.Component {
     constructor(props) {
         super(props);
+        this._renderItem = this._renderItem.bind(this);
     }
 
-    _showDetail = () => {
-        console.log("pressed");
-        this.props.navigation.navigate('ItemDetailPage');
-    };
 
     _renderItem({ item, index }) {
         return (
-            <ListItem item={item} index={index} navigation={this.props.navigation}/>
+            <ListItem item={item} index={index} navigation = {this.props.navigation}/>
         );
     }
 

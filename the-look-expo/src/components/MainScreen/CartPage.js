@@ -68,7 +68,7 @@ let data = [
 
 class CartItem extends Component {
     constructor(props) {
-        super();
+        super(props);
         this.state = {
             id: props.id,
             image: props.image,
@@ -76,6 +76,10 @@ class CartItem extends Component {
             price: props.price,
             amountTaken: props.amountTaken
         };
+
+        this._add=this._add.bind(this);
+        this._subtract=this._subtract.bind(this);
+        this._onPress = this._onPress.bind(this);
     }
 
     _add = () => {
@@ -88,6 +92,10 @@ class CartItem extends Component {
         }
     };
 
+    _onPress = () => {
+        this.props.navigation.navigate('ItemDetailPage');
+    };
+
     render() {
         console.log(this.state.name);
         const {
@@ -98,7 +106,7 @@ class CartItem extends Component {
             priceStyle } = styles;
 
         return (
-            <View style={containerStyle}>
+            <View style={containerStyle} onPress={this._onPress}>
                 <Image source={this.state.image} style={imageStyle} />
                 <View style={textStyle}>
                     <Text style={{color: '#2e2f30'}}>{this.state.name}</Text>
@@ -139,6 +147,8 @@ class CartItem extends Component {
 }
 
 class CartPage extends Component {
+
+
 
     _renderItem({item}) {
         //console.log(item);
