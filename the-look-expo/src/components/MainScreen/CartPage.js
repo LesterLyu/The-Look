@@ -75,6 +75,7 @@ class CartItem extends Component {
             image: props.image,
             name: props.name,
             price: props.price,
+
             amountTaken: props.amountTaken,
             navigation:props.navigation
         };
@@ -82,11 +83,13 @@ class CartItem extends Component {
         this._add=this._add.bind(this);
         this._subtract=this._subtract.bind(this);
         this._onPress = this._onPress.bind(this);
+
     }
 
     _add = () => {
         this.setState({amountTaken: this.state.amountTaken + 1});
     };
+
 
     _subtract = () => {
         if (this.state.amountTaken > 1) {
@@ -98,6 +101,7 @@ class CartItem extends Component {
         this.state.navigation.navigate('ItemDetailPage');
     };
 
+
     render() {
         console.log(this.state.name);
         const {
@@ -108,7 +112,9 @@ class CartItem extends Component {
             priceStyle } = styles;
 
         return (
+
             <TouchableOpacity onPress={this._onPress}>
+
             <View style={containerStyle}>
                 <Image source={this.state.image} style={imageStyle} />
                 <View style={textStyle}>
@@ -144,13 +150,16 @@ class CartItem extends Component {
 
 
             </View>
+
             </TouchableOpacity>
+
 
         );
     }
 }
 
 class CartPage extends Component {
+
     constructor(props) {
         super(props);
         this._renderItem = this._renderItem.bind(this);
@@ -160,12 +169,14 @@ class CartPage extends Component {
     _renderItem({item}) {
         //console.log(item);
         return(
+
           <CartItem id={item.id}
                     image={item.image}
                     name={item.name}
                     price={item.price}
                     amountTaken={item.amountTaken}
                     navigation = {this.props.navigation}/>
+
         );
     }
 
@@ -188,7 +199,7 @@ class CartPage extends Component {
                 />
 
                 <Button block dark><Text style={{color: '#ffffff'}}
-                onPress={() => {Alert.alert("Checkout Success")}}>Checkout</Text></Button>
+                                         onPress={() => {Alert.alert("Checkout Success")}}>Checkout</Text></Button>
             </Container>
         );
     }
