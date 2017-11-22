@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Text, View, FlatList, Image, TouchableWithoutFeedback } from 'react-native';
+import {Alert, Text, View, FlatList, Image, TouchableWithoutFeedback ,TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+
 
 import {
     Body,
@@ -68,25 +69,38 @@ let data = [
 
 class CartItem extends Component {
     constructor(props) {
-        super();
+        super(props);
         this.state = {
             id: props.id,
             image: props.image,
             name: props.name,
             price: props.price,
-            amountTaken: props.amountTaken
+
+            amountTaken: props.amountTaken,
+            navigation:props.navigation
         };
+
+        this._add=this._add.bind(this);
+        this._subtract=this._subtract.bind(this);
+        this._onPress = this._onPress.bind(this);
+
     }
 
     _add = () => {
         this.setState({amountTaken: this.state.amountTaken + 1});
     };
 
+
     _subtract = () => {
         if (this.state.amountTaken > 1) {
             this.setState({amountTaken: this.state.amountTaken - 1});
         }
     };
+
+    _onPress = () => {
+        this.state.navigation.navigate('ItemDetailPage');
+    };
+
 
     render() {
         console.log(this.state.name);
@@ -98,6 +112,9 @@ class CartItem extends Component {
             priceStyle } = styles;
 
         return (
+
+            <TouchableOpacity onPress={this._onPress}>
+
             <View style={containerStyle}>
                 <Image source={this.state.image} style={imageStyle} />
                 <View style={textStyle}>
@@ -134,21 +151,38 @@ class CartItem extends Component {
 
             </View>
 
+            </TouchableOpacity>
+
+
         );
     }
 }
 
 class CartPage extends Component {
 
+    constructor(props) {
+        super(props);
+        this._renderItem = this._renderItem.bind(this);
+    }
+
+
     _renderItem({item}) {
         //console.log(item);
         return(
-            <CartItem id={item.id} image={item.image} name={item.name} price={item.price} amountTaken={item.amountTaken}/>
+
+          <CartItem id={item.id}
+                    image={item.image}
+                    name={item.name}
+                    price={item.price}
+                    amountTaken={item.amountTaken}
+                    navigation = {this.props.navigation}/>
+
         );
     }
 
 
     render() {
+
         return (
             <Container>
                 <Header>
