@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, FlatList, Image, TouchableWithoutFeedback, Alert } from 'react-native';
+import { Text, View, FlatList, Image, TouchableWithoutFeedback } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import {
@@ -30,106 +30,129 @@ const image3 = require("../../imgs/styles/6/Schott.jpg");
 const image4 = require("../../imgs/styles/6/Supreme-Plain-Logo-Shirt.png");
 const image5 = require("../../imgs/styles/6/Zara-Leather-Jacket.jpg");
 
+
 let data = [
     {
         id: 1,
+        image: image1,
+        name: 'Uniqlo Black Shirt',
+        price: 15,
+        amountTaken: 1
+    }, {
+        id: 2,
+        image: image2,
+        name: 'Levis 501',
+        price: 398,
+        amountTaken: 1
+    }, {
+        id: 3,
+        image: image3,
+        name: 'Schott',
+        price: 78,
+        amountTaken: 1
+    }, {
+        id: 4,
+        image: image4,
+        name: 'Supreme Plain Logo Shirt',
+        price: 780,
+        amountTaken: 1
+    }, {
+        id: 5,
         image: image5,
         name: 'Zara Leather Jacket',
-        price: 200,
+        price: 6800,
         amountTaken: 1
     },
-]
+];
 
-// let data = [
-//     {
-//         id: 1,
-//         image: image1,
-//         name: 'Uniqlo Black Shirt',
-//         price: 15,
-//         amountTaken: 1
-//     }, {
-//         id: 2,
-//         image: image2,
-//         name: 'Levis 501',
-//         price: 398,
-//         amountTaken: 1
-//     }, {
-//         id: 3,
-//         image: image3,
-//         name: 'Schott',
-//         price: 78,
-//         amountTaken: 1
-//     }, {
-//         id: 4,
-//         image: image4,
-//         name: 'Supreme Plain Logo Shirt',
-//         price: 780,
-//         amountTaken: 1
-//     }, {
-//         id: 5,
-//         image: image5,
-//         name: 'Zara Leather Jacket',
-//         price: 6800,
-//         amountTaken: 1
-//     },
-// ];
 
-class CartPage extends Component {
-    _renderItem({ item, index }) {
+class CartItem extends Component {
+    constructor(props) {
+        super();
+        this.state = {
+            id: props.id,
+            image: props.image,
+            name: props.name,
+            price: props.price,
+            amountTaken: props.amountTaken
+        };
+    }
+
+    _add = () => {
+        this.setState({amountTaken: this.state.amountTaken + 1});
+    };
+
+    _subtract = () => {
+        if (this.state.amountTaken > 1) {
+            this.setState({amountTaken: this.state.amountTaken - 1});
+        }
+    };
+
+    render() {
+        console.log(this.state.name);
         const {
             containerStyle,
-            lastItemStyle,
             imageStyle,
             textStyle,
             counterStyle,
             priceStyle } = styles;
 
         return (
-            <TouchableWithoutFeedback>
-                <View style={(index + 1 === data.length) ? lastItemStyle : containerStyle}>
-                    <Image source={item.image} style={imageStyle}/>
-                    <View style={textStyle}>
-                        <Text style={{ color: '#2e2f30' }}>{item.name}</Text>
-                        <View style={priceStyle}>
-                            <Text style={{ color: '#2e2f30', fontSize: 12 }}>${item.price}</Text>
-                        </View>
-                    </View>
-
-                    <View style={counterStyle}>
-                        <Icon.Button
-                            name="ios-remove"
-                            size={25}
-                            color='#fff'
-                            backgroundColor='#fff'
-                            style={{ borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30 }}
-                            iconStyle={{ marginRight: 0 }}
-                        />
-
-                        <Text>{item.amountTaken}</Text>
-
-                        <Icon.Button
-                            name="ios-add"
-                            size={25}
-                            color='#fff'
-                            backgroundColor='#fff'
-                            style={{ borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30 }}
-                            iconStyle={{ marginRight: 0 }}
-                        />
-
+            <View style={containerStyle}>
+                <Image source={this.state.image} style={imageStyle} />
+                <View style={textStyle}>
+                    <Text style={{color: '#2e2f30'}}>{this.state.name}</Text>
+                    <View style={priceStyle}>
+                        <Text style={{color: '#2e2f30', fontSize: 12}}>${this.state.price}</Text>
                     </View>
                 </View>
-            </TouchableWithoutFeedback>
+
+                <View style={counterStyle}>
+                    <Icon.Button
+                        name="ios-remove"
+                        size={25}
+                        color='#fff'
+                        backgroundColor='#fff'
+                        style={{borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30}}
+                        iconStyle={{marginRight: 0}}
+                        onPress={this._subtract}
+                    />
+
+                    <Text>{this.state.amountTaken}</Text>
+
+                    <Icon.Button
+                        name="ios-add"
+                        size={25}
+                        color='#fff'
+                        backgroundColor='#fff'
+                        style={{borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30}}
+                        iconStyle={{marginRight: 0}}
+                        onPress={this._add}
+                    />
+                </View>
+
+
+            </View>
+
+        );
+    }
+}
+
+class CartPage extends Component {
+
+    _renderItem({item}) {
+        //console.log(item);
+        return(
+            <CartItem id={item.id} image={item.image} name={item.name} price={item.price} amountTaken={item.amountTaken}/>
         );
     }
 
-    _checkout = () => {
-        Alert.alert("Your order has been placed!");
-    };
 
     render() {
         return (
             <Container>
                 <Header>
+
                     <Body>
                     <Title>My Cart</Title>
                     </Body>
@@ -141,7 +164,8 @@ class CartPage extends Component {
                     keyExtractor={(item) => item.id}
                 />
 
-                <Button block dark onPress={this._checkout}><Text style={{color: '#ffffff'}}>Checkout</Text></Button>
+                <Button block dark><Text style={{color: '#ffffff'}}
+                                         onPress={() => {Alert.alert("Checkout Success")}}>Checkout</Text></Button>
             </Container>
         );
     }
