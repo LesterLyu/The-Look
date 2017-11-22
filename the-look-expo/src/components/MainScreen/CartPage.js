@@ -66,56 +66,84 @@ let data = [
 ];
 
 
-class CartPage extends Component {
+class CartItem extends Component {
+    constructor(props) {
+        super();
+        this.state = {
+            id: props.id,
+            image: props.image,
+            name: props.name,
+            price: props.price,
+            amountTaken: props.amountTaken
+        };
+    }
 
-    _renderItem({ item, index }) {
+    _add = () => {
+        this.setState({amountTaken: this.state.amountTaken + 1});
+    };
+
+    _subtract = () => {
+        if (this.state.amountTaken > 1) {
+            this.setState({amountTaken: this.state.amountTaken - 1});
+        }
+    };
+
+    render() {
+        console.log(this.state.name);
         const {
             containerStyle,
-            lastItemStyle,
             imageStyle,
             textStyle,
             counterStyle,
             priceStyle } = styles;
 
-        this.state = {
-            amount: item.amountTaken
-        };
-
         return (
-            <TouchableWithoutFeedback>
-                <View style={(index + 1 === data.length) ? lastItemStyle : containerStyle}>
-                    <Image source={item.image} style={imageStyle}/>
-                    <View style={textStyle}>
-                        <Text style={{ color: '#2e2f30' }}>{item.name}</Text>
-                        <View style={priceStyle}>
-                            <Text style={{ color: '#2e2f30', fontSize: 12 }}>${item.price}</Text>
-                        </View>
-                    </View>
-
-                    <View style={counterStyle}>
-                        <Icon.Button
-                            name="ios-remove"
-                            size={25}
-                            color='#fff'
-                            backgroundColor='#fff'
-                            style={{ borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30 }}
-                            iconStyle={{ marginRight: 0 }}
-                        />
-
-                        <Text>{this.state.amount}</Text>
-
-                        <Icon.Button
-                            name="ios-add"
-                            size={25}
-                            color='#fff'
-                            backgroundColor='#fff'
-                            style={{ borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30 }}
-                            iconStyle={{ marginRight: 0 }}
-                        />
-
+            <View style={containerStyle}>
+                <Image source={this.state.image} style={imageStyle} />
+                <View style={textStyle}>
+                    <Text style={{color: '#2e2f30'}}>{this.state.name}</Text>
+                    <View style={priceStyle}>
+                        <Text style={{color: '#2e2f30', fontSize: 12}}>${this.state.price}</Text>
                     </View>
                 </View>
-            </TouchableWithoutFeedback>
+
+                <View style={counterStyle}>
+                    <Icon.Button
+                        name="ios-remove"
+                        size={25}
+                        color='#fff'
+                        backgroundColor='#fff'
+                        style={{borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30}}
+                        iconStyle={{marginRight: 0}}
+                        onPress={this._subtract}
+                    />
+
+                    <Text>{this.state.amountTaken}</Text>
+
+                    <Icon.Button
+                        name="ios-add"
+                        size={25}
+                        color='#fff'
+                        backgroundColor='#fff'
+                        style={{borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30}}
+                        iconStyle={{marginRight: 0}}
+                        onPress={this._add}
+                    />
+                </View>
+
+
+            </View>
+
+        );
+    }
+}
+
+class CartPage extends Component {
+
+    _renderItem({item}) {
+        //console.log(item);
+        return(
+          <CartItem id={item.id} image={item.image} name={item.name} price={item.price} amountTaken={item.amountTaken}/>
         );
     }
 
