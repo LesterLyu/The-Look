@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Text, View, FlatList, Image, TouchableWithoutFeedback } from 'react-native';
+import {Alert, Text, View, FlatList, Image, TouchableWithoutFeedback ,TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+
 
 import {
     Body,
@@ -74,7 +75,8 @@ class CartItem extends Component {
             image: props.image,
             name: props.name,
             price: props.price,
-            amountTaken: props.amountTaken
+            amountTaken: props.amountTaken,
+            navigation:props.navigation
         };
 
         this._add=this._add.bind(this);
@@ -93,7 +95,7 @@ class CartItem extends Component {
     };
 
     _onPress = () => {
-        this.props.navigation.navigate('ItemDetailPage');
+        this.state.navigation.navigate('ItemDetailPage');
     };
 
     render() {
@@ -106,7 +108,8 @@ class CartItem extends Component {
             priceStyle } = styles;
 
         return (
-            <View style={containerStyle} onPress={this._onPress}>
+            <TouchableOpacity onPress={this._onPress}>
+            <View style={containerStyle}>
                 <Image source={this.state.image} style={imageStyle} />
                 <View style={textStyle}>
                     <Text style={{color: '#2e2f30'}}>{this.state.name}</Text>
@@ -141,24 +144,34 @@ class CartItem extends Component {
 
 
             </View>
+            </TouchableOpacity>
 
         );
     }
 }
 
 class CartPage extends Component {
-
+    constructor(props) {
+        super(props);
+        this._renderItem = this._renderItem.bind(this);
+    }
 
 
     _renderItem({item}) {
         //console.log(item);
         return(
-          <CartItem id={item.id} image={item.image} name={item.name} price={item.price} amountTaken={item.amountTaken}/>
+          <CartItem id={item.id}
+                    image={item.image}
+                    name={item.name}
+                    price={item.price}
+                    amountTaken={item.amountTaken}
+                    navigation = {this.props.navigation}/>
         );
     }
 
 
     render() {
+
         return (
             <Container>
                 <Header>
