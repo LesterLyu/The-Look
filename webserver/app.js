@@ -21,8 +21,12 @@ let mongoose    = require('mongoose');
 
 let jwt    = require('jsonwebtoken'); // used to create, sign, and verify tokens
 
-mongoose.connect(config.database); // connect to database
-
+// Use bluebird
+mongoose.Promise = require('bluebird');
+// connect to database
+let promise = mongoose.connect(config.database, {
+    useMongoClient: true,
+});
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -50,7 +54,7 @@ app.use('/api/authenticate', authenticate);
 app.use(function(req, res, next) {
 
     // check header or url parameters or post parameters for token
-    let token = req.body.token || req.param('token') || req.headers['x-access-token'];
+    let token = req.body.token || req.params.token || req.headers['x-access-token'];
 
     // decode token
     if (token) {
