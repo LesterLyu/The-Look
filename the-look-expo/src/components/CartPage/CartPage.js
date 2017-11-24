@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {Alert, Text, View, FlatList, Image, TouchableWithoutFeedback ,TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-
 import {
     Body,
     Button,
@@ -95,7 +94,7 @@ class CartItem extends Component {
     };
 
     _onPress = () => {
-        this.state.navigation.navigate('ItemDetailPage');
+        this.props.navigation.navigate('ItemDetailPage');
     };
 
     render() {
@@ -107,43 +106,44 @@ class CartItem extends Component {
             counterStyle,
             priceStyle } = styles;
 
+
         return (
             <TouchableOpacity onPress={this._onPress}>
-            <View style={containerStyle}>
-                <Image source={this.state.image} style={imageStyle} />
-                <View style={textStyle}>
-                    <Text style={{color: '#2e2f30'}}>{this.state.name}</Text>
-                    <View style={priceStyle}>
-                        <Text style={{color: '#2e2f30', fontSize: 12}}>${this.state.price}</Text>
+                <View style={containerStyle}>
+                    <Image source={this.state.image} style={imageStyle} />
+                    <View style={textStyle}>
+                        <Text style={{color: '#2e2f30'}}>{this.state.name}</Text>
+                        <View style={priceStyle}>
+                            <Text style={{color: '#2e2f30', fontSize: 12}}>${this.state.price}</Text>
+                        </View>
                     </View>
+
+                    <View style={counterStyle}>
+                        <Icon.Button
+                            name="ios-remove"
+                            size={25}
+                            color='#fff'
+                            backgroundColor='#fff'
+                            style={{borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30}}
+                            iconStyle={{marginRight: 0}}
+                            onPress={this._subtract}
+                        />
+
+                        <Text>{this.state.amountTaken}</Text>
+
+                        <Icon.Button
+                            name="ios-add"
+                            size={25}
+                            color='#fff'
+                            backgroundColor='#fff'
+                            style={{borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30}}
+                            iconStyle={{marginRight: 0}}
+                            onPress={this._add}
+                        />
+
+                    </View>
+
                 </View>
-
-                <View style={counterStyle}>
-                    <Icon.Button
-                        name="ios-remove"
-                        size={25}
-                        color='#fff'
-                        backgroundColor='#fff'
-                        style={{borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30}}
-                        iconStyle={{marginRight: 0}}
-                        onPress={this._subtract}
-                    />
-
-                    <Text>{this.state.amountTaken}</Text>
-
-                    <Icon.Button
-                        name="ios-add"
-                        size={25}
-                        color='#fff'
-                        backgroundColor='#fff'
-                        style={{borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30}}
-                        iconStyle={{marginRight: 0}}
-                        onPress={this._add}
-                    />
-                </View>
-
-
-            </View>
             </TouchableOpacity>
 
         );
@@ -185,7 +185,7 @@ class CartPage extends Component {
                     data={data}
                     renderItem={this._renderItem}
                     keyExtractor={(item) => item.id}
-                />
+                                    />
 
                 <Button block dark><Text style={{color: '#ffffff'}}
                 onPress={() => {Alert.alert("Checkout Success")}}>Checkout</Text></Button>

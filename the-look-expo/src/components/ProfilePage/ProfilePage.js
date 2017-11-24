@@ -87,7 +87,6 @@ class ProfilePage extends React.Component {
 ProfilePage.navigationOptions = ({ navigation }) => ({
     header: (
         <Header>
-
             <Body>
             <Title>Profile</Title>
             </Body>

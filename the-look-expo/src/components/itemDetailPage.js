@@ -22,7 +22,6 @@ import {
     Title,
 } from 'native-base';
 
-import CartPage from "../MainScreen/CartPage.js";
 
 export default class Bananas extends Component {
     render() {
