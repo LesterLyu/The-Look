@@ -7,4 +7,7 @@ import { StackNavigator } from "react-navigation";
 export default (DrawNav = StackNavigator({
     ProfilePage: { screen: ProfilePage },
     EditProfile: { screen: EditProfile },
+}, {
+    headerMode: 'screen'
 }));
+

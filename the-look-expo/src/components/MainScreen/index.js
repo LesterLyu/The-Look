@@ -1,8 +1,8 @@
 import React from "react";
-import StylesPage from "./StylesPage.js";
-import CartPage from "./CartPage.js";
+import Styles from "./StylesPage.js";
+import Carts from "../CartPage/index";
 import Likes from "../Likes/index";
-import ProfilePage from "../ProfilePage/index.js";
+import Profiles from "../ProfilePage/index.js";
 
 import {TabNavigator} from "react-navigation";
 
@@ -10,12 +10,12 @@ import {Button, Footer, FooterTab, Icon, Item, Label, Text} from "native-base";
 
 export default (MainScreenNavigator = TabNavigator(
     {
-        StylesPage: {
-            screen: StylesPage,
+        Styles: {
+            screen: Styles,
         },
         Likes: {screen: Likes},
-        CartPage: {screen: CartPage},
-        ProfilePage: {screen: ProfilePage},
+        Carts: {screen: Carts},
+        Profiles: {screen: Profiles},
     },
     {
         swipeEnabled:false,
@@ -41,28 +41,28 @@ export default (MainScreenNavigator = TabNavigator(
                         <Button
                             vertical
                             active={props.navigationState.index === 0}
-                            onPress={() => props.navigation.navigate("StylesPage")}
+                            onPress={() => props.navigation.navigate("Styles")}
                         >
                             <Icon name="shirt"/>
                         </Button>
                         <Button
                             vertical
                             active={props.navigationState.index === 1}
-                            onPress={() => props.navigation.navigate("LikesPage")}
+                            onPress={() => props.navigation.navigate("Likes")}
                         >
                             <Icon name="heart"/>
                         </Button>
                         <Button
                             vertical
                             active={props.navigationState.index === 2}
-                            onPress={() => props.navigation.navigate("CartPage")}
+                            onPress={() => props.navigation.navigate("Carts")}
                         >
                             <Icon name="cart"/>
                         </Button>
                         <Button
                             vertical
                             active={props.navigationState.index === 3}
-                            onPress={() => props.navigation.navigate("ProfilePage")}
+                            onPress={() => props.navigation.navigate("Profiles")}
                         >
                             <Icon name="person"/>
                         </Button>

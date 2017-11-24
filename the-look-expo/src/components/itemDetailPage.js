@@ -22,7 +22,6 @@ import {
     Title,
 } from 'native-base';
 
-import CartPage from "../MainScreen/CartPage.js";
 
 const image5 = require("../../imgs/styles/6/Zara-Leather-Jacket.jpg");
 
