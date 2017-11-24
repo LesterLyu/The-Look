@@ -1,7 +1,7 @@
-
-import React, {Component} from 'react';
-import {ListView} from 'react-native';
-
+import React, { Component } from 'react';
+import { Text, View, FlatList, Image, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
+import PropTypes from 'prop-types';
 import {
     Body,
     Button,
@@ -14,29 +14,21 @@ import {
     H2,
     H3,
     Header,
-    Icon,
     Left,
     List,
-    ListItem,
     Right,
-    Text,
     Thumbnail,
     Title,
-    View
 } from 'native-base';
 
-import styles from '../MainScreen/styles';
 
 const image1 = require("../../imgs/styles/6/Uniqlo-Black-Shirt.jpg");
 const image2 = require("../../imgs/styles/6/Levis.jpg");
 const image3 = require("../../imgs/styles/6/Schott.jpg");
 const image4 = require("../../imgs/styles/6/Supreme-Plain-Logo-Shirt.png");
 const image5 = require("../../imgs/styles/6/Zara-Leather-Jacket.jpg");
-const image6 = require("../../imgs/styles/6/Levis501.jpg");
-const image7 = require("../../imgs/styles/6/Saint-Laurent-Signature-Biker-Jacket.jpg");
-const image8 = require("../../imgs/styles/6/Diesel-Sleenker.jpg")
 
-const datas = [
+const data = [
     {
         id: 1,
         image: image1,
@@ -67,24 +59,6 @@ const datas = [
         name: 'Zara Leather Jacket',
         price: 200,
         amountTaken: 1
-    }, {
-        id: 6,
-        image: image6,
-        name: 'Levis Pants',
-        price: 200,
-        amountTaken: 1
-    }, {
-        id: 7,
-        image: image7,
-        name: 'Saint Laurent Signature Biker Jacket',
-        price: 200,
-        amountTaken: 1
-    }, {
-        id: 8,
-        image: image8,
-        name: 'Diesel Sleenker',
-        price: 200,
-        amountTaken: 1
     },
 ];
 
@@ -111,59 +85,110 @@ const datas = [
 
 
 
-class SuitDetailPage extends Component {
+class ListItem extends React.Component {
+    _onPress = () => {
+        this.props.navigation.navigate('ItemDetailPage');
+    };
+
     constructor(props) {
         super(props);
-        this.ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
         this.state = {
-            basic: true,
-            listViewData: datas,
-            dataSource: this.ds.cloneWithRows(datas)
+            index: props.index,
+            item: props.item,
+            navigation:props.navigation
         };
+        this._onPress=this._onPress.bind(this);
+
+        if(props.type === 'image') {
+            this.state.images = props.images
+        }
+    };
+
+    render() {
+        return (
+            <TouchableOpacity onPress={this._onPress}>
+                <View style={(this.state.index + 1 === data.length) ? styles.lastItemStyle : styles.containerStyle}>
+                    <Image source={this.state.item.img} style={styles.imageStyle}/>
+                    <View style={styles.textStyle}>
+                        <Text style={{ color: '#2e2f30' }}>{this.state.item.name}</Text>
+                        <View style={styles.priceStyle}>
+                            <Text style={{ color: '#2e2f30', fontSize: 12 }}>${this.state.item.price}</Text>
+                        </View>
+                    </View>
+                </View>
+            </TouchableOpacity>
+        )
+    }
+}
+
+
+class SuitDetailPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this._renderItem = this._renderItem.bind(this);
     }
 
-    deleteRow(secId, rowId, rowMap) {
-        rowMap[`${secId}${rowId}`].props.closeRow();
-        const newData = [...this.state.listViewData];
-        newData.splice(rowId, 1);
-        this.setState({listViewData: newData});
-    }
 
-
-    closeRow(secId, rowId, rowMap) {
-        rowMap[`${secId}${rowId}`].props.closeRow();
+    _renderItem({ item, index }) {
+        return (
+            <ListItem item={item} index={index} navigation = {this.props.navigation}/>
+        );
     }
 
     render() {
-        //const {navigate} = this.props.navigation;
-        //const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-
         return (
-            <Container style={styles.container}>
+            <Container>
+                <FlatList
+                    data={data}
+                    renderItem={this._renderItem}
+                    keyExtractor={(item) => item.id}
+                />
 
-                <Content>
-                    <ListView
-                        dataSource={this.state.dataSource}
-                        renderRow={(data, secId, rowId, rowMap) =>
-                            <ListItem thumbnail onPress={() => this.props.navigation.navigate("ItemDetailPage")}>
-                                <Left style={{flex:0.2}}>
-                                    <Thumbnail square size={110} source={data.image} />
-                                </Left>
-                                <Body style={{flex:1}}>
-
-                                <Text style={{fontSize:14}}
-                                >{data.text}</Text>
-                                <Text numberOfLines={1}
-                                      style={{fontSize:12}}
-                                >{data.name} ${data.price}</Text>
-                                </Body>
-                            </ListItem>}
-                        rightOpenValue={-75}
-                    />
-                </Content>
             </Container>
         );
     }
 }
+
+
+const styles = {
+    containerStyle: {
+        flexDirection: 'row',
+        flex: 1,
+        borderBottomWidth: 1,
+        borderColor: '#e2e2e2',
+        padding: 10,
+        paddingLeft: 15,
+        backgroundColor: '#fff'
+    },
+    lastItemStyle: {
+        flexDirection: 'row',
+        flex: 1,
+        padding: 10,
+        paddingLeft: 15,
+        backgroundColor: '#fff'
+    },
+    imageStyle: {
+        width: 50,
+        height: 50,
+        marginRight: 20
+    },
+    textStyle: {
+        flex: 2,
+        justifyContent: 'center'
+    },
+    priceStyle: {
+        backgroundColor: '#ddd',
+        width: 60,
+        alignItems: 'center',
+        marginTop: 3,
+        borderRadius: 3
+    },
+    counterStyle: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center'
+    }
+};
 
 export default SuitDetailPage;

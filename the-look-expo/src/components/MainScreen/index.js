@@ -1,9 +1,8 @@
 import React from "react";
 import StylesPage from "./StylesPage.js";
 import CartPage from "./CartPage.js";
-import LikesPage from "../Likes/index";
+import Likes from "../Likes/index";
 import ProfilePage from "../ProfilePage/index.js";
-import itemDetailPage from "../Likes/itemDetailPage.js";
 
 import {TabNavigator} from "react-navigation";
 
@@ -14,14 +13,9 @@ export default (MainScreenNavigator = TabNavigator(
         StylesPage: {
             screen: StylesPage,
         },
-        LikesPage: {screen: LikesPage},
+        Likes: {screen: Likes},
         CartPage: {screen: CartPage},
         ProfilePage: {screen: ProfilePage},
-        itemDetailPage: { screen: itemDetailPage,
-            navigationOptions: ({navigation}) => ({
-                header: null,
-            }),
-        },
     },
     {
         swipeEnabled:false,

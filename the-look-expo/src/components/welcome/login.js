@@ -84,7 +84,6 @@ export default class Login extends Component {
                 if(data.success) {
                     //Alert.alert("Registration success");
                     this.props.navigation.navigate("EditProfile", {from: "login"});
-                    this.props.navigationOptions
                 }
                 else {
                     Alert.alert("Failed to register, " + data.msg);

@@ -15,7 +15,6 @@ export default (Likes = StackNavigator({
     SuitDetailsPage: { screen: SuitDetailsPage,
         navigationOptions: ({navigation}) => ({
             headerTitle: "Suit Detail",
-
         }),
     },
     ItemDetailPage: { screen: ItemDetailPage,

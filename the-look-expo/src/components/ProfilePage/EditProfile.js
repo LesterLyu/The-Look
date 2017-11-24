@@ -200,9 +200,6 @@ export default class EditProfile extends React.Component {
                         <Col>
                             <ProfileButton descriptions={height}/>
                         </Col>
-                        <Col>
-                            <View style={styles.boxEmpty}></View>
-                        </Col>
                     </Grid>
 
                     <Grid>
