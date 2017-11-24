@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {Alert, Text, View, FlatList, Image, TouchableWithoutFeedback ,TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-
 import {
     Body,
     Button,
@@ -75,7 +74,6 @@ class CartItem extends Component {
             image: props.image,
             name: props.name,
             price: props.price,
-
             amountTaken: props.amountTaken,
             navigation:props.navigation
         };
@@ -83,13 +81,11 @@ class CartItem extends Component {
         this._add=this._add.bind(this);
         this._subtract=this._subtract.bind(this);
         this._onPress = this._onPress.bind(this);
-
     }
 
     _add = () => {
         this.setState({amountTaken: this.state.amountTaken + 1});
     };
-
 
     _subtract = () => {
         if (this.state.amountTaken > 1) {
@@ -98,9 +94,8 @@ class CartItem extends Component {
     };
 
     _onPress = () => {
-        this.state.navigation.navigate('ItemDetailPage');
+        this.props.navigation.navigate('ItemDetailPage');
     };
-
 
     render() {
         console.log(this.state.name);
@@ -111,10 +106,9 @@ class CartItem extends Component {
             counterStyle,
             priceStyle } = styles;
 
+
         return (
-
             <TouchableOpacity onPress={this._onPress}>
-
             <View style={containerStyle}>
                 <Image source={this.state.image} style={imageStyle} />
                 <View style={textStyle}>
@@ -124,42 +118,39 @@ class CartItem extends Component {
                     </View>
                 </View>
 
-                <View style={counterStyle}>
-                    <Icon.Button
-                        name="ios-remove"
-                        size={25}
-                        color='#fff'
-                        backgroundColor='#fff'
-                        style={{borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30}}
-                        iconStyle={{marginRight: 0}}
-                        onPress={this._subtract}
-                    />
+                    <View style={counterStyle}>
+                        <Icon.Button
+                            name="ios-remove"
+                            size={25}
+                            color='#fff'
+                            backgroundColor='#fff'
+                            style={{borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30}}
+                            iconStyle={{marginRight: 0}}
+                            onPress={this._subtract}
+                        />
 
-                    <Text>{this.state.amountTaken}</Text>
+                        <Text>{this.state.amountTaken}</Text>
 
-                    <Icon.Button
-                        name="ios-add"
-                        size={25}
-                        color='#fff'
-                        backgroundColor='#fff'
-                        style={{borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30}}
-                        iconStyle={{marginRight: 0}}
-                        onPress={this._add}
-                    />
+                        <Icon.Button
+                            name="ios-add"
+                            size={25}
+                            color='#fff'
+                            backgroundColor='#fff'
+                            style={{borderRadius: 15, backgroundColor: '#bbb', height: 30, width: 30}}
+                            iconStyle={{marginRight: 0}}
+                            onPress={this._add}
+                        />
+
+                    </View>
+
                 </View>
-
-
-            </View>
-
             </TouchableOpacity>
-
 
         );
     }
 }
 
 class CartPage extends Component {
-
     constructor(props) {
         super(props);
         this._renderItem = this._renderItem.bind(this);
@@ -169,14 +160,12 @@ class CartPage extends Component {
     _renderItem({item}) {
         //console.log(item);
         return(
-
           <CartItem id={item.id}
                     image={item.image}
                     name={item.name}
                     price={item.price}
                     amountTaken={item.amountTaken}
                     navigation = {this.props.navigation}/>
-
         );
     }
 
@@ -196,10 +185,10 @@ class CartPage extends Component {
                     data={data}
                     renderItem={this._renderItem}
                     keyExtractor={(item) => item.id}
-                />
+                                    />
 
                 <Button block dark><Text style={{color: '#ffffff'}}
-                                         onPress={() => {Alert.alert("Checkout Success")}}>Checkout</Text></Button>
+                onPress={() => {Alert.alert("Checkout Success")}}>Checkout</Text></Button>
             </Container>
         );
     }
