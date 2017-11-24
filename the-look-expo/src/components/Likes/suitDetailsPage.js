@@ -22,33 +22,67 @@ import {
 } from 'native-base';
 
 
-const thumbnail = require("../../imgs/1.jpeg");
-const thumbnail2 = require("../../imgs/2.jpeg");
-
+const image1 = require("../../imgs/styles/6/Uniqlo-Black-Shirt.jpg");
+const image2 = require("../../imgs/styles/6/Levis.jpg");
+const image3 = require("../../imgs/styles/6/Schott.jpg");
+const image4 = require("../../imgs/styles/6/Supreme-Plain-Logo-Shirt.png");
+const image5 = require("../../imgs/styles/6/Zara-Leather-Jacket.jpg");
 
 const data = [
     {
         id: 1,
-        img: thumbnail,
-        name: "Vivamus",
-        note: "Lorem ipsum dolor sit amet.",
-        price: "59.99"
-    },
-    {
+        image: image1,
+        name: 'Uniqlo Black Shirt',
+        price: 15,
+        amountTaken: 1
+    }, {
         id: 2,
-        img: thumbnail,
-        name: "Morbi laoreet leo",
-        note: "Proin ornare ante erat, efficitur molestie metus venenatis eget.",
-        price: "50.99"
-    },
-    {
+        image: image2,
+        name: 'Levis 501',
+        price: 398,
+        amountTaken: 1
+    }, {
         id: 3,
-        img: thumbnail2,
-        name: "Sed viverra",
-        note: "Etiam quis gravida justo, a lobortis risus. Maecenas eu dui et arcu lobortis suscipit. ",
-        price: "84.99"
+        image: image3,
+        name: 'Schott',
+        price: 78,
+        amountTaken: 1
+    }, {
+        id: 4,
+        image: image4,
+        name: 'Supreme Plain Logo Shirt',
+        price: 780,
+        amountTaken: 1
+    }, {
+        id: 5,
+        image: image5,
+        name: 'Zara Leather Jacket',
+        price: 200,
+        amountTaken: 1
     },
 ];
+
+// const datas = [
+//     {
+//         img: thumbnail,
+//         text: "Vivamus",
+//         note: "Lorem ipsum dolor sit amet.",
+//         price: "59.99"
+//     },
+//     {
+//         img: thumbnail,
+//         text: "Morbi laoreet leo",
+//         note: "Proin ornare ante erat, efficitur molestie metus venenatis eget.",
+//         price: "50.99"
+//     },
+//     {
+//         img: thumbnail2,
+//         text: "Sed viverra",
+//         note: "Etiam quis gravida justo, a lobortis risus. Maecenas eu dui et arcu lobortis suscipit. ",
+//         price: "84.99"
+//     },
+// ];
+
 
 
 class ListItem extends React.Component {
@@ -109,6 +143,7 @@ class SuitDetailPage extends React.Component {
                     renderItem={this._renderItem}
                     keyExtractor={(item) => item.id}
                 />
+
             </Container>
         );
     }

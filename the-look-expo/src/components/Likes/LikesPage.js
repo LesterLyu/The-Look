@@ -26,12 +26,20 @@ import {
     Title,
 } from "native-base";
 
-const s1 = require("../../imgs/corporate.jpg");
-const s2 = require("../../imgs/hiphop.jpg");
-const s3 = require("../../imgs/jock.jpg");
-const s4 = require("../../imgs/popstar.jpg");
-const s5 = require("../../imgs/rockstar.jpg");
-const s6 = require("../../imgs/throwback.jpg");
+// const s1 = require("../../imgs/corporate.jpg");
+// const s2 = require("../../imgs/hiphop.jpg");
+// const s3 = require("../../imgs/jock.jpg");
+// const s4 = require("../../imgs/popstar.jpg");
+// const s5 = require("../../imgs/rockstar.jpg");
+// const s6 = require("../../imgs/throwback.jpg");
+
+const s1 = require("../../imgs/1.jpeg");
+const s2 = require("../../imgs/2.jpeg");
+const s3 = require("../../imgs/3.jpeg");
+const s4 = require("../../imgs/4.jpeg");
+const s5 = require("../../imgs/5.jpeg");
+const s6 = require("../../imgs/6.jpeg");
+const s7 = require("../../imgs/7.jpeg");
 
 class StyleSection extends React.Component {
     constructor(props) {

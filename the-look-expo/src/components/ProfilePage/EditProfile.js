@@ -163,34 +163,19 @@ export default class EditProfile extends React.Component {
                 <Content padder>
                     <Grid>
                         <Col>
-                            <ProfileButton type={'image'} descriptions={skinColor} images={skinColorImg}/>
-                        </Col>
-                        <Col>
-                            <ProfileButton type={'image'} descriptions={legTorsoRatio} images={legTorsoRatioImg}/>
-                        </Col>
-                    </Grid>
-                    <Grid>
-                        <Col>
-                            <ProfileButton type={'image'} descriptions={belly} images={bellyImg}/>
-                        </Col>
-                        <Col>
                             <ProfileButton type={'image'} descriptions={shoulderShape} images={shoulderShapeImg}/>
                         </Col>
-                    </Grid>
-                    <Grid>
-                        <Col>
-                            <ProfileButton type={'image'} descriptions={legShape} images={legShapeImg}/>
-                        </Col>
-                        <Col>
-                            <ProfileButton descriptions={height}/>
-                        </Col>
-                    </Grid>
-                    <Grid>
                         <Col>
                             <ProfileButton type={'image'} descriptions={neckType} images={neckTypeImg}/>
                         </Col>
+                    </Grid>
+
+                    <Grid>
                         <Col>
-                            <ProfileButton type={'image'} descriptions={bodyShape} images={bodyShapeImg}/>
+                            <ProfileButton type={'image'} descriptions={skinColor} images={skinColorImg}/>
+                        </Col>
+                        <Col>
+                            <ProfileButton type={'image'} descriptions={belly} images={bellyImg}/>
                         </Col>
                     </Grid>
                     <Grid>
@@ -198,9 +183,25 @@ export default class EditProfile extends React.Component {
                             <ProfileButton type={'image'} descriptions={atLength} images={atLengthImg}/>
                         </Col>
                         <Col>
-                            <View style={styles.boxEmpty}/>
+                            <ProfileButton type={'image'} descriptions={legShape} images={legShapeImg}/>
                         </Col>
                     </Grid>
+
+                    <Grid>
+                        <Col>
+                            <ProfileButton type={'image'} descriptions={legTorsoRatio} images={legTorsoRatioImg}/>
+                        </Col>
+                        <Col>
+                            <ProfileButton type={'image'} descriptions={bodyShape} images={bodyShapeImg}/>
+                        </Col>
+                    </Grid>
+
+                    <Grid>
+                        <Col>
+                            <ProfileButton descriptions={height}/>
+                        </Col>
+                    </Grid>
+
                     <Grid>
                         <Col>
                             <Button full rounded light

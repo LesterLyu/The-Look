@@ -109,14 +109,14 @@ class CartItem extends Component {
 
         return (
             <TouchableOpacity onPress={this._onPress}>
-                <View style={containerStyle}>
-                    <Image source={this.state.image} style={imageStyle} />
-                    <View style={textStyle}>
-                        <Text style={{color: '#2e2f30'}}>{this.state.name}</Text>
-                        <View style={priceStyle}>
-                            <Text style={{color: '#2e2f30', fontSize: 12}}>${this.state.price}</Text>
-                        </View>
+            <View style={containerStyle}>
+                <Image source={this.state.image} style={imageStyle} />
+                <View style={textStyle}>
+                    <Text style={{color: '#2e2f30'}}>{this.state.name}</Text>
+                    <View style={priceStyle}>
+                        <Text style={{color: '#2e2f30', fontSize: 12}}>${this.state.price}</Text>
                     </View>
+                </View>
 
                     <View style={counterStyle}>
                         <Icon.Button
