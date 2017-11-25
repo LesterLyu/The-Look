@@ -23,13 +23,10 @@ import {
 } from 'native-base';
 
 
-const image5 = require("../../imgs/styles/6/Zara-Leather-Jacket.jpg");
+const image5 = require("../imgs/styles/6/Zara-Leather-Jacket.jpg");
 
-export default class Bananas extends Component {
+export default class ItemDetailPage extends Component {
     render() {
-        let vans = {
-            uri: 'https://images.vans.com/is/image/Vans/D3HY28-HERO'
-        };
 
         return (
             <Container>
