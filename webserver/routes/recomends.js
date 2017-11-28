@@ -4,7 +4,7 @@ const BodyShape = require('../models/bodyShape');
 const User = require('../models/user');
 const Suit = require('../models/suit');
 
-const recomendLimit = 5;
+const recomendLimit = 100;
 
 router.get('/', function(req, res, next) {
 
@@ -22,32 +22,35 @@ router.get('/', function(req, res, next) {
 
             console.log("Recommend random styles");
 
-            let suitsCur = getRandom();
-            console.log(suits);
-            res.json(suits);
+            getRandom(function (err, suits) {
+                console.log(suits);
+                suits.suitId = suits._id;
+                res.json(suits);
+            });
+
 
         }
         // the user has bodyShapeId
         else {
             console.log("Recommend styles based on body shape");
             // algorithm to recommend styles based on body shape
-            let suitsCur = getRecomands(bodyShapeId);
-            console.log(suitsCur);
-            res.json(suitsCur);
-
-            
-
+            getRecomands(function (err, suits) {
+                console.log(suits);
+                suits.suitId = suits._id;
+                res.json(suits);
+            });
         }
     });
 
 });
 
-function getRandom(){
-    Suit.find({}).limit(recomendLimit);
+function getRandom(callback){
+    Suit.find().limit(recomendLimit).exec(callback);
+
 }
 
-function getRecomands(bodyShapeId){
-    Suit.find({"bodyShapeId":bodyShapeId}).limit(recomendLimit);
+function getRecomands(callback){
+    return Suit.find({}).limit(recomendLimit).exec(callback);
 }
 
 module.exports = router;
