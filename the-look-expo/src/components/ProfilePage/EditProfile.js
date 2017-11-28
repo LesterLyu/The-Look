@@ -139,6 +139,15 @@ export default class EditProfile extends React.Component {
 
     };
 
+    _submitProfile = () => {
+        alert("Submitted Profile");
+        if(this.state.from === 'login') {
+            this.props.navigation.navigate('HomeScreen');
+        }
+        else
+            this.props.navigation.goBack();
+    }
+
     constructor(params) {
         super();
         const {state} = params.navigation;
@@ -205,7 +214,7 @@ export default class EditProfile extends React.Component {
                     <Grid>
                         <Col>
                             <Button full rounded light
-                                    style={{ marginTop: 10, marginBottom: 20}} onPress={this.back}>
+                                    style={{ marginTop: 10, marginBottom: 20}} onPress={this._submitProfile}>
                                 <Text>THAT'S ME</Text>
                             </Button>
                         </Col>

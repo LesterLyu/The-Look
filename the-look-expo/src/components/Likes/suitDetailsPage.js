@@ -87,6 +87,7 @@ const data = [
 
 class ListItem extends React.Component {
     _onPress = () => {
+        alert("To item detail page")
         this.props.navigation.navigate('ItemDetailPage');
     };
 
@@ -97,7 +98,7 @@ class ListItem extends React.Component {
             item: props.item,
             navigation:props.navigation
         };
-        this._onPress=this._onPress.bind(this);
+        //this._onPress=this._onPress.bind(this);
 
         if(props.type === 'image') {
             this.state.images = props.images

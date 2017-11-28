@@ -35,34 +35,51 @@ export default (MainScreenNavigator = TabNavigator(
 
 
         tabBarComponent: props => {
+
+            _generateStylesPage = () => {
+                props.navigation.navigate("Styles");
+            };
+
+            _generateLikesPage = () => {
+                props.navigation.navigate("Likes");
+            };
+
+            _generateCartsPage = () => {
+                props.navigation.navigate("Carts");
+            };
+
+            _generateProfilePage = () => {
+                props.navigation.navigate("Profiles");
+            };
+
             return (
                 <Footer>
                     <FooterTab>
                         <Button
                             vertical
                             active={props.navigationState.index === 0}
-                            onPress={() => props.navigation.navigate("Styles")}
+                            onPress={this._generateStylesPage}
                         >
                             <Icon name="shirt"/>
                         </Button>
                         <Button
                             vertical
                             active={props.navigationState.index === 1}
-                            onPress={() => props.navigation.navigate("Likes")}
+                            onPress={this._generateLikesPage}
                         >
                             <Icon name="heart"/>
                         </Button>
                         <Button
                             vertical
                             active={props.navigationState.index === 2}
-                            onPress={() => props.navigation.navigate("Carts")}
+                            onPress={this._generateCartsPage}
                         >
                             <Icon name="cart"/>
                         </Button>
                         <Button
                             vertical
                             active={props.navigationState.index === 3}
-                            onPress={() => props.navigation.navigate("Profiles")}
+                            onPress={this._generateProfilePage}
                         >
                             <Icon name="person"/>
                         </Button>
