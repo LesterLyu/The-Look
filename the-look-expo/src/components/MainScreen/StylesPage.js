@@ -1,5 +1,5 @@
 import React from "react";
-import { StatusBar, View, Image } from "react-native";
+import { StatusBar, View, Image, Alert } from "react-native";
 import {
     Button,
     Text,
@@ -66,10 +66,55 @@ export default class LearnMe extends React.Component {
   _like = () => {
       this._deckSwiper._root.swipeRight();
       alert("Like");
+      let headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+      headers.append('x-access-token', 'some token');
+      return fetch('http://lesterlyu.com/api/user/item', {
+          method: 'POST',
+          headers: headers,
+          body: JSON.stringify({
+              operation: 'like',
+              type: 'suit',
+              id: 'some_id'
+          }),
+
+      }).then(data => {
+          if(data.success) {
+              Alert.alert("Like success");
+          }
+          else {
+              Alert.alert("Failed to like, " + data.msg);
+              console.log(data);
+          }
+      }).catch(err => {
+          console.log(err);
+      });
   };
   _pass = () => {
       this._deckSwiper._root.swipeLeft();
       alert("Pass");
+      let headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+      headers.append('x-access-token', 'some token');
+      return fetch('http://lesterlyu.com/api/user/item', {
+          method: 'POST',
+          headers: headers,
+          body: JSON.stringify({
+              operation: 'dislike',
+              type: 'suit',
+              id: 'some_id'
+          }),
+      }).then(data => {
+          if(data.success) {
+              Alert.alert("Dislike success");
+          }
+          else {
+              Alert.alert("Failed to dislike, " + data.msg);
+              console.log(data);
+          }
+      }).catch(err => {
+          console.log(err);
+      });
   };
     render() {
         return (
