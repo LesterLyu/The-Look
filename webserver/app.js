@@ -95,7 +95,7 @@ app.use('/api/item/item/', item);
 app.use('/api/item/suit/', suit);
 
 // recommend styles
-app.use('/api/recommendation', recomends);
+app.use('/api/user/recommendation', recomends);
 
 
 
