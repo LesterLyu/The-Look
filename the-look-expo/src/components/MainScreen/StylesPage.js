@@ -63,7 +63,14 @@ const cards = [
 ];
 
 export default class LearnMe extends React.Component {
-
+  _like = () => {
+      this._deckSwiper._root.swipeRight();
+      alert("Like");
+  };
+  _pass = () => {
+      this._deckSwiper._root.swipeLeft();
+      alert("Pass");
+  };
     render() {
         return (
             <Container>
@@ -87,11 +94,11 @@ export default class LearnMe extends React.Component {
 
 
                 <View style={{flexDirection: "row", flex: 0.15, position: 'absolute', bottom:15, left: 15, right: 15, justifyContent: 'space-between'}}>
-                    <Button iconLeft rounded danger large onPress={() => this._deckSwiper._root.swipeLeft()}>
+                    <Button iconLeft rounded danger large onPress={this._pass}>
                         <Icon name="md-thumbs-down" />
                         <Text>Pass</Text>
                     </Button>
-                    <Button iconRight rounded success large onPress={() => this._deckSwiper._root.swipeRight()}>
+                    <Button iconRight rounded success large onPress={this._like}>
                         <Text>Like</Text>
                         <Icon name="md-thumbs-up" />
                     </Button>
