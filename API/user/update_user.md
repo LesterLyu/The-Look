@@ -12,15 +12,15 @@ Used to register a User.
 
 ```json
 {
-    "height": "[height in cm]",
-    "skinColor": "[?]",
-    "belly": "[?]",
-    "shoulderShape": "[?]",
-    "legShape": "[?]",
-    "legTorsoRatio": "[?]",
-    "bodyShape": "[?]",
-    "atLength": "[?]",
-    "neckType": "[?]"
+    "height": "[Number]",
+    "skinColor": "[Number]",
+    "belly": "[Number]",
+    "shoulderShape": "[Number]",
+    "legShape": "[Number]",
+    "legTorsoRatio": "[Number]",
+    "bodyShape": "[Number]",
+    "atLength": "[Number]",
+    "neckType": "[Number]"
 }
 ```
 
@@ -29,15 +29,15 @@ Used to register a User.
 ```json
 
 {
-    "height": 190,
-    "skinColor": "[?]",
-    "belly": "[?]",
-    "shoulderShape": "[?]",
-    "legShape": "[?]",
-    "legTorsoRatio": "[?]",
-    "bodyShape": "[?]",
-    "atLength": "[?]",
-    "neckType": "[?]"
+    "height": 0,
+    "skinColor": 0,
+    "belly": 1,
+    "shoulderShape": 2,
+    "legShape": 3,
+    "legTorsoRatio": 1,
+    "bodyShape": 2,
+    "atLength": 3,
+    "neckType": 2
 }
 ```
 
