@@ -13,7 +13,6 @@ Used to register a User.
 ```json
 {
     "height": "[height in cm]",
-    "weight": "[weight in kg]",
     "skinColor": "[?]",
     "belly": "[?]",
     "shoulderShape": "[?]",
@@ -21,8 +20,7 @@ Used to register a User.
     "legTorsoRatio": "[?]",
     "bodyShape": "[?]",
     "atLength": "[?]",
-    "neckType": "[?]",
-    "gender": "[?]"
+    "neckType": "[?]"
 }
 ```
 
@@ -32,7 +30,6 @@ Used to register a User.
 
 {
     "height": 190,
-    "weight": 80,
     "skinColor": "[?]",
     "belly": "[?]",
     "shoulderShape": "[?]",
@@ -40,8 +37,7 @@ Used to register a User.
     "legTorsoRatio": "[?]",
     "bodyShape": "[?]",
     "atLength": "[?]",
-    "neckType": "[?]",
-    "gender": "[?]"
+    "neckType": "[?]"
 }
 ```
 
