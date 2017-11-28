@@ -14,6 +14,8 @@ let authenticate = require('./routes/authenticate');
 let item = require('./routes/item');
 let suit = require('./routes/suit');
 
+let styles = require('./routes/styles');
+
 let app = express();
 
 let morgan      = require('morgan');
@@ -91,6 +93,9 @@ app.use(function(req, res, next) {
 app.use('/api/user', user);
 app.use('/api/item/item/', item);
 app.use('/api/item/suit/', suit);
+
+// recommend styles
+app.use('/api/styles', styles);
 
 
 
