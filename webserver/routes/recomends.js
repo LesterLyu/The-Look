@@ -23,7 +23,6 @@ router.get('/', function(req, res, next) {
             console.log("Recommend random styles");
 
             getRandom(function (err, suits) {
-                console.log(suits);
                 suits.suitId = suits._id;
                 res.json(suits);
             });
@@ -35,7 +34,6 @@ router.get('/', function(req, res, next) {
             console.log("Recommend styles based on body shape");
             // algorithm to recommend styles based on body shape
             getRecomands(function (err, suits) {
-                console.log(suits);
                 suits.suitId = suits._id;
                 res.json(suits);
             });
