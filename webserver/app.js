@@ -14,7 +14,7 @@ let authenticate = require('./routes/authenticate');
 let item = require('./routes/item');
 let suit = require('./routes/suit');
 
-let styles = require('./routes/styles');
+let styles = require('./routes/recomends');
 
 let app = express();
 
