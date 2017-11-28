@@ -15,14 +15,7 @@ Used to automatic add an item based on the given url.
 ```json
 {
     "url": "[item url]",
-    "height":{
-        "max": "[Number in cm]",
-        "min": "[Number in cm]"
-    },
-    "weight":{
-        "max": "[Number in kg]",
-        "min": "[Number in kg]"
-    },
+    "height":[0, 1, 2, 3],
     "skinColor":[
         "c1", "c2", "c3", "etc..."
     ],
