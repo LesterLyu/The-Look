@@ -33,7 +33,8 @@ router.post('/', function(req, res, next) {
                     res.status(400);
                     res.json({ success: false, msg: err });
                 }
-                res.json({ success: true, msg: "Registration success"});
+                else
+                    res.json({ success: true, msg: "Registration success"});
             });
 
         }

@@ -50,6 +50,7 @@ router.put('/', function(req, res, next) {
                     if (err) {
                         res.status(400);
                         res.json({ success: false, msg: err });
+                        return;
                     }
                     res.json({ success: true, msg: "Update profile success."});
                 });
@@ -63,6 +64,7 @@ router.put('/', function(req, res, next) {
                 if (err) {
                     res.status(400);
                     res.json({ success: false, msg: err });
+                    return;
                 }
                 res.json({ success: true, msg: "Update profile success."});
             });
