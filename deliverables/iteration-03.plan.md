@@ -1,8 +1,4 @@
-# THE LOOK
-
- > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
- > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
-
+# THE LOOK / TEAM 14
 
 ## Iteration 3
 
@@ -16,6 +12,14 @@
 #### Changes from previous iteration
 
 List the most significant changes you made to your process (if any).
+
+###### Change 1: Introduced Group Coding Sessions & Code Review Sessions
+One of the biggest challenges that we faced when completing Deliverable 2 was the lack of communication when we were developing our application. For Delierable 2, we decided to assign tasks to each member and write code independently. The reason behind that decision is that it was reading week and we were hoping that working independently gives each group memeber the flexibility to manage their time, so that we can be more productive and save time for arranging meetings and traveling to meet. However, this decision did not turn out as well as we hoped because it led to lack of communication which caused the problem of implementing 
+
+###### Change 2: Change in Roles & Responsibilities
+
+###### Change 3: Change in communication methods (more face-to-face meetings)
+
 
  * At most 3 items
  * Start with the most significant change
