@@ -49,3 +49,5 @@ function getRandom(){
 function getRecomands(bodyShapeId){
     Suit.find({"bodyShapeId":bodyShapeId}).limit(recomendLimit);
 }
+
+module.exports = router;

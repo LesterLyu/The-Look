@@ -14,7 +14,7 @@ let authenticate = require('./routes/authenticate');
 let item = require('./routes/item');
 let suit = require('./routes/suit');
 
-let styles = require('./routes/recomends');
+let recomends = require('./routes/recomends');
 
 let app = express();
 
@@ -95,7 +95,7 @@ app.use('/api/item/item/', item);
 app.use('/api/item/suit/', suit);
 
 // recommend styles
-app.use('/api/styles', styles);
+app.use('/api/recommendation', recomends);
 
 
 
