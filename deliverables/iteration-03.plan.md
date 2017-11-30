@@ -88,7 +88,7 @@ List/describe the artifacts you will produce in order to organize your team.
 
 * We follow camelcase syntax for naming class, method, variable and file/folder, we also follow Airbnb's Javascript coding style. 
 
-** Why we choose this workflow? **
+##### Why we choose this workflow?
 This workflow can prevent struggling on conflicts, and improve the code readibility. This is the same GitHub workflow that we used in our D2, we find that this workflow is very efficient so we are staying with it for D3 as well. We choose this workflow because: 
 
 * Each team member has a different task, commit to their separate branch will not affect others. This will save lots of time and allow each team member to focus on their individual task rather than having to worry about others' code and progress. 
