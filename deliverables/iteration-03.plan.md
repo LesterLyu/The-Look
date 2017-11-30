@@ -66,19 +66,19 @@ List/describe the artifacts you will produce in order to organize your team.
  
  * How do we keep track of what needs to get done?
    
-We decided what needed to get done during the meeting/coding sessions on November 21, and November 27. Since these are in person interviews, we discussed verbally about the tasks that we need to complete. 
+  We decided what needed to get done during the meeting/coding sessions on November 21, and November 27. Since these are in   person interviews, we discussed verbally about the tasks that we need to complete. 
    
 * How do we prioritize tasks?
  
- For this deliverable, we have 3 remaining things that needed to be done: the plan and review documents, front-end & back-end integration, and the video. 
+  For this deliverable, we have 3 remaining things that needed to be done: the plan and review documents, front-end & back-   end integration, and the video. 
 
- We decided to put front-end & back-end integration on the top of the list since this requires lots of coding, debugging, and communication. This is the most important task to get to a final working product. 
+  We decided to put front-end & back-end integration on the top of the list since this requires lots of coding, debugging,     and communication. This is the most important task to get to a final working product. 
 
- In terms of the video for D3, we decided to re-use most of the parts from our previous deliverable, since the functionalities and the main concepts of our product remain the same, and the majority of the work done in this deliverable is behind the scenes (i.e. backend implementation) which does not affect our demo. 
+  In terms of the video for D3, we decided to re-use most of the parts from our previous deliverable, since the          functionalities and the main concepts of our product remain the same, and the majority of the work done in this deliverable is behind the scenes (i.e. backend implementation) which does not affect our demo. 
 
 * How do tasks get assigned to team members?
 
- Since front-end & back-end integration is one of the most prioritized tasks for this deliverable. We decided to have coding sessions and assign tasks to team members during these coding sessions. For detailed explaination of the tasks, see Roles & Responsibilities. 
+  Since front-end & back-end integration is one of the most prioritized tasks for this deliverable. We decided to have coding sessions and assign tasks to team members during these coding sessions. For detailed explaination of the tasks, see Roles & Responsibilities. 
 
 #### Git / GitHub workflow
 
