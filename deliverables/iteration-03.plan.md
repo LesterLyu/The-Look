@@ -66,7 +66,7 @@ List/describe the artifacts you will produce in order to organize your team.
  
  * How do we keep track of what needs to get done?
    
-  We decided what needed to get done during the meeting/coding sessions on November 21, and November 27. Since these are in   person interviews, we discussed verbally about the tasks that we need to complete. 
+   We decided what needed to get done during the meeting/coding sessions on November 21, and November 27. Since these are in   person interviews, we discussed verbally about the tasks that we need to complete. 
    
 * How do we prioritize tasks?
  
