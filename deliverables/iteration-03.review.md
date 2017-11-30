@@ -23,38 +23,38 @@ List process-related (i.e. team organization) decisions that, in retrospect, tur
 
 List process-related (i.e. team organization) decisions that, in retrospect, were not as successful as you thought they would be.
 
-1. The decision to allow a team member to hand over their task to another 
+1. We decided to use direct messaging (i.e. group member A to group member B) to communicate in addition to group chat about the product in the hopes that with direct messaging, we can get a response faster than with a group chat. We made this decision since we noticed from our previous iteration, there are not a lot of communication using the WeChat GroupChat. However, it turns out that this is not a great decision because this method does not provide a lot of transparency. Often times other group members does not have any knowledge about the decisions made during direct messaging. 
 
-2. 
+2. We decided to make the coding sessions optional since we understand that everyone has a different schedule and it was difficult to find a common time for all group members. For these coding sessions, we set a time range and each group member can drop in whenever they have time. However, this did not turn out as well as we hoped because some group members only have time to code for 1 hour while others will stay for the entire 5 hours. This created an inbalance in the division of work, since those who stayed for the entire 5 hour is contributing more than those who stayed for 1 hour. 
 
 #### Planned changes
 
 List any process-related changes you are planning to make (if there are any)
 
- * Ordered from most to least important.
- * Explain why you are making a change.
+1. Daily Brief: Every group member is required to check-in in the group chat, give an overall summary of the status of the tasks they are currently working on. The scrum manager can then adjust the tasks assigned to make sure no one is left behind and that we can finish eveything by the deadline. 
 
+2. Before coding, talk with the product manager / scrum manager to double check that you know what you should implement and how you are going to implement it. 
 
 ## Product - Review
 
 #### Goals and/or tasks that were met/completed:
-
- * From most to least important.
- * Refer/link to artifact(s) that show that a goal/task was met/completed.
- * If a goal/task was not part of the original iteration plan, please mention it.
+   
+   * A fully working navigation system for the UI
+   * Buttons in UI are now clickable and functional
+   * Integrating front-end & back-end for storing and analyzing user profile
+   * Basic authentication system (login/signup)
 
 #### Goals and/or tasks that were planned but not met/completed:
-
- * From most to least important.
- * For each goal/task, explain why it was not met/completed.      
-   e.g. Did you change your mind, or did you just not get to it yet?
+   
+   * Finish implementing algorithm to suggest styles according to user's profile. It turns out that this was a difficult task to implement, and since we had give up on machine learning, the algorithm that we currently have does not recommend styles as accurately as we had hoped. 
 
 ## Meeting Highlights
 
 Going into the next iteration, our main insights are:
 
- * 2 - 4 items
- * Short (no more than one short paragraph per item)
- * High-level concepts that should guide your work for the next iteration.
- * These concepts should help you decide on where to focus your efforts.
- * Can be related to product and/or process.
+* Communication is the key
+
+* We should continue to hold coding sessions
+
+* We need to finalize the features and user workflow we plan to demo
+
