@@ -45,6 +45,7 @@ Describe the different roles on the team and the responsibilities associated wit
 ##### Back-end
 > The back end developers will be responsible on algorithm design and implementation. 
 - Yuanhao Tu (w34336): He is responsible for implementing the cart page and likes page logic and functionalities. 
+
 - Bin Yu (andrewbinyu): He is responsible for implementing machine learning algorithm for styles classification and recommendation. 
 
 #### Events
