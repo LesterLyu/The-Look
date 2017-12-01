@@ -11,8 +11,6 @@ We begin to fix some bugs for the UI from D2, and implement valid functionalitie
 
 #### Changes from previous iteration
 
-List the most significant changes you made to your process (if any).
-
 ##### Change 1: Introduced Group Coding Sessions & Code Review Sessions
 One of the biggest challenges that we faced when completing Deliverable 2 was the lack of communication when we were developing our application. For Delierable 2, we decided to assign tasks to each member and write code independently. The reason behind that decision is that it was reading week and we were hoping that working independently gives each group memeber the flexibility to manage their time, so that we can be more productive and save time for arranging meetings and traveling to meet. However, this decision did not turn out as well as we hoped because it led to lack of communication which caused the problem of implementing extra functionalities that cannot be used in our product. Thus, learning from our previous deliverable, we decided to introduce group coding sessions and code review sessions (see [Events](#events)). We hope that with group coding sessions, we can integrate our front-end and back-end in an efficient manner. In addition, we hope these coding sessions will give every group member an opportunity to contribute their code. A success metric for this change will be that there are less bugs discovered, more bugs/issues resolved, and more contribution from every group member. 
 
@@ -23,8 +21,6 @@ In D2, we made a clear separtion between the front-end team and the back-end tea
 We decided to have more face-to-face meetings rather than online meetings or WeChat communications. We are making this change because we found that face-to-face communication is the most effective and efficient since it was difficult to get an immediate response using group chat and it was time-consuming to plan an online meeting that fits everyone's schedule. These face-to-face meetings are very casual and flexible, and serves the purpose of allowing group memebers to know the latest progress in terms of our project. We hoep that by introducing more face-to-face meetings, each member can have a clear understanding of their tasks and the state of our product as a whole. 
 
 #### Roles & responsibilities
-
-Describe the different roles on the team and the responsibilities associated with each role.
 
 ##### Full Stack
 > The full stack developers will be responsible for integrating back-end with the front-end, fixing bugs from UI left from previous deliverable, implementing backend functionality, communicating with both front-end and back-end teams. 
@@ -38,7 +34,7 @@ Describe the different roles on the team and the responsibilities associated wit
 ##### Front-end
 > The front end developers will be responsible for designing user workflow, implementing UI, and video making. 
 
-- Heng Ye (leonyhenn): He is the product manager, and is responsible for maitaining the product structure and flow. He will be responsible for our product's idea, goals, and user experience. 
+- Heng Ye (leonyhenn): He is the product manager, and is responsible for maitaining the product structure and flow. He will be responsible for our product's idea, goals, and user experience, also responsible for writing the second layer on the filter system.
 
 - Zezhong Pan (ShuiFanZZ): He is responsible for refactoring code on the front-end to integrate with backend. He has a fully equipped home studio and tons of experience on making videos. He is also responsible for video editing. 
 
@@ -50,17 +46,13 @@ Describe the different roles on the team and the responsibilities associated wit
 
 #### Events
 
-Describe meetings (and other events) you are planning to have:
-
  * Tuesday, November 21, 2017 - In person meeting on November 21 at Dishu Lyu's house. In this meeting, we planned out our responsibilities and the features we have to implement for our final product. In addition, we discussed about our time schedule and planned out future coding sessions. After this meeting, some group members stayed to work on some bugs on the front end not fixed in D2, and implemented the edit profile functionalities on the backend. 
  
  * Monday, November 27, 2017 - In person meeting / coding session on November 27 at Dishu Lyu's house. In this meeting, we discussed about what we should demo for our D3 video. We also assigned tasks to each team member and had a coding session for around 4-5 hours. 
  
  * Thursday November 30, 2017 - Studio recording for our D3 video
 
-#### Artifacts
-
-List/describe the artifacts you will produce in order to organize your team.       
+#### Artifacts     
 
  * [Trackboard](https://docs.google.com/document/d/1FIVt9HOjWtJEGN-1Ru8d8Crb7CeDV5ArKOWB1BIJYXE/edit): But not much in there because we are all more comfortable with WeChat Group Chat. The WeChat Group chat history is better at maintaining our tasks and schedules. 
  
@@ -105,8 +97,6 @@ This workflow can prevent struggling on conflicts, and improve the code readibil
  * We need to decide on the main functionality and features that we plan to demo for our final product. This requires lots of communication and meetings. So we plan to hold face-to-face meetings. 
 
 #### Artifacts
-
-List/describe the artifacts you will produce in order to present your project idea.
 
  1. **Product Functionality added: Cart and Checkout function**
 
