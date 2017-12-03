@@ -14,7 +14,10 @@ router.post('/', function(req, res, next) {
         username: req.body.username
     }, function(err, user) {
 
-        if (err) throw err;
+        if (err) {
+            res.status(400);
+            res.json({ success: false, msg: err });
+        }
         if (!user || user === "undefined") {
             res.status(400);
             res.json({ success: false, msg: 'Authentication failed. User not found.' });

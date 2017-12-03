@@ -1,32 +1,19 @@
-'use strict'
+'use strict';
 const mongo = require('mongoose');
 const Schema = mongo.Schema;
 
 
 let bodyShapeRangeSchema = new Schema({
-    height:{
-        max: Number,
-        min: Number
-    },
-    weight:{
-        max: Number,
-        min: Number
-    },
-    skinColor:[String],
-    belly:[String],
-    shoulderShape:[String],
-    legShape:[String],
-    legTorsoRatio:{
-        max: Number,
-        min: Number
-    },
-    bodyShape:[String],
-    atLength:{
-        max: Number,
-        min: Number
-    },
-    neckType:[String],
-    gender:[String]
+    height:[Number],
+    skinColor:[Number],
+    belly:[Number],
+    shoulderShape:[Number],
+    legShape:[Number],
+    legTorsoRatio:[Number],
+    bodyShape:[Number],
+    atLength:[Number],
+    neckType:[Number],
+    gender:[Number]
 });
 
 module.exports = mongo.model('BodyShapeRange',bodyShapeRangeSchema);

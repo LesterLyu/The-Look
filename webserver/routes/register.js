@@ -23,16 +23,18 @@ router.post('/', function(req, res, next) {
                 admin: req.body.admin,
                 email: req.body.email,
                 address: req.body.address,
-                phone: req.body.phone
+                phone: req.body.phone,
+                contactId: "",
+                bodyShapeId: "",
             });
 
             newUser.save(function(err) {
                 if (err) {
                     res.status(400);
                     res.json({ success: false, msg: err });
-                    return;
                 }
-                res.json({ success: true, msg: "Registration success"});
+                else
+                    res.json({ success: true, msg: "Registration success"});
             });
 
         }
