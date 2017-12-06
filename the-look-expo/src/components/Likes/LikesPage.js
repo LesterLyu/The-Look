@@ -53,7 +53,19 @@ class StyleSection extends React.Component {
 
     _viewSuitDetail = () => {
         alert("To SuitDetailPage");
-        this.props.navigation("SuitDetailsPage")
+        this.props.navigation("SuitDetailsPage");
+        let headers = {"x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ZmFsc2UsInVzZXJuYW1lIjoiYWJjZGUiLCJpYXQiOjE1MTI1MTY5NTUsImV4cCI6MTUyMTE1Njk1NX0.hnXCq1SoC678MploOFfXmVfrOmZ3F4o62oa8Rh1Ry64"};
+        return fetch('http://lesterlyu.com/api/user/recommendation', {
+            method: 'GET',
+            headers: headers,
+            body: {},
+        }).then(data => {
+            if(data) {
+                console.log(data);
+            }
+        }).catch(err => {
+            console.log(err);
+        });
     }
 
 
